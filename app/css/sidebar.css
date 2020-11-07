@@ -78,6 +78,11 @@
     text-decoration: none;
 }
 
+.ocultar {
+    display: none;
+}
+
+
 .fa {
 position: relative;
 font-size: 25px;
