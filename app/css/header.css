@@ -5,7 +5,7 @@
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    height: 78px;
+    height: 70px;
     background-color: var(--color-black);
 }
 
@@ -13,7 +13,7 @@
     width: 80px;
 }
 
-#hamb-menu{
+#icon-hamb{
     display: block;
     color: #f2f2f2;
     width: 50px;
@@ -24,15 +24,14 @@
     display: none;
 }
 
-#search-icon{
-    color: #f2f2f2;
+#icon-search{
     width: 50px;
     padding: 16px;
 }
 
 @media(min-width:768px) {
     
-    #hamb-menu{
+    #icon-hamb{
         display: none;
     }
 
@@ -47,7 +46,7 @@
         flex-flow: row;
         align-items: center;
         list-style-type: none;
-        padding-right: 32px;
+        padding-right: 16px;
     }
 
     .menu-header li{
