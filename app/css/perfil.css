@@ -1,0 +1,41 @@
+body {
+    overflow-y: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+    margin-top: 70px;
+    position: absolute;
+    width: (100%-280px);
+}
+
+.bloque {
+    width: 100%;
+    padding: 10px;
+}
+
+.cabecera {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.info-usuario {
+    display:flex;
+    flex-direction:column;
+}
+.info-perfil-large {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-cabecera {
+    text-align: right;
+    padding: 1px 5px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px var(--color-gray6) solid;
+    height: 50px;
+}
