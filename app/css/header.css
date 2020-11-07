@@ -9,39 +9,129 @@
     background-color: var(--color-black);
 }
 
-#logo {
-    width: 80px;
+#logo-header {
+    width: 60px;
+    margin-top: 2px;
 }
 
-#icon-hamb{
-    display: block;
-    color: #f2f2f2;
-    width: 50px;
+.header-icon{
+    width: 40px;
     padding: 16px;
 }
 
-.menu-header{
+#main-menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    
+    background-color: var(--color-black);
+    
+    transform: translateX(-100vw);
+    transition: transform 0.3s ease;
+}
+
+#menu-options{
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.link-seccion {
+    font-size: 30px;
+    color: var(--color-gray5);
+    margin-bottom: 32px;
+}
+
+.link-secundario {
+    font-size: 17px;
+    color: var(--color-gray5);
+    margin-bottom: 16px;
+}
+
+#separador-main-menu{
+    margin-bottom: 32px;
+}
+
+#ingresar-btn{
     display: none;
 }
 
-#icon-search{
-    width: 50px;
-    padding: 16px;
+#logo-menu {
+    width: 40px;
+    margin-top: 200px;
 }
 
 @media(min-width:768px) {
     
-    #icon-hamb{
+    #hamb-button{
         display: none;
     }
 
-    #logo {
-        width: 80px;
+    #logo-header {
+        width: 75px;
         padding: 16px;
         padding-left: 32px;
+        margin-top: 4px;
     }
 
-    .menu-header{
+    #main-menu{
+        position: relative;
+        width: auto;
+        height: auto;
+        z-index: auto;
+        
+        display: flex;
+        flex-flow: row;
+        
+        background: none;
+        align-items: center;
+        
+        transform: translateX(0);
+        transition: none;
+    }
+
+    #menu-options{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin: 0;
+    }
+
+    #separador-main-menu{
+        display: none;
+    }
+
+    .link-seccion {
+        font-size: 18px;
+        margin: 0px 16px;
+    }
+
+    .link-secundario {
+        display: none;
+    }
+
+    #ingresar-btn{
+        display: inline-block;
+        font-size: 18px;
+        margin: 0px 32px 0px 16px;
+    }
+
+    #logo-menu {
+        display: none;
+    }
+    
+    #close-menu {
+        display: none;
+    }
+
+
+    /* #main_menu{
         display: flex;
         flex-flow: row;
         align-items: center;
@@ -49,19 +139,19 @@
         padding-right: 16px;
     }
 
-    .menu-header li{
+    #main_menu li{
         margin-right: 24px;
     }
 
-    .menu-header li a{
+    #main_menu li a{
         text-decoration: none;
         font-size: 20px;
         color: var(--color-gray5);
     }
     
-    .menu-header li a:hover{
+    #main_menu li a:hover{
         color: #f2f2f2;
-    }
+    } */
     
 }
 
