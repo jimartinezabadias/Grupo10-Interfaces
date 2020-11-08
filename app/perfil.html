@@ -132,6 +132,8 @@
             
         </ul>
     </div>
+
+
     <div class="main" id="main">
 
       <div class="bloque cabecera">
@@ -262,6 +264,7 @@
 
     </div>
     
+    <!-- Player -->
     <div id="player">
       
       <div class="info-mini">
@@ -276,7 +279,7 @@
 
         <button>
           <svg width="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 15l7-7 7 7" />
           </svg>
         </button>
 
@@ -332,6 +335,14 @@
 
         </div>
 
+        <div id="song-nav">
+        
+          <span id="current-time">02:24</span>
+          <input type="range" name="volume" id="song-range" class="player-range">
+          <span id="total-time">4:02</span>
+
+        </div>
+
         <div id="vol-control">
 
           <button id="vol-mute">
@@ -341,7 +352,7 @@
             </svg>
           </button>
         
-          <input type="range" name="volume" id="vol-range">
+          <input type="range" name="volume" id="volume-range" class="player-range">
 
           <button id="vol-btn">
             <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -356,6 +367,8 @@
       </div>
 
     </div>
+
+
 <script src="js/main.js"></script>
 <script src="js/header.js"></script>
 </body>
