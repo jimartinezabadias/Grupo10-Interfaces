@@ -62,6 +62,29 @@ a {
     color: inherit;
 }
 
-.text-md{
+.text-medium{
     font-weight: 500;
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+#main{
+    width: 100%;
+}
+
+.display-1{
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 54px;
+}
+
+@media(min-width:768px) {
+    
+    .display-1{
+        font-size: 50px;
+        letter-spacing: 1px;
+    }
+
 }
