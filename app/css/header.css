@@ -67,6 +67,15 @@
     margin-top: 200px;
 }
 
+#search-bar{
+    display: flex;
+    align-items: center;
+}
+
+#search-input{
+    display: none;
+}
+
 @media(min-width:768px) {
     
     #hamb-button{
@@ -130,28 +139,11 @@
         display: none;
     }
 
-
-    /* #main_menu{
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        list-style-type: none;
-        padding-right: 16px;
+    #search-input{
+        display: inline-flex;
+        width: 300px;
+        height: 40px;
     }
-
-    #main_menu li{
-        margin-right: 24px;
-    }
-
-    #main_menu li a{
-        text-decoration: none;
-        font-size: 20px;
-        color: var(--color-gray5);
-    }
-    
-    #main_menu li a:hover{
-        color: #f2f2f2;
-    } */
     
 }
 
