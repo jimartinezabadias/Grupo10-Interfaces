@@ -3,12 +3,8 @@ body {
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    margin-left: 280px;
-    margin-top: 70px;
-    position: absolute;
-    width: (100%-280px);
+    margin-left: 300px;
+    padding-top: 70px;
 }
 
 .bloque {
@@ -22,10 +18,34 @@ body {
     justify-content:space-between;
 }
 
+.bloque-usuario {
+    display: flex;
+    flex-direction: row;
+}
+
+#avatar-perfil {
+    width: 128px;
+    height: 128px;
+    background-color: var(--color-gray4);
+    border-radius: 65px;
+    margin-top: auto;
+}
+
 .info-usuario {
     display:flex;
     flex-direction:column;
+    margin-left: 15px;
+    margin-top: -11px;
 }
+
+.info-usuario .btn {
+    width: 48px;
+}
+
+.info-usuario h1 {
+    height: 18px;
+}
+
 .info-perfil-large {
     display: flex;
     flex-direction: row;
@@ -33,9 +53,11 @@ body {
 
 .texto-cabecera {
     text-align: right;
-    padding: 1px 5px;
+    padding: 8px 5px;
     display: flex;
     flex-direction: column;
     border-bottom: 2px var(--color-gray6) solid;
     height: 50px;
+    margin-top: auto;
+    font-size: 20px;
 }
