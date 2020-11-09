@@ -63,16 +63,16 @@ a {
     color: inherit;
 }
 
+.text-normal{
+    font-weight: 300;
+}
+
 .text-medium{
     font-weight: 500;
 }
 
 .text-bold{
     font-weight: 700;
-}
-
-#main{
-    width: 100%;
 }
 
 .display-1{
