@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+}
+.container{
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-columns: auto 350px auto;
+    grid-template-rows: 100px 12px 100px 32px 160px 25px 120px;
+}
+
+.check{
+    position: relative;
+    left: 300px;
+    top: -33px;
+}
+
+input{
+    padding-left: 15px;
+    font-size: 18px;
+    color: white;
+    width: 314px;
+    height: 40px;
+    background-color: var(--color-gray2);
+    border: none;
+}
+
+.view{
+    position: relative;
+    left: -33px;
+    top: 4px;
+}
+
+.email{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-left: 15px;
+}
+
+.email input{
+    border-bottom: 2px #589472 solid;
+}
+
+.pass{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-column-end: 4;
+    padding-left: 15px;
+}
+
+.init{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.init button{
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 145px;
+    height: 49px;
+    background-color: var(--color-blue1);
+    box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.25);
+}
+
+.init a{
+    color: var(--color-blue1);
+    text-decoration: underline;
+}
+
+div .center{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.opt{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.opt p{
+    display: inline-block;
+}
+
+.opt p:nth-child(1){
+    position: relative;
+    left: 20px;
+    top: 12px;
+    width: 130px;
+    height: 2px;
+    background-color: white;
+}
+
+.opt p:nth-child(2){
+    position: relative;
+    left: 44px;
+}
+
+.opt p:nth-child(3){
+    position: relative;
+    left: 66px;
+    top: 12px;
+    width: 130px;
+    height: 2px;
+    background-color: white;
+}
+
+.registrarse{
+    position: relative;
+    left: 10px;
+    top: 20px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.btnRegis{
+    margin-top: 12px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 145px;
+    height: 49px;
+    background-color: var(--color-gray3);
+}
