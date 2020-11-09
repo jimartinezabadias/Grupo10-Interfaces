@@ -1,0 +1,19 @@
+#search-page{
+    display: flex;
+    padding: 40px 16px 0px 16px;
+}
+
+#search-page .search-bar{
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+#search-page #search-input{
+    width: 100%;
+}
+
+#search-action-btn{
+    width: 30px;
+    margin-left: 16px;
+}

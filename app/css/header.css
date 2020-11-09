@@ -66,16 +66,16 @@
     margin-top: 200px;
 }
 
-#search-bar{
+#header .search-bar{
     display: flex;
     align-items: center;
 }
 
-#search-input{
+#header #search-input{
     display: none;
 }
 
-#search-button{
+#header #search-button{
     display: inline-flex;
 }
 
@@ -142,7 +142,7 @@
         display: none;
     }
 
-    #search-input{
+    #header #search-input{
         display: inline-flex;
         width: 300px;
         height: 40px;
