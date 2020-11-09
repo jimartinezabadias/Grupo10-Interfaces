@@ -1,0 +1,364 @@
+.bar-back{
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    background-color: #4F4F4F;
+    position: absolute;
+    top: 65px;
+}
+
+p{
+    margin: 2px;
+}
+
+.bar-back label{
+    font-size: 22px;
+    position: relative;
+    left: 110px;
+    top: 10px;
+}
+
+.bar-back svg{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+.info-planActual{
+    line-height: 133%;
+    position: relative;
+    width: 100%;
+    font-size: 22px;
+    top: 142px;
+    text-align: center;
+}
+
+.info-planActual div:nth-child(2){
+    margin: 40px 18px;
+    font-size: 16px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto 324px auto;
+    position: relative;
+    top: 160px;
+}
+
+.cards div p{
+    margin-bottom: 0;
+}
+
+.titulo-card{
+    margin: 12px;
+    text-align: center;
+    font-size: 33px;
+}
+
+.cards div p:nth-child(2){
+    display: inline-block;
+    position: relative;
+    left: 118px;
+    top: -22px;
+}
+.cards div p:nth-child(3){
+    display: inline-block;
+    font-size: 48px;
+    position: relative;
+    left: 120px;
+}
+.cards div p:nth-child(4){
+    display: inline-block;
+    position: relative;
+    left: 120px;
+}
+
+.cards div p:nth-child(5){
+    font-size: 14px;
+    text-align: center;
+}
+
+.cards div p:nth-child(6){
+    text-align: center;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.cards div p:nth-child(7){
+    text-align: center;
+    font-size: 18px;
+    margin-top: 29px;
+}
+.cards div p:nth-child(11){
+    position: relative;
+    left: 190px;
+    width: 100px;
+    text-align: end;
+}
+.cards div p:nth-child(12){
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.cards div p:nth-child(16){
+    text-align: center;
+    font-size: 18px;
+    margin-top: 22px;
+}
+.cards div p:nth-child(20){
+    position: relative;
+    left: 190px;
+    width: 100px;
+    text-align: end;
+}
+
+.linea{
+    width: 253px;
+    height: 1px;
+    background-color: #9999a1;
+    margin-left: 35px;
+}
+
+.barra{
+    position: relative;
+    height: 4px;
+    background-color: #cdcddd;
+    margin-left: 35px;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.cards button{
+    position: relative;
+    top: 20px;
+    left: 90px;
+    font-size: 18px;
+    background-color: #2599df;
+    width: 145px;
+    height: 49px;
+}
+
+
+/* Primer plan */
+
+.cards div:nth-child(1) .c-playlist{
+    left: 282px;
+    animation: left-check-100 1.2s linear;
+}
+.cards div:nth-child(1) .c-cuenta{
+    left: 282px;
+    animation: left-check-100 1.2s linear;
+}
+.cards div:nth-child(1) .c-audio{
+    left: 282px;
+    animation: left-check-100 1.2s linear;
+}
+
+.cards div:nth-child(1){ 
+    border: 3px solid #2599df;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 324px;
+    height: 489px;
+    background-color: #4F4F4F;
+    margin-bottom: 33px;
+    box-shadow: 7px 6px 6px 3px rgba(0, 0, 0, 0.25);
+}
+
+.cards div:nth-child(1) .barra{
+    width: 257px;
+    animation: width-barra-100 1.2s linear;
+}
+
+/* Segundo plan */
+
+.cards div:nth-child(2) .c-playlist{
+    left: 200px;
+    animation: left-check-60 1.2s linear;
+}
+.cards div:nth-child(2) .c-cuenta{
+    left: 200px;
+    animation: left-check-60 1.2s linear;
+}
+.cards div:nth-child(2) .c-audio{
+    left: 200px;
+    animation: left-check-60 1.2s linear;
+}
+
+.cards div:nth-child(2){
+    border: 2px solid #755097;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 324px;
+    height: 489px;
+    background-color: #4F4F4F;
+    margin-bottom: 33px;
+    box-shadow: 7px 6px 6px 3px rgba(0, 0, 0, 0.25);
+}
+
+.cards div:nth-child(2) .barra{
+    width: 175px;
+    animation: width-barra-60 1.2s linear;
+}
+
+/* Tercer plan */
+
+.cards div:nth-child(3) .c-playlist{
+    left: 90px;
+    animation: left-check-20 1.2s linear;
+}
+.cards div:nth-child(3) .c-cuenta{
+    left: 90px;
+    animation: left-check-20 1.2s linear;
+}
+.cards div:nth-child(3) .c-audio{
+    left: 90px;
+    animation: left-check-20 1.2s linear;
+}
+
+.cards div:nth-child(3){
+    border: 2px solid #29804e;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 324px;
+    height: 489px;
+    background-color: #4F4F4F;
+    margin-bottom: 33px;
+    box-shadow: 7px 6px 6px 3px rgba(0, 0, 0, 0.25);
+}
+
+.cards div:nth-child(3) .barra{
+    width: 65px;
+    animation: width-barra-20 1.2s linear;
+}
+
+/* Cuarto plan */
+
+.cards div:nth-child(4) .c-playlist{
+    left: 90px;
+    animation: left-check-20 1.2s linear;
+}
+.cards div:nth-child(4) .c-cuenta{
+    left: 90px;
+    animation: left-check-20 1.2s linear;
+}
+.cards div:nth-child(4) .c-audio{
+    left: 90px;
+    animation: left-check-20 1.2s linear;
+}
+
+.cards div:nth-child(4){
+    border: 2px solid #aa9043;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 324px;
+    height: 489px;
+    background-color: #4F4F4F;
+    margin-bottom: 33px;
+    box-shadow: 7px 6px 6px 3px rgba(0, 0, 0, 0.25);
+}
+
+.cards div:nth-child(4) .barra{
+    width: 65px;
+    animation: width-barra-20 1.2s linear;
+}
+
+
+@keyframes width-barra-100{
+    from{
+        width: 0;
+    }
+    to{
+        width: 253px;
+    }
+}
+
+@keyframes left-check-100{
+    from{
+        left: 25px;
+    }
+    to{
+        left: 282px;
+    }
+}
+
+@keyframes left-check-60{
+    from{
+        left: 25px;
+    }
+    to{
+        left: 200px;
+    }
+}
+
+@keyframes width-barra-60{
+    from{
+        width: 0;
+    }
+    to{
+        width: 175px;
+    }
+}
+
+@keyframes left-check-20{
+    from{
+        left: 25px;
+    }
+    to{
+        left: 90px;
+    }
+}
+
+@keyframes width-barra-20{
+    from{
+        width: 0;
+    }
+    to{
+        width: 65px;
+    }
+}
+
+@media(min-width:768px){
+    .cards{
+        display: grid;
+        grid-template-columns: auto 330px 80px 330px auto;
+        grid-template-rows: auto 40px auto;
+        position: relative;
+        top: 160px;
+    }
+
+    .bar-back{
+        display: none;
+    }
+
+    .info-planActual {
+        position: relative;
+        top: 120px;
+    }
+
+    .info-planActual div:nth-child(1){
+        margin: 0;
+    }
+
+    .cards div:nth-child(2){
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .cards div:nth-child(3){
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .cards div:nth-child(4){
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+}
