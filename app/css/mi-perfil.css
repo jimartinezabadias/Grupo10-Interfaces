@@ -12,6 +12,43 @@
 .contenido-bloque {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 16px;
+    margin-top: -28px;
+}
+
+.bloque-mes {
+    width: 100%;
+}
+
+.titulo-mes {
+    height: 25px;
+}
+
+.positivo-stat {
+    color: var(--color-blue3);
+}
+
+.negativo-stat {
+    color: var(--color-orange);
+}
+
+.estadistica-element {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px var(--color-gray3) solid;
+    height: 50px;
+}
+
+.estadistica-izq {
+    display: flex;
+    margin-top: 8px;
+}
+
+.estadistica-izq h5 {
+    margin-top: 8px;
+    padding-left: 3px;
+    color: var(--color-gray4);
 }
 
 .playlist-card {
@@ -46,6 +83,8 @@
 .bloque-usuario {
     display: flex;
     flex-direction: row;
+    padding-left: 8px;
+    padding-top: 8px;
 }
 
 #avatar-perfil {
@@ -74,6 +113,7 @@
 .info-perfil-large {
     display: flex;
     flex-direction: row;
+    padding-right: 16px;
 }
 
 .info-mobile {
@@ -91,11 +131,54 @@
     font-size: 20px;
 }
 
+.botones-perfil {
+    height: 40px;
+    position: absolute;
+    margin-left: 243px;
+}
+.notification-element {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification-element h4 {
+    height: 4px;
+}
+
+.notification-element span {
+    color: var(--color-gray4);
+}
+
+.notification-element svg {
+    float: right;
+}
+
+.titulo-bloque h2 {
+    padding-left: 8px;
+}
+
+.bloques {
+    display: flex;
+    flex-direction: row;
+}
+
 @media(max-width:768px) {
     .main {
         padding-top: 70px;
         width: 100%;
         margin-left: 0px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .notification-element h4 {
+        height: 25px;
+    }
+
+    .bloques {
+        display: flex;
+        flex-direction: column;
     }
 
     .info-perfil-large {
@@ -110,5 +193,33 @@
     .bloque {
         width: 97%;
         padding: 10px;
+    }
+
+    .contenido-bloque {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 8px;
+        margin-top: -28px;
+    }
+
+    .bloque-usuario {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0px;
+        padding-top: 8px;
+    }
+
+    .titulo-bloque h2 {
+        padding-left: 0px;
+    }
+
+    .estadistica-element {
+        width: 98%;
+    }
+
+    .botones-perfil {
+        height: 40px;
+        position: unset;
+        margin-left: 0px;
     }
 }

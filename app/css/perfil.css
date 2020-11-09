@@ -46,6 +46,8 @@
 .bloque-usuario {
     display: flex;
     flex-direction: row;
+    padding-left: 8px;
+    padding-top: 8px;
 }
 
 #avatar-perfil {
@@ -74,6 +76,7 @@
 .info-perfil-large {
     display: flex;
     flex-direction: row;
+    padding-right: 16px;
 }
 
 .info-mobile {
@@ -89,6 +92,10 @@
     height: 50px;
     margin-top: auto;
     font-size: 20px;
+}
+
+.titulo-bloque h2 {
+    padding-left: 8px;
 }
 
 @media(max-width:768px) {
@@ -111,5 +118,21 @@
     .bloque {
         width: 97%;
         padding: 10px;
+    }
+
+    .bloque-usuario {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0px;
+        padding-top: 8px;
+    }
+
+    .titulo-bloque h2 {
+        padding-left: 0px;
+    }
+
+    .playlist-card {
+        padding: 0px 7px;
+        min-width: 158px;
     }
 }
