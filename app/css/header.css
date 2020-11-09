@@ -75,6 +75,10 @@
     display: none;
 }
 
+#search-button{
+    display: inline-flex;
+}
+
 @media(min-width:768px) {
     
     #hamb-button{
