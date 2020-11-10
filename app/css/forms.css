@@ -9,11 +9,12 @@ input {
     padding: 12px;
 }
 
-input:focus { 
+input:focus,
+input:active { 
     outline:none;
     border-bottom: 1px solid var(--color-gray6);
 }
 
 ::placeholder {
     color: var(--color-gray3);
-  }
+}

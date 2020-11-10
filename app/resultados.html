@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/forms.css">
-
+    <link rel="stylesheet" href="css/navbar.css">
+    
     <!-- Estilos Particulares --> 
-    <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href="css/buscar.css">
+    <link rel="stylesheet" href="css/resultados.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     
     <title>Document</title>
@@ -39,7 +41,7 @@
         <input type="search" name="search" id="search-input"
           placeholder="Artistas, playlist, podcast ...">
 
-        <a href="#" id="search-button">
+        <a href="buscar.html" id="search-button">
           <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
@@ -57,7 +59,7 @@
         
           <div id="menu-options">
             
-            <a class="link-seccion" href="/app/html/planes.html">Planes</a>
+            <a class="link-seccion" href="">Planes</a>
           
           
             <a class="link-seccion" href="">Ayuda</a>
@@ -90,20 +92,70 @@
       </div>
         
     </div>
+
+    <!-- Nav -->
+    <div id="nav">
+
+      <a href="index.html">
+        <svg id="back-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+      </a>
+
+      <div id="page-title">
+        <h3 class="text-normal">Buscar</h3>
+      </div>
+
+      <div></div>
+
+    </div>
     
-    <div id="index-hero">
+    <!-- Search Page -->
+    <div id="search-page">
 
-      <div id="hero-text">
+      <div class="search-bar">
 
-        <h1 class="display-1 text-medium" >#1 En streaming de musica</h1>
+        <input type="search" name="search" id="search-input" value="Busqueda 1"
+          placeholder="Artistas, playlist, podcast ...">
 
-        <a href="#" class="btn">Comenzar</a>
+        <a href="resultados.html" id="search-action-btn">
+          <svg class="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </a>
+
+      </div>
+
+
+    </div>
+
+    <!-- Results -->
+    <div id="results-page">
+      
+      <!-- Search text -->
+      <h3 class="text-normal">Resultados para <span id="search-text" class="text-medium">Busqueda 1</span></h3>
+
+      <!-- Filters -->
+      <div>
+
+        <select id="search-filters">
+          <option value="">Filtrar</option>
+          <option value="">Canciones</option>
+          <option value="">Playlist</option>
+          <option value="">Podcast</option>
+          <option value="">Artistas</option>
+        </select>
+        
+        <select id="search-order">
+          <option value="">Ordenar</option>
+          <option value="">Nombre</option>
+          <option value="">Fecha</option>
+          <option value="">Autor</option>
+        </select>
 
       </div>
 
     </div>
-
-    
 
     <script src="js/header.js"></script>
 
