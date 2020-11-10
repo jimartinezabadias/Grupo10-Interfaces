@@ -1,0 +1,27 @@
+.li-play{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    /* align-items: flex-end; */
+}
+
+.li-play img{
+    max-height: 48px;
+}
+
+.li-play .info{
+    display: flex;
+}
+
+.li-play .textos{
+    margin-left: 10px;
+}
+
+.li-play .li-buttons{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.li-play button.play-btn{
+    width: 32px;
+    color: var(--color-gray5);
+}

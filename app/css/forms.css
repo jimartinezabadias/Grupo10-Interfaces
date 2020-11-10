@@ -108,12 +108,7 @@ input[type="text"] {
 
 .select-dropdown {
     position: relative;
-    background-color: #e6e6e6;
-    width: auto;
-    float: left;
-    max-width: 100%;
-    border-radius: 2px;
-    height: 33px;
+    display: inline-flex;
 }
 
 .select-dropdown:after {
@@ -126,21 +121,20 @@ input[type="text"] {
     height: 0; 
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #aaa;
+    border-top: 5px solid var(--color-gray4);
 }
 
 select {
-    font-family: "helvetica neue", helvetica;
-    font-size: 1rem;
-    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--color-gray5);
     max-width: 100%;
     padding: 8px 24px 8px 10px;
     border: none;
-    background-color: transparent;
+    background-color: var(--color-gray2);
+    border-bottom: 1px solid var(--color-gray4);
     -webkit-appearance: none;
     -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
 }
 
 select:active {
