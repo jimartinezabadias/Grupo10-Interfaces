@@ -1,17 +1,68 @@
 body{
     margin: 0;
 }
-.container{
+.containerLogin{
     position: relative;
-    top: 100px;
+    top: 20px;
     display: grid;
     grid-template-columns: auto 350px auto;
     grid-template-rows: 100px 12px 100px 32px 160px 25px 120px;
 }
 
+.containerRegistro{
+    position: relative;
+    top: 20px;
+    display: grid;
+    grid-template-columns: auto 350px auto;
+    grid-template-rows: 100px 5px 100px 5px 100px 5px 100px 30px 50px;
+    padding-left: 20px;
+}
+
+.usuario{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.registerEmail{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.passw{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.confirmPassw{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.btnConfirm button{
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 145px;
+    height: 49px;
+    background-color: var(--color-blue1);
+    box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.25);
+}
+
+.btnConfirm{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 9;
+}
+
 .check{
     position: relative;
-    left: 300px;
+    left: 294px;
     top: -33px;
 }
 
@@ -19,7 +70,7 @@ input{
     padding-left: 15px;
     font-size: 18px;
     color: white;
-    width: 314px;
+    width: 305px;
     height: 40px;
     background-color: var(--color-gray2);
     border: none;
@@ -43,9 +94,8 @@ input{
 
 .pass{
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
     grid-column-end: 4;
+    grid-row-start: 3;
     padding-left: 15px;
 }
 
@@ -70,7 +120,7 @@ input{
     text-decoration: underline;
 }
 
-div .center{
+.center{
     text-align: center;
     padding-left: 20px;
 }
