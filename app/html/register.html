@@ -6,12 +6,10 @@
     <link rel="stylesheet" href="/app/css/generales/navbar.css">
     <link rel="stylesheet" href="/app/css/generales/style.css">
     <link rel="stylesheet" href="/app/css/generales/header.css">
-    <link rel="stylesheet" href="/app/css/paginas/planes.css">
+    <link rel="stylesheet" href="/app/css/paginas/LoginRegister.css">
     <title>Spoiler Five</title>
 </head>
 <body>
-
-    <!-- Header -->
     <div id="header">
 
         <button id="hamb-button">
@@ -31,7 +29,7 @@
           <input type="search" name="search" id="search-input"
             placeholder="Artistas, playlist, podcast ...">
   
-          <a href="/app/buscar.html" id="search-button">
+          <a href="buscar.html" id="search-button">
             <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -78,200 +76,59 @@
             </div>
         </div>
     </div>
-    
-    <div class="bar-back">
-        <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 13.5H21M10 21.375L3 13.5L10 21.375ZM3 13.5L10 5.625L3 13.5Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
 
-        <label>
-            Planes premium
-        </label>
+    <div id="nav">
+        <a href="index.html">
+          <svg id="back-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+        </a>
+  
+        <div id="page-title">
+          <h3 class="text-normal">Registro</h3>
+        </div>
+
+        <div></div>
     </div>
 
-    <div class="info-planActual">
-        <div>
-            Por ahora no tenes ningun plan.
+    <div class="containerRegistro">
+        <div class="usuario">
+            <p>Usuario</p>
+            <input type="text" name="Usuario" value="Pepito28">
+            <svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
-        <div>
-            Proba gratis por un mes cualquiera de nuestros planes.
+        <div class="registerEmail">
+            <p>Email</p>
+            <input type="email" name="Email" value="pepito28@spoilerfive.com">
+            <svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
-    </div>
-
-    <!-- Cards -->
-    <div class="cards">
-
-        <div>
-            <p class="titulo-card">
-                Avanzado
-            </p>
-            <p>$</p>
-            <p>60</p>
-            <p>/mes</p>
-            <p>$699 /año</p>
-            <p>Escucha sin anuncios</p>
-            <p>Playlist propias sin limites</p>
-            <div class="check c-playlist">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p> </p>
-
-            <p> 5 Cuentas</p>
-            <div class="check c-cuenta">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p> Calidad de audio</p>
-            <div class="check c-audio">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p>AAC 256kbps</p>
-
-            <button>
-                Comenzar
-            </button>
+        <div class="passw">
+            <p>Contraseña</p>
+            <input type="password" name="pass" value="soypepito28">
+            <svg class="view" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10Z" stroke="#E6E6E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.04834 10C3.11001 6.61919 6.26917 4.16669 10 4.16669C13.7317 4.16669 16.89 6.61919 17.9517 10C16.89 13.3809 13.7317 15.8334 10 15.8334C6.26917 15.8334 3.11001 13.3809 2.04834 10V10Z" stroke="#E6E6E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
-
-        <div>
-            <p class="titulo-card">
-                Intermedio
-            </p>
-            <p>$</p>
-            <p>55</p>
-            <p>/mes</p>
-            <p>$640 /año</p>
-            <p>Escucha sin anuncios</p>
-            <p>Playlist propias sin limites</p>
-            <div class="check c-playlist">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p>5 playlist</p>
-
-            <p> 3 Cuentas</p>
-            <div class="check c-cuenta">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p> Calidad de audio</p>
-            <div class="check c-audio">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p> 170kHz</p>
-
-            <button>
-                Comenzar
-            </button>
+        <div class="confirmPassw">
+            <p>Confirmar Contraseña</p>
+            <input type="password" name="confirmPass" value="soypepito28">
+            <svg class="view" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10Z" stroke="#E6E6E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.04834 10C3.11001 6.61919 6.26917 4.16669 10 4.16669C13.7317 4.16669 16.89 6.61919 17.9517 10C16.89 13.3809 13.7317 15.8334 10 15.8334C6.26917 15.8334 3.11001 13.3809 2.04834 10V10Z" stroke="#E6E6E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
-
-        <div>
-            <p class="titulo-card">
-                Simple
-            </p>
-            <p>$</p>
-            <p>45</p>
-            <p>/mes</p>
-            <p>$520 /año</p>
-            <p>Escucha sin anuncios</p>
-            <p>Playlist propias sin limites</p>
-            <div class="check c-playlist">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p>2 playlist</p>
-
-            <p> 1 Cuenta</p>
-            <div class="check c-cuenta">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p> Calidad de audio</p>
-            <div class="check c-audio">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p> 140kHz</p>
-
-            <button>
-                Comenzar
-            </button>
+        <div class="btnConfirm">
+            <button>Registrarse</button>
         </div>
-
-        <div>
-            <p class="titulo-card">
-                Estudiante
-            </p>
-            <p>$</p>
-            <p>30</p>
-            <p>/mes</p>
-            <p>$340 /año</p>
-            <p>Escucha sin anuncios</p>
-            <p>Playlist propias sin limites</p>
-            <div class="check c-playlist">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p>2 playlist</p>
-
-            <p> 1 Cuenta</p>
-            <div class="check c-cuenta">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p> Calidad de audio</p>
-            <div class="check c-audio">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="barra"></div>
-            <div class="linea"></div>
-            <p> 170kHz</p>
-
-            <button>
-                Comenzar
-            </button>
-        </div>
-
+            
+        </button>
     </div>
 
     <script src="/app/js/header.js"></script>
-
 </body>
 </html>
