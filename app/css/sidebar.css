@@ -51,8 +51,7 @@
 }
 
 .menu-extensible {
-  list-style: none;
-  margin-left: -40px;
+    list-style: none;
 }
 
 .menu-extensible li {
