@@ -1,15 +1,177 @@
-.containerlr{
-    position: relative;
-    top: 400px;
+.modal{
+    z-index: 1;
+    position: fixed;
+    top: 200px;
     display: grid;
-    grid-template-columns: auto 400px auto;
+    grid-template-columns: 5fr 2fr 5fr;
+    grid-template-rows: 400px;
 }
 
-.popup-lr{
+.modal input{
+    padding-left: 10px;
+    font-size: 14px;
+    color: ;
+    width: 210px;
+    height: 27px;
+    background-color: var(--color-gray2);
+    border: none;
+    border-bottom: 1px #838389 solid;
+    color: var(--color-gray5);
+}
+
+
+.modal-content{
     grid-column-start: 2;
-    width: 300px;
-    height: 300px;
-    background-color: --color-gray2;
+    background-color: var(--color-gray1);
+    width: 600px;
+    height: 400px;
+}
+
+.contentlr{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 250px 50px 250px;
+    grid-template-rows: 30px 60px 60px 60px 60px 60px;
+}
+
+.user{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.emailreg{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.passreg{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.confirmpass{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.btnRegistrar{
+    width: 80px;
+    height: 35px;
+    background-color: var(--color-blue1);
+}
+
+.buttonReg{
+    margin-right: 30px;
+    margin-top: 7px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    text-align: center;
+}
+
+.inputlr{
+    width: 100px;
+}
+
+.barraVertical{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 2px;
+    height: 285px;
+    background-color: var(--color-gray2);
+    margin-left: 25px;
+}
+
+.emailInicio{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.emailInicio input{
+    border-bottom: 1px solid var(--color-green2);
+}
+
+.passInicio{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.containerIniciar{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 13px;
+}
+
+.btnIniciar{
+    width: 95px;
+    height: 35px;
+    background-color: var(--color-green2);
+}
+
+.view{
+    position: relative;
+    left: -26px;
+    top: 3px;
+}
+
+.resetPass{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.link{
+    color: var(--color-blue1);
+    text-decoration: underline;
+}
+
+
+.p1{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.column3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.mt-3{
+    margin-top: 20px;
+}
+.row1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.p2{
+    margin: 0;
+    font-weight: 600;
+}
+
+.p3{
+    margin: 0;
+    font-style: normal;
+    font-size: 10px;
 }
 
 #index-hero{
@@ -22,7 +184,6 @@
     background-image: url('../../assets/background4.jpg');
     background-size: cover;
     background-position: 75% 70px;
-
 }
 
 #hero-text{
@@ -33,6 +194,26 @@
     padding: 32px;
 }
 
+#search-input{
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border:none;
+    font-family: Lato, sans-serif;
+    color: #888;
+    box-shadow: none;
+    border-bottom: 1px solid var(--color-gray4);
+    transition: border-bottom 0.2s ease;
+    background-color: var(--color-gray2);
+    color: var(--color-gray5);
+}
+
+.modal{
+    display: none;
+}
+
 @media(min-width:768px) {
     
     #hero-text{
@@ -40,5 +221,7 @@
         flex-direction: column;
         align-items: center;
     }
+
+
 
 }
