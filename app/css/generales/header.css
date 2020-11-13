@@ -144,7 +144,11 @@
     #header #search-input{
         display: inline-flex;
         width: 300px;
-        height: 40px;
+    }
+
+    .header-icon{
+        width: 28px;
+        padding: 8px;
     }
     
 }

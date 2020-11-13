@@ -78,7 +78,23 @@ a {
     font-size: 13px;
 }
 
-.display-1{
+.text-p{
+    font-size: 16px;
+}
+
+.text-3{
+    font-size: 18.7px;
+}
+
+.text-2{
+    font-size: 24px;
+}
+
+.text-1{
+    font-size: 32px;
+}
+
+.display-1 {
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 54px;
