@@ -1,17 +1,23 @@
 #results-page{
     display: flex;
     flex-direction: column;
-    padding: 0px 16px;
+    padding-top: 67px;
+}
+
+#results-page .search-bar{
+    padding: 16px
 }
 
 #filters{
     display: flex;
     column-gap: 16px;
+    padding: 0px 16px;
 }
 
 #lista-resultados{
     display: flex;
     flex-flow: column;
     margin-top: 16px;
+    padding: 0px 16px;
     row-gap: 8px;
 }

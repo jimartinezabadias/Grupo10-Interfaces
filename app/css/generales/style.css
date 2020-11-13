@@ -35,7 +35,7 @@ body{
 .btn {
     background-color: var(--color-blue1);
     color: var(--color-gray6);
-    padding: 12px 24px;
+    padding: 8px 20px;
 }
 
 button{

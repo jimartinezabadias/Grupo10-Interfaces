@@ -4,7 +4,6 @@
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    height: 70px;
     background-color: var(--color-black);
 }
 
@@ -14,7 +13,7 @@
 }
 
 .header-icon{
-    width: 40px;
+    width: 32px;
     padding: 16px;
 }
 
@@ -44,7 +43,7 @@
 .link-seccion {
     font-size: 30px;
     color: var(--color-gray5);
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .link-secundario {
@@ -86,7 +85,7 @@
     }
 
     #logo-header {
-        width: 75px;
+        width: 60px;
         padding: 16px;
         padding-left: 32px;
         margin-top: 4px;
@@ -120,7 +119,7 @@
     }
 
     .link-seccion {
-        font-size: 18px;
+        font-size: initial;
         margin: 0px 16px;
     }
 
@@ -130,7 +129,7 @@
 
     #ingresar-btn{
         display: inline-block;
-        font-size: 18px;
+        font-size: initial;
         margin: 0px 32px 0px 16px;
     }
 

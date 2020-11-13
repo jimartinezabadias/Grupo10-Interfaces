@@ -1,15 +1,14 @@
-#search-page{
+/* #search-page{
     display: flex;
     padding: 16px 16px 0px 16px;
-}
+} */
 
-#search-page .search-bar{
-    align-items: center;
-    width: 100%;
+.search-bar{
+    align-items: flex-end;
     display: flex;
 }
 
-#search-page #search-input{
+#search-input{
     width: 100%;
 }
 

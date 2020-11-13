@@ -3,7 +3,7 @@
     grid-template-columns: 2fr 8fr 2fr;
     align-items: center;
     background-color: var(--color-gray2);
-    padding: 78px 8px 8px 8px;
+    padding: 8px;
 }
 
 #nav h3{
