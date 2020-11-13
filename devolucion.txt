@@ -1,0 +1,29 @@
+Cristian García Bauza17:48
+@Juan Ignacio, grupo 10:
+-Vean el tema del tono de grises y los boxes. (muy marcado, queda como cosas estancas)
+-Los banners no se entienden bien de donde viene. 
+-Ojo con la funcionalidad de eliminar playlist, revisar los checkbox. 
+Pablo Francisco Calandria17:48
+Si no es mucha molestia Cristian, a nosotros grupo 8, si podes tambien darnos una devolucion!
+Giancarlo Cristiano17:48
+Muy buena acotación Nati
+Cristian García Bauza17:48
+@Juan Ignacio, Grupo 10:
+-Estaría bueno que haya posibilidad de ocultar la barra de comentarios para que no ocupe toda la pantalla. 
+-Buscador, ver tema de las columnas en los resultados, puede funcionar pero así como está no parece muy justificado. 
+@Juan Ignacio, Grupo 10:
+-No es claro el tema de los "Me gusta", es como que algunas cosas se pueden y otras no tanto. 
+-No se distingue la parte "libre" del TP, recomendaciones y el uso del sitio en base a momentos: falta el tema de diferenciar en caso de que el usuario vaya en auto, corriendo, etc, o por lo menos no esta a la vista
+*FIN*
+No es lo mismo que la devolución hablada, pero bue...
+Tú17:49
+Muchas gracias, tomamos nota
+Cristian García Bauza17:49
+despues lo vamos mirando en las clases
+congelen version
+y clonen cuando empiecen a hacer mejoras
+ESTO ES PARA TODOS
+asi eventualmente se puede comparar
+"Asi estaba, y asi va quedando...."
+
+
