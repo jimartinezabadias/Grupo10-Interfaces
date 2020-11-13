@@ -100,15 +100,19 @@
         width: 75%;
     }
 
+    #fav-btn{
+        width: 28px;
+    }
+
     #add-playlist-btn{
         display: inline-block;
-        width: 40px;
+        width: 30px;
         margin-left: 8px;
     }
 
     .info-img{
-        width: 54px;
-        height: 54px;
+        width: 45px;
+        height: 45px;
         background-color: gray;
     }
 
@@ -131,6 +135,11 @@
     
     #volume-mute{
         display: inline-block;
+        width: 18px;
+    }
+
+    #volume-btn{
+        width: 24px;
     }
 
     #song-nav{
@@ -181,7 +190,7 @@
     }
 
     #play-button{
-        width: 70px;
+        width: 55px;
     }
     
     /* #play-button.playing{
