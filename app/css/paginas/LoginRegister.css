@@ -30,6 +30,11 @@ body{
     grid-row-end: 4;
 }
 
+.registerEmail input{
+    border-bottom: 2px #589472 solid;
+    color: var(--color-gray5);
+}
+
 .passw{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -51,6 +56,7 @@ body{
     height: 49px;
     background-color: var(--color-blue1);
     box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.25);
+    margin-right: 35px;
 }
 
 .btnConfirm{
@@ -62,24 +68,13 @@ body{
 
 .check{
     position: relative;
-    left: 294px;
-    top: -33px;
+    left: -34px;
+    top: 6px;
 }
 
 input{
-    padding-left: 15px;
     font-size: 18px;
-    color: white;
-    width: 305px;
-    height: 40px;
-    background-color: var(--color-gray2);
-    border: none;
-}
-
-.view{
-    position: relative;
-    left: -33px;
-    top: 4px;
+    width: 280px;
 }
 
 .email{
@@ -90,12 +85,21 @@ input{
 
 .email input{
     border-bottom: 2px #589472 solid;
+    color: var(--color-gray5);
+    padding: 12px;
+}
+
+.usuario input{
+    border-bottom: 2px #589472 solid;
+    color: var(--color-gray5);
+    padding: 12px;
 }
 
 .pass{
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 3;
+    grid-row-end: 4;
     padding-left: 15px;
 }
 
@@ -115,14 +119,13 @@ input{
     box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.25);
 }
 
-.init a{
+.link{
     color: var(--color-blue1);
     text-decoration: underline;
 }
 
 .center{
     text-align: center;
-    padding-left: 20px;
 }
 
 .opt{
@@ -138,7 +141,7 @@ input{
 
 .opt p:nth-child(1){
     position: relative;
-    left: 20px;
+    left: 10px;
     top: 12px;
     width: 130px;
     height: 2px;
@@ -147,12 +150,12 @@ input{
 
 .opt p:nth-child(2){
     position: relative;
-    left: 44px;
+    left: 34px;
 }
 
 .opt p:nth-child(3){
     position: relative;
-    left: 66px;
+    left: 56px;
     top: 12px;
     width: 130px;
     height: 2px;
@@ -161,7 +164,7 @@ input{
 
 .registrarse{
     position: relative;
-    left: 10px;
+    left: 0px;
     top: 20px;
     text-align: center;
     grid-column-start: 2;

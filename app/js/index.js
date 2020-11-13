@@ -13,7 +13,7 @@ if(window.location.pathname == "/app/index.html"){
             modal.style.display = "grid";
             heroText.style.display = "none";
         }else{
-            window.open("../app/html/login.html", "_self");
+            window.open("./login.html", "_self");
         }
     });
 
@@ -27,9 +27,9 @@ window.addEventListener("resize",function(){
     width = window.innerWidth;
     if(window.location.pathname == "/app/index.html"){
         if(width < 768 && modal.style.display == "grid"){
-            window.open("../app/html/login.html", "_self");
+            window.open("./login.html", "_self");
         }
-    }else if((window.location.pathname == "/app/html/login.html" || window.location.pathname == "/app/html/register.html") && width > 768){
-        window.open("../index.html", "_self");
+    }else if((window.location.pathname == "/app/login.html" || window.location.pathname == "/app/register.html") && width > 768){
+        window.open("./index.html", "_self");
     }
 });

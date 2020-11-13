@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/generales/navbar.css">
-    <link rel="stylesheet" href="../css/generales/style.css">
-    <link rel="stylesheet" href="../css/generales/header.css">
-    <link rel="stylesheet" href="../css/paginas/planes.css">
+    <link rel="stylesheet" href="./css/generales/navbar.css">
+    <link rel="stylesheet" href="./css/generales/style.css">
+    <link rel="stylesheet" href="./css/generales/header.css">
+    <link rel="stylesheet" href="./css/paginas/planes.css">
     <title>Spoiler Five</title>
 </head>
 <body>
@@ -31,7 +31,7 @@
           <input type="search" name="search" id="search-input"
             placeholder="Artistas, playlist, podcast ...">
   
-          <a href="/app/buscar.html" id="search-button">
+          <a href="./buscar.html" id="search-button">
             <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -79,14 +79,20 @@
         </div>
     </div>
     
-    <div class="bar-back">
-        <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 13.5H21M10 21.375L3 13.5L10 21.375ZM3 13.5L10 5.625L3 13.5Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+    <div id="nav">
 
-        <label>
-            Planes premium
-        </label>
+        <a href="index.html">
+          <svg id="back-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+        </a>
+  
+        <div id="page-title">
+          <h3 class="text-normal">Login</h3>
+        </div>
+  
+        <div></div>
+  
     </div>
 
     <div class="info-planActual">
@@ -271,7 +277,7 @@
 
     </div>
 
-    <script src="/app/js/header.js"></script>
+    <script src="./js/header.js"></script>
 
 </body>
 </html>
