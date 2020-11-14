@@ -108,49 +108,49 @@
 
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            
+      <ul class="sidebar-nav">
+          
+          <li>
+              <a href="#" class="text-3 text-medium">Inicio</a>
+          </li>
+          <li>
+              <a href="#" class="text-3">Explorar</a>
+          </li>
+        <div class="extensible">
+          <li>
+              <a href="#" id="link-biblioteca" class="text-3">Biblioteca
+                <button id="boton-extensible" class="active">
+                  <svg id="flecha" style="transform: rotate(0deg);" width="24px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                  </svg>
+                </button>
+              </a>
+          </li>
+          <ul class="menu-extensible">
             <li>
-                <a href="#">Inicio</a>
-            </li>
+              <a class="text-small" href="#"><i class="fa fa-play-circle"></i>Verano 2020</a>
+          </li>
             <li>
-                <a href="#">Explorar</a>
-            </li>
-          <div class="extensible">
+              <a class="text-small" href="#"><i class="fa fa-play-circle"></i>Cumbia Viejita</a>
+          </li>
             <li>
-                <a href="#">Biblioteca
-                  <button id="boton-extensible" class="active">
-                    <svg id="flecha" style="transform: rotate(0deg);" width="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                    </svg>
-                  </button>
-                </a>
-            </li>
-            <ul class="menu-extensible">
-              <li>
-                <a href="#"><i class="fa fa-play-circle"></i>Verano 2020</a>
-            </li>
-              <li>
-                <a href="#"><i class="fa fa-play-circle"></i>Cumbia Viejita</a>
-            </li>
-              <li>
-                <a href="#"><i class="fa fa-play-circle"></i>Para limpiar la casa</a>
-            </li>
-              <li>
-                <a href="#"><i class="fa fa-play-circle"></i>Cachenge a full</a>
-            </li>
-              <li>
-                <a href="#"><i class="fa fa-play-circle"></i>Rock nacional</a>
-            </li>
-              <li>
-                <a href="#"><i class="fa fa-play-circle"></i>Me quede sin ideas</a>
-            </li>
-            </ul>
-          </div>
-            
-            
-        </ul>
-    </div>
+              <a class="text-small" href="#"><i class="fa fa-play-circle"></i>Para limpiar la casa</a>
+          </li>
+            <li>
+              <a class="text-small" href="#"><i class="fa fa-play-circle"></i>Cachenge a full</a>
+          </li>
+            <li>
+              <a class="text-small" href="#"><i class="fa fa-play-circle"></i>Rock nacional</a>
+          </li>
+            <li>
+              <a class="text-small" href="#"><i class="fa fa-play-circle"></i>Me quede sin ideas</a>
+          </li>
+          </ul>
+        </div>
+          
+          
+      </ul>
+  </div>
 
 
     <div class="main">
@@ -592,7 +592,7 @@
 
         <div class="info-texto">
           <span class="text-medium">Nombre de la cancion</span>
-          <span>Nombre del artista</span>
+          <span class="text-small">Nombre del artista</span>
         </div>
 
       </div>
@@ -640,16 +640,16 @@
 
         <div id="song-nav">
         
-          <span id="current-time">02:24</span>
+          <span id="current-time" class="text-small">02:24</span>
           <input type="range" name="volume" id="song-range" class="player-range">
-          <span id="total-time">4:02</span>
+          <span id="total-time" class="text-small">4:02</span>
 
         </div>
 
         <div id="vol-control">
 
           <button id="volume-mute">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.586 13.002H2C1.73478 13.002 1.48043 12.8966 1.29289 12.7091C1.10536 12.5215 1 12.2672 1 12.002V8.00196C1 7.73674 1.10536 7.48239 1.29289 7.29485C1.48043 7.10732 1.73478 7.00196 2 7.00196H3.586L8.293 2.29496C8.923 1.66496 10 2.11096 10 3.00196V17.002C10 17.893 8.923 18.339 8.293 17.709L3.586 13.002Z" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M17 10.002L19 12.002M15 12.002L17 10.002L15 12.002ZM17 10.002L19 8.00195L17 10.002ZM17 10.002L15 8.00195L17 10.002Z" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
