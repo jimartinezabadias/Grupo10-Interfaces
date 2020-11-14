@@ -1,11 +1,9 @@
 #sidebar-wrapper {
     z-index: 1;
-    position: fixed;
     left: 250px;
     width: 0;
     height: 100%;
     margin-top: 63px;
-    margin-left: -250px;
     overflow-y: auto;
     /* background: var(--color-gray2); */
     background: rgba(255,255,255,0.016);
@@ -13,6 +11,7 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    display: none;
 }
 
 /* #wrapper.toggled #sidebar-wrapper {
@@ -114,9 +113,9 @@ right: 5px;
     }
 
     #sidebar-wrapper {
-        width: 210px;
+        width: 100%;
+        display: block;
     }
-
     #wrapper.toggled #sidebar-wrapper {
         width: 0;
     }
