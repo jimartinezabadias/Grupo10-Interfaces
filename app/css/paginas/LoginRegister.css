@@ -5,7 +5,7 @@ body{
     position: relative;
     top: 20px;
     display: grid;
-    grid-template-columns: auto 350px auto;
+    grid-template-columns: auto 315px auto;
     grid-template-rows: 100px 12px 100px 32px 160px 25px 120px;
 }
 
@@ -13,7 +13,7 @@ body{
     position: relative;
     top: 20px;
     display: grid;
-    grid-template-columns: auto 350px auto;
+    grid-template-columns: auto 315px auto;
     grid-template-rows: 100px 5px 100px 5px 100px 5px 100px 30px 50px;
     padding-left: 20px;
 }
@@ -21,6 +21,7 @@ body{
 .usuario{
     grid-column-start: 2;
     grid-column-end: 3;
+    padding-left: 15px;
 }
 
 .registerEmail{
@@ -28,11 +29,11 @@ body{
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    padding-left: 15px;
 }
 
 .registerEmail input{
     border-bottom: 2px #589472 solid;
-    color: var(--color-gray5);
 }
 
 .passw{
@@ -40,6 +41,7 @@ body{
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+    padding-left: 15px;
 }
 
 .confirmPassw{
@@ -47,6 +49,7 @@ body{
     grid-column-end: 3;
     grid-row-start: 7;
     grid-row-end: 8;
+    padding-left: 15px;
 }
 
 .btnConfirm button{
@@ -72,27 +75,28 @@ body{
     top: 6px;
 }
 
-input{
-    font-size: 18px;
-    width: 280px;
-}
-
 .email{
     grid-column-start: 2;
     grid-column-end: 3;
     padding-left: 15px;
 }
 
+.containerLogin input{
+    width: 250px;
+    height: 20px;
+}
+
+.containerRegistro input{
+    width: 250px;
+    height: 20px;
+}
+
 .email input{
     border-bottom: 2px #589472 solid;
-    color: var(--color-gray5);
-    padding: 12px;
 }
 
 .usuario input{
     border-bottom: 2px #589472 solid;
-    color: var(--color-gray5);
-    padding: 12px;
 }
 
 .pass{

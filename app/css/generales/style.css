@@ -111,6 +111,11 @@ ul{
     margin: 0;
 }
 
+.link{
+    color: var(--color-blue1);
+    text-decoration: underline;
+}
+
 @media(min-width:768px) {
     
     .display-1{
