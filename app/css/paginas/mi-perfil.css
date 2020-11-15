@@ -1,32 +1,24 @@
-.main {
-    margin-left: 280px;
-    width: 78%;
-}
-
-#nav {
-    display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
-    align-items: center;
-    background-color: var(--color-gray2);
-    padding: 78px 8px 8px 8px;
-    width: 79%;
-    float: right;
-}
-
 .bloque {
-    width: 99%;
-    padding: 10px;
 }
 
 .contenido-bloque {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 16px;
-    margin-top: -28px;
+    padding-left: 7px;
+    margin-top: -13px;
+}
+
+.estadisticas {
+    width: 50%;
+}
+
+.notificaciones {
+    width: 50%;
 }
 
 .bloque-mes {
     width: 100%;
+    margin-top: -15px;
 }
 
 .titulo-mes {
@@ -115,6 +107,12 @@
     width: 48px;
 }
 
+.info-usuario p {
+    color: var(--color-gray4);
+    height: 10px;
+    margin-top: 4px;
+}
+
 .info-usuario h1 {
     height: 18px;
 }
@@ -145,14 +143,12 @@
     position: absolute;
     margin-left: 243px;
 }
+
 .notification-element {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
-}
-
-.notification-element h4 {
-    height: 4px;
+    padding-top: 6px;
 }
 
 .notification-element span {
@@ -161,10 +157,6 @@
 
 .notification-element svg {
     float: right;
-}
-
-.titulo-bloque h2 {
-    padding-left: 8px;
 }
 
 .bloques {
@@ -192,32 +184,23 @@
 
 
 @media(max-width:768px) {
-    .main {
-        width: 100%;
-        margin-left: 0px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav {
-        display: grid;
-        grid-template-columns: 2fr 8fr 2fr;
-        align-items: center;
-        background-color: var(--color-gray2);
-        padding: 78px 8px 8px 8px;
-        width: 100%;
-        float: right;
-    }
-
-    .notification-element h4 {
-        height: 25px;
-    }
-
     .bloques {
         display: flex;
         flex-direction: column;
     }
 
+    .notificaciones {
+        width: 100%;
+    }
+
+    .estadisticas {
+        width: 100%;
+    }
+
+    .notification-element h4 {
+        height: 25px;
+    }
+    
     .info-perfil-large {
         display: none;
     }
@@ -227,29 +210,6 @@
         padding: 2px;
     }
     
-    .bloque {
-        width: 97%;
-        padding: 10px;
-    }
-
-    .contenido-bloque {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 8px;
-        margin-top: -28px;
-    }
-
-    .bloque-usuario {
-        display: flex;
-        flex-direction: row;
-        padding-left: 0px;
-        padding-top: 8px;
-    }
-
-    .titulo-bloque h2 {
-        padding-left: 0px;
-    }
-
     .estadistica-element {
         width: 98%;
     }
@@ -268,6 +228,6 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         text-align: right;
-        margin-left: -122px;
+        margin-left: -118px;
     }
 }
