@@ -66,12 +66,24 @@
 .menu-extensible {
     display: flex;
     flex-flow: column;
-    row-gap: 2px;
+    row-gap: 7px;
     padding: 4px 0px 8px 0px;
 }
 
 .menu-extensible li {
     /* margin-top: 0px; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+}
+
+.menu-extensible a {
+    padding-left: 6px;
+}
+
+.menu-extensible button {
+    position: absolute;
+    display: inline-block;
 }
 
 .sidebar-nav li a {
