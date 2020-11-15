@@ -1,11 +1,6 @@
-/* #search-page{
-    display: flex;
-    padding: 16px 16px 0px 16px;
-} */
-
 .search-bar{
-    align-items: flex-end;
     display: flex;
+    align-items: flex-end;
 }
 
 #search-input{

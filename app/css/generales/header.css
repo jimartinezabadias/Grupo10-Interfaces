@@ -7,6 +7,10 @@
     background-color: var(--color-black);
 }
 
+#link-logo{
+    display: inline-flex;
+}
+
 #logo-header {
     width: 60px;
     margin-top: 2px;
