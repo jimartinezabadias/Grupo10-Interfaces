@@ -1,3 +1,7 @@
+#search-page{
+    margin-top: 16px;
+}
+
 .search-bar{
     display: flex;
     align-items: flex-end;
