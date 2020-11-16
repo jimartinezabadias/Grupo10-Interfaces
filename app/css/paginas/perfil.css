@@ -22,13 +22,6 @@
     width: 135px;
 }
 
-.card-bottom .fa {
-    float: right;
-    font-size: 30px;
-    margin-top: -15px;
-    margin-right: -17px;
-}
-
 .cabecera {
     display: flex;
     flex-direction: row;
