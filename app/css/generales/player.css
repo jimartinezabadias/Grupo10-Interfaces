@@ -14,9 +14,37 @@
 .info-mini{
     display: grid;
     height: 20px;
-    grid-template-columns: 3fr 8fr 1fr;
+    grid-template-columns: 2.5fr 8fr 1.5fr;
     padding: 4px;
-    font-size: 14px;
+    align-items: center;
+    justify-items: center;
+}
+
+#song-title{
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+    padding: 0px 16px;
+    /* width: 100%; */
+    /* text-overflow: ellipsis; */
+
+    /* Required for text-overflow to do anything */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+}
+
+@keyframes playerSongName {
+    from {transform: translateX(110%);}
+    to {transform: translateX(-110%);}
+}
+
+#song-title span{
+    transform: translateX(110%);
+    animation: playerSongName 10s 1s infinite linear;
+}
+
+#open-playing-song{
+    width: 28px;
 }
 
 .controles{
@@ -63,6 +91,21 @@
 #play-button{
     width: 60px;
 }
+
+@keyframes playGlow{
+    0% {opacity: 100%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+#play-glow{
+    position: absolute;
+    width: 60px;
+    opacity: 100%;
+    animation: playGlow 10s infinite ease-in-out;
+    color: var(--color-green3);
+}
+
 
 #play-button.playing{
     color: var(--color-green3);
@@ -193,18 +236,26 @@
         width: 55px;
     }
     
+    #play-glow{
+        /* position: absolute; */
+        width: 55px;
+        /* opacity: 100%; */
+        /* animation: playGlow 10s infinite ease-in-out; */
+        /* color: var(--color-green3); */
+    }
+    
     /* #play-button.playing{
         color: var(--color-green3);
     } */
 
     #play-prev-button{
         margin-right: 4px;
-        width: 20px;
+        width: 18px;
     }
     
     #play-next-button{
         margin-left: 4px;
-        width: 20px;
+        width: 18px;
     }
    
 }
