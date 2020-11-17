@@ -1,21 +1,9 @@
-.main {
-    margin-left: 280px;
-    padding-top: 70px;
-    width: 78%;
-}
-
-.bloque {
-    width: 99%;
-    padding: 10px;
-}
-
 .contenido-bloque {
     display: flex;
     flex-wrap: wrap;
 }
 
 .descripcion {
-    padding-left: 16px;
     width: 90%;
     margin-top: -14px;
 }
@@ -24,28 +12,23 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: -21px;
 }
 
 .bloque-primario {
-    width: 60%;
-    padding: 10px;
+    width: 65%;
 }
 
 .bloque-secundario {
     width: 35%;
-    padding: 10px;
-}
-
-.canciones {
-    padding-left: 6px;
 }
 
 .cabecera {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
 }
+
 .cabecera-playlist {
     background-color: var(--color-gray6);
     background-image: url(https://i.imgur.com/eoNdWRk.png);
@@ -67,11 +50,10 @@
     padding-top: 3px;
 }
 
-.bloque-artista {
+.bloque-playlist {
     display: flex;
     flex-direction: row;
-    padding-left: 8px;
-    padding-top: 0px;
+    padding-top: 16px;
 }
 
 .cancion-square-image {
@@ -119,9 +101,13 @@
     background-size: cover;
 }
 
-#play {
-    font-size: 42px;
-    padding-left: 6px;
+#lista-canciones {
+    display: flex;
+    flex-flow: column;
+    margin-top: -7px;
+    row-gap: 8px;
+    padding-left: 7px;
+    width: 48%;
 }
 
 .central-playlist {
@@ -134,6 +120,7 @@
 
 .central-playlist h1 {
     margin-top: -7px;
+    height: 27px;
 }
 
 .central-playlist p {
@@ -142,11 +129,16 @@
 }
 
 .botones-playlist {
-    margin-top: -25px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.botones-playlist button {
+    padding-left: 7px;
 }
 
 .info-playlist {
-    width: 19%;
+    width: 27%;
     text-align: right;
     padding-top: 61px;
     color: var(--color-gray4);
@@ -157,44 +149,32 @@
     display: none;
 }
 
-.titulo-bloque h2 {
-    padding-left: 8px;
-}
-
-#nav {
-    display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
-    align-items: center;
-    background-color: var(--color-gray2);
-    padding: 78px 8px 8px 8px;
-    width: 79%;
-    float: right;
-}
-
 .comentarios-input {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 7px;
 }
 
 .estrellas {
-    width: 275px;
+    width: 259px;
     height: 28px;
-    padding-left: 18px;
 }
+
 
 .estrellas p {
     text-align: right;
     margin-top: -27px;
-    margin-right: 71px;
+    margin-right: 58px;
     color: var(--color-gray4);
 }
 
 .boton-comentario {
     width: 20%;
     color: var(--color-blue3);
-    margin-top: -13px;
+    margin-top: -15px;
 }
+
 
 .avatar-round {
     width: 54px;
@@ -205,7 +185,7 @@
 
 .lista-comentarios {
     width: 100%;
-    padding-left: 18px;
+    padding-left: 7px;
 }
 
 .texto-comentario {
@@ -224,13 +204,12 @@
 
 .dropdown {
     position: absolute;
-    margin-top: 0px;
     background-color: var(--color-black);
-    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    text-align: left;
-    margin-left: -61px;
+    text-align: right;
+    margin-top: -171px;
+    margin-left: -63px;
 }
 
 .dropdown a {
@@ -248,23 +227,16 @@
 
 
 @media(max-width:768px) {
-    .main {
-        padding-top: 0px;
-        width: 100%;
-        margin-left: 0px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
     .cabecera-podcast {
         display: none;
     }
 
-    .bloque-artista {
+    .bloque-playlist {
         display: flex;
         flex-direction: column;
         padding-left: 0px;
         padding-top: 32px;
+        text-align: center;
     }
 
     .central-episodio {
@@ -289,6 +261,19 @@
         margin: 0 auto;
     }
 
+    #lista-canciones {
+        display: flex;
+        flex-flow: column;
+        margin-top: 2px;
+        row-gap: 8px;
+        padding-left: 7px;
+        width: 100%;
+    }
+
+    .segunda {
+        display: none;
+    }
+
     .info-mobile {
         display: inline;
         width: 57%;
@@ -302,14 +287,6 @@
     .bloque {
         width: 100%;
         padding: 0px;
-    }
-
-    .titulo-bloque h2 {
-        padding-left: 12px;
-    }
-
-    .canciones {
-        padding-left: 16px;
     }
 
     .botones-perfil {
@@ -326,6 +303,16 @@
         width: 96%;
     }
 
+    .dropdown {
+        position: absolute;
+        background-color: var(--color-black);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        text-align: right;
+        margin-top: 0;
+        margin-left: -63px;
+    }
+
     .texto-comentario {
         width: 77%;
         margin-top: 0px;
@@ -336,7 +323,6 @@
     .estrellas {
         width: 204px;
         height: 28px;
-        padding-left: 18px;
     }
 
     .estrellas p {
@@ -368,12 +354,10 @@
 
     .bloque-primario {
         width: 100%;
-        padding: 0;
     }
 
     .bloque-secundario {
         width: 100%;
-        padding: 0px;
     }
 
     .comentario-element {
@@ -381,7 +365,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding-top: 10px;
-        width: 96%;
+        width: 100%;
     }
 
     .texto-comentario {
@@ -427,11 +411,10 @@
     }
 
     .descripcion {
-        padding-left: 16px;
-        width: 90%;
         display: flex;
         flex-direction: row;
-        margin-top: 0;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .cabecera {
@@ -460,10 +443,5 @@
         width: 100%;
         margin: 0 auto;
         padding-top: 12px;
-    }
-
-    #nav {
-        width: 100%;
-        float: right;
     }
 }
