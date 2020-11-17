@@ -93,9 +93,12 @@
 }
 
 @keyframes playGlow{
-    0% {opacity: 100%;}
-    50% {opacity: 0%;}
-    100% {opacity: 100%;}
+    0% {opacity: 100%;
+        filter: brightness(1.5);}
+    50% {opacity: 0%;
+        filter: brightness(1);}
+    100% {opacity: 100%;
+        filter: brightness(1.5);}
 }
 
 #play-glow{
