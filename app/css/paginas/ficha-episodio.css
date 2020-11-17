@@ -1,23 +1,12 @@
-.main {
-    margin-left: 280px;
-    padding-top: 70px;
-    width: 78%;
-}
-
-.bloque {
-    width: 99%;
-    padding: 10px;
-}
-
 .contenido-bloque {
     display: flex;
     flex-wrap: wrap;
 }
 
 .texto-descripcion {
-    padding-left: 16px;
-    width: 90%;
-    margin-top: -14px;
+    padding-left: 7px;
+    width: 96%;
+    margin-top: -16px;
 }
 
 .dos-columnas {
@@ -26,20 +15,18 @@
 }
 
 .bloque-primario {
-    width: 60%;
-    padding: 10px;
+    width: 65%;
 }
 
 .bloque-secundario {
     width: 35%;
-    padding: 10px;
 }
 
 .cabecera {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 97%;
+    padding-top: 16px;
 }
 
 .cabecera-podcast {
@@ -56,7 +43,6 @@
 .bloque-artista {
     display: flex;
     flex-direction: row;
-    padding-left: 8px;
     padding-top: 0px;
 }
 
@@ -68,11 +54,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: auto;
-}
-
-#play {
-    font-size: 42px;
+    margin-top: 16px;
 }
 
 .central-episodio {
@@ -93,10 +75,15 @@
 
 .botones-episodio {
     padding-top: 93px;
+    display: flex;
+}
+
+.botones-episodio button {
+    padding-right: 6px;
 }
 
 .info-episodio {
-    width: 27%;
+    width: 30%;
     text-align: right;
     padding-top: 50px;
     color: var(--color-gray4);
@@ -106,20 +93,6 @@
     display: none;
 }
 
-.titulo-bloque h2 {
-    padding-left: 8px;
-}
-
-#nav {
-    display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
-    align-items: center;
-    background-color: var(--color-gray2);
-    padding: 78px 8px 8px 8px;
-    width: 79%;
-    float: right;
-}
-
 .comentarios-input {
     width: 100%;
     display: flex;
@@ -127,15 +100,15 @@
 }
 
 .estrellas {
-    width: 275px;
+    width: 251px;
     height: 28px;
-    padding-left: 18px;
+    padding-left: 7px;
 }
 
 .estrellas p {
     text-align: right;
     margin-top: -27px;
-    margin-right: 71px;
+    margin-right: 49px;
     color: var(--color-gray4);
 }
 
@@ -152,9 +125,15 @@
     border-radius: 65px;
 }
 
+.ver-mas-bottom {
+    color: var(--color-gray4);
+    text-decoration: underline;
+    margin: 0 auto;
+    padding-top: 7px;
+}
+
 .lista-comentarios {
     width: 100%;
-    padding-left: 18px;
 }
 
 .texto-comentario {
@@ -173,13 +152,12 @@
 
 .dropdown {
     position: absolute;
-    margin-top: 0px;
     background-color: var(--color-black);
-    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    text-align: left;
-    margin-left: -61px;
+    text-align: right;
+    margin-top: -198px;
+    margin-left: -63px;
 }
 
 .dropdown a {
@@ -205,23 +183,10 @@
 
 
 @media(max-width:768px) {
-    .main {
-        padding-top: 0px;
-        width: 100%;
-        margin-left: 0px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
-    .cabecera-podcast {
-        display: none;
-    }
-
     .bloque-artista {
         display: flex;
         flex-direction: column;
-        padding-left: 0px;
-        padding-top: 32px;
+        padding-top: 0px;
     }
 
     .central-episodio {
@@ -236,8 +201,8 @@
     }
 
     #portada-episodio {
-        width: 347px;
-        height: 227px;
+        width: 100%;
+        height: 188px;
         background-color: var(--color-gray4);
         background-image: url(https://i.imgur.com/LKxRDD5.png);
         background-position: center;
@@ -259,15 +224,6 @@
         padding: 2px;
     }
     
-    .bloque {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .titulo-bloque h2 {
-        padding-left: 0px;
-    }
-
     .botones-perfil {
         height: 40px;
         position: unset;
@@ -280,6 +236,7 @@
         justify-content: space-between;
         padding-top: 10px;
         width: 96%;
+        padding-left: 7px;
     }
 
     .texto-comentario {
@@ -292,7 +249,7 @@
     .estrellas {
         width: 204px;
         height: 28px;
-        padding-left: 18px;
+        padding-left: 7px;
     }
 
     .estrellas p {
@@ -324,12 +281,10 @@
 
     .bloque-primario {
         width: 100%;
-        padding: 10px;
     }
 
     .bloque-secundario {
         width: 100%;
-        padding: 10px;
     }
 
     .comentario-element {
@@ -337,7 +292,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding-top: 10px;
-        width: 96%;
+        padding-left: 7px;
     }
 
     .texto-comentario {
@@ -353,8 +308,9 @@
         text-align: right;
     }
 
-    #nav {
+    .texto-descripcion {
+        padding-left: 7px;
         width: 100%;
-        float: right;
+        margin-top: -25px;
     }
 }
