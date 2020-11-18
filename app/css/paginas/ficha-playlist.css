@@ -130,7 +130,7 @@
 
 .botones-playlist {
     display: flex;
-    margin: 0 auto;
+    margin-left: -10px;
 }
 
 .botones-playlist button {
@@ -358,6 +358,11 @@
 
     .bloque-secundario {
         width: 100%;
+    }
+
+    .botones-playlist {
+        display: flex;
+        margin: 0 auto;
     }
 
     .comentario-element {

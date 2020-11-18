@@ -112,6 +112,10 @@ a {
     line-height: 54px;
 }
 
+.text-color-secondary {
+    color: var(--color-gray4);
+}
+
 
 ul{
     list-style-type: none;

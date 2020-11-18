@@ -1,21 +1,9 @@
-.main {
-    margin-left: 280px;
-    padding-top: 70px;
-    width: 78%;
-}
-
-.bloque {
-    width: 99%;
-    padding: 10px;
-}
-
 .contenido-bloque {
     display: flex;
     flex-wrap: wrap;
 }
 
 .descripcion {
-    padding-left: 16px;
     width: 90%;
     margin-top: -14px;
 }
@@ -27,17 +15,11 @@
 }
 
 .bloque-primario {
-    width: 60%;
-    padding: 10px;
+    width: 65%;
 }
 
 .bloque-secundario {
     width: 35%;
-    padding: 10px;
-}
-
-.episodios{
-    padding-left: 6px;
 }
 
 .cabecera {
@@ -46,6 +28,7 @@
     justify-content: space-between;
     width: 100%;
 }
+
 .cabecera-podcast {
     background-color: var(--color-gray6);
     background-image: url(https://i.imgur.com/BkcuP81.png);
@@ -70,8 +53,7 @@
 .bloque-podcast {
     display: flex;
     flex-direction: row;
-    padding-left: 8px;
-    padding-top: 0px;
+    padding-top: 16px;
 }
 
 .episodio-square-image {
@@ -121,11 +103,6 @@
     background-size: cover;
 }
 
-#play {
-    font-size: 42px;
-    padding-left: 6px;
-}
-
 .central-podcast {
     display: flex;
     flex-direction: column;
@@ -136,6 +113,7 @@
 
 .central-podcast h1 {
     margin-top: -7px;
+    height: 27px;
 }
 
 .central-podcast p {
@@ -144,11 +122,17 @@
 }
 
 .botones-podcast {
-    margin-top: -25px;
+    display: flex;
+    margin-left: -10px;
+}
+
+
+.botones-podcast button {
+    padding-left: 7px;
 }
 
 .info-podcast {
-    width: 20%;
+    width: 27%;
     text-align: right;
     padding-top: 61px;
     color: var(--color-gray4);
@@ -163,16 +147,6 @@
     padding-left: 8px;
 }
 
-#nav {
-    display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
-    align-items: center;
-    background-color: var(--color-gray2);
-    padding: 78px 8px 8px 8px;
-    width: 79%;
-    float: right;
-}
-
 .comentarios-input {
     width: 100%;
     display: flex;
@@ -180,22 +154,22 @@
 }
 
 .estrellas {
-    width: 275px;
+    width: 240px;
     height: 28px;
-    padding-left: 18px;
+    padding-left: 7px;
 }
 
 .estrellas p {
     text-align: right;
     margin-top: -27px;
-    margin-right: 71px;
+    margin-right: 38px;
     color: var(--color-gray4);
 }
 
 .boton-comentario {
     width: 20%;
     color: var(--color-blue3);
-    margin-top: -13px;
+    margin-top: -19px;
 }
 
 .avatar-round {
@@ -207,7 +181,7 @@
 
 .lista-comentarios {
     width: 100%;
-    padding-left: 18px;
+    padding-left: 7px;
 }
 
 .texto-comentario {
@@ -222,6 +196,15 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 10px;
+}
+
+#lista-episodios {
+    display: flex;
+    flex-flow: column;
+    margin-top: -7px;
+    row-gap: 8px;
+    padding-left: 7px;
+    width: 48%;
 }
 
 .dropdown {
@@ -250,19 +233,20 @@
 
 .select-dropdown {
     float: right;
-    margin-top: -66px;
+    margin-top: -57px;
+    margin-right: 16px;
+}
+
+.li-play img {
+    max-height: 43px;
+}
+
+.li-play .textos {
+    margin-left: 3px;
 }
 
 
 @media(max-width:768px) {
-    .main {
-        padding-top: 0px;
-        width: 100%;
-        margin-left: 0px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
     .select-dropdown {
         float: right;
         margin-top: -60px;
@@ -273,18 +257,24 @@
         display: none;
     }
 
-    .bloque-podcast{
+    .bloque-podcast {
         display: flex;
         flex-direction: column;
         padding-left: 0px;
         padding-top: 32px;
+        text-align: center;
     }
 
     .info-mobile {
-        display: inline;
-        width: 49%;
-        text-align: right;
+        display: flex;
+        text-align: center;
+        margin-top: -17px;
     }
+
+    .info-mobile p {
+
+    }
+
     .info-podcast {
         display: none;
     }
@@ -292,20 +282,6 @@
     .bloque {
         width: 100%;
         padding: 0px;
-    }
-
-    .titulo-bloque h2 {
-        padding-left: 12px;
-    }
-
-    .episodios {
-        padding-left: 16px;
-    }
-
-    .botones-perfil {
-        height: 40px;
-        position: unset;
-        margin-left: 0px;
     }
 
     .comentario-element {
@@ -326,7 +302,6 @@
     .estrellas {
         width: 204px;
         height: 28px;
-        padding-left: 18px;
     }
 
     .estrellas p {
@@ -351,6 +326,11 @@
         float: right;
     }
 
+    .botones-podcast {
+        display: flex;
+        margin: 0 auto;
+    }
+
     .dos-columnas {
         display: flex;
         flex-direction: column;
@@ -358,12 +338,10 @@
 
     .bloque-primario {
         width: 100%;
-        padding: 0;
     }
 
     .bloque-secundario {
         width: 100%;
-        padding: 0px;
     }
 
     .comentario-element {
@@ -371,7 +349,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding-top: 10px;
-        width: 96%;
+        width: 100%;
     }
 
     .texto-comentario {
@@ -417,15 +395,14 @@
     }
 
     .descripcion {
-        padding-left: 11px;
-        width: 95%;
         display: flex;
-        flex-direction: row;
-        margin-top: 0;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 0;
     }
 
     .descripcion p {
-        float: right;
         width: 100%;
     }
 
@@ -457,8 +434,11 @@
         padding-top: 12px;
     }
 
-    #nav {
+    .segunda {
+        display: none;
+    }
+
+    #lista-episodios {
         width: 100%;
-        float: right;
     }
 }
