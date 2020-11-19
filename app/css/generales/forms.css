@@ -3,12 +3,19 @@ input {
   border:none;
   border-bottom: 1px solid var(--color-gray4);
   transition: border-bottom 0.2s ease;
-  background-color: var(--color-gray2);
+  background-color: var(--color-tr1);
   color: var(--color-gray6);
   padding: 8px 12px;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
+}
+
+input:focus,
+input:active { 
+  outline:none;
+  background-color: var(--color-tr2);
+  border-bottom: 1px solid var(--color-gray6);
 }
 
 textarea {
@@ -27,11 +34,6 @@ textarea {
   height: 65px;
 }
 
-input:focus,
-input:active { 
-    outline:none;
-    border-bottom: 1px solid var(--color-gray6);
-}
 
 ::placeholder {
     color: var(--color-gray3);
@@ -108,47 +110,49 @@ label:hover:before {
 }
 
 input #new-task {
-    float: left;
-    width: 318px;
+  float: left;
+  width: 318px;
 }
 
 .select-dropdown {
-    position: relative;
-    display: inline-flex;
+  position: relative;
+  display: inline-flex;
 }
 
 .select-dropdown:after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    margin-top: -2px;
-    right: 8px;
-    width: 0; 
-    height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid var(--color-gray4);
+  content: " ";
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 8px;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--color-gray4);
 }
 
 select {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    color: var(--color-gray5);
-    max-width: 100%;
-    padding: 8px 24px 8px 10px;
-    border: none;
-    background-color: var(--color-gray2);
-    border-bottom: 1px solid var(--color-gray4);
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--color-gray5);
+  max-width: 100%;
+  padding: 8px 24px 8px 10px;
+  border: none;
+  background-color: var(--color-tr1);
+  border-bottom: 1px solid var(--color-gray4);
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 select:active {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  background-color: var(--color-tr2);
+  box-shadow: none;
 }
-
+  
 select:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  background-color: var(--color-tr2);
+  box-shadow: none;
 }

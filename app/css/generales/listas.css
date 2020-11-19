@@ -7,6 +7,10 @@
     max-height: 48px;
 }
 
+.li-play a{
+    display: inline-flex;
+}
+
 .li-play .info{
     display: flex;
     flex-flow: row;
@@ -18,18 +22,42 @@
 
 .li-play .li-buttons{
     display: flex;
+    column-gap: 8px;
     align-content: center;
-    /* align-self: flex-end; */
-    /* justify-self: flex-end; */
 }
 
 .li-play button.play-btn{
     width: 32px;
-    color: var(--color-gray5);
+    color: var(--color-gray6);
+}
+
+.li-play button.opciones-btn{
+    width: 24px;
+    color: var(--color-gray4);
 }
 
 .list-footer{
     display: flex;
     justify-content: center;
     margin-top: 14px;
+}
+
+.li-play-artista img{
+    border-radius: 50%;
+}
+
+/* .li-buttons .opciones-desplegable{
+    position: absolute;
+    margin-top: 10%;
+    right: 15%;
+    display: flex;
+    flex-flow: column;
+    padding: 12px;
+    row-gap: 8px;
+    background-color: var(--color-black);
+} */
+
+@media(min-width:768px) {
+
+
 }

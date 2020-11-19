@@ -1,6 +1,6 @@
 :root {
     --color-black: #171717;
-    --color-gray1: #333333;
+    --color-gray1: #202020;
     --color-gray2: #4f4f4f;
     --color-gray3: #828282;
     --color-gray4: #bdbdbd;
@@ -21,6 +21,9 @@
     --color-blue3: #56CCF2;
     --color-blue2: #2D9CDB;
     --color-blue1: #2F80ED;
+
+    --color-tr1: rgba(255,255,255,0.032);
+    --color-tr2: rgba(255,255,255,0.056);
 }
 
 body {
