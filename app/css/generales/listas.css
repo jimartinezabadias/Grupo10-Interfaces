@@ -25,3 +25,9 @@
     width: 32px;
     color: var(--color-gray5);
 }
+
+.list-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
