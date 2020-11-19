@@ -12,3 +12,7 @@ botonmenu.onclick = function() {
         flecha.style.transform = "rotate(0deg)";
     }  
 };
+
+function goBack() {
+    window.history.back();
+}

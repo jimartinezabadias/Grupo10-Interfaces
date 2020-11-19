@@ -18,7 +18,8 @@
     text-align: center;
 }
 
-#back-btn-icon{
+#back-btn-icon {
     width: 24px;
     margin: 0px 16px;
+    float: left;
 }
