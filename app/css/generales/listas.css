@@ -1,7 +1,6 @@
 .li-play{
-    display: grid;
-    grid-template-columns: 10fr 2fr;
-    /* align-items: flex-end; */
+    display: flex;
+    flex-flow: row;
 }
 
 .li-play img{
@@ -10,15 +9,18 @@
 
 .li-play .info{
     display: flex;
-}
-
-.li-play .textos{
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
     margin-left: 10px;
 }
 
 .li-play .li-buttons{
-    align-self: flex-end;
-    justify-self: flex-end;
+    display: flex;
+    align-content: center;
+    /* align-self: flex-end; */
+    /* justify-self: flex-end; */
 }
 
 .li-play button.play-btn{
