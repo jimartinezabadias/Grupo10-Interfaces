@@ -162,7 +162,7 @@
     
     background-image: url('../../assets/background4.jpg');
     background-size: cover;
-    background-position: 75% 70px;
+    grid-column: span 2;
 }
 
 #hero-text{
