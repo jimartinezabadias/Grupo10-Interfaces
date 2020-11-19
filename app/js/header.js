@@ -6,6 +6,7 @@ let close_menu;
 
 let user_menu_button;
 let user_menu;
+let width = window.innerWidth;
 
 function openMainMenu() {
     main_menu.style.transform = `translateX(0vw)`;
@@ -23,7 +24,11 @@ function closeUserMenu() {
     user_menu.style.transform = `translateX(100%)`;
 }
 
-function handleUserMenu() {
+function handleUserMenu(e) {
+    if (width > 768){
+        return true;
+    }
+    e.preventDefault();
     if (user_menu.classList.contains('closed')){
         openUserMenu();
         user_menu.classList.remove("closed");
@@ -51,6 +56,7 @@ function initHeader() {
     user_menu.classList.add("closed");
 
     user_menu_button.addEventListener("click", handleUserMenu);
+
 }
 
 document.addEventListener("DOMContentLoaded", initHeader);
