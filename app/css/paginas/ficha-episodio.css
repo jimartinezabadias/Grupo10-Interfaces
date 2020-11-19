@@ -4,7 +4,6 @@
 }
 
 .texto-descripcion {
-    padding-left: 7px;
     width: 96%;
     margin-top: -16px;
 }
@@ -102,7 +101,6 @@
 .estrellas {
     width: 251px;
     height: 28px;
-    padding-left: 7px;
 }
 
 .estrellas p {
@@ -303,7 +301,6 @@
         justify-content: space-between;
         padding-top: 10px;
         width: 96%;
-        padding-left: 7px;
     }
 
     .texto-comentario {
@@ -316,7 +313,6 @@
     .estrellas {
         width: 204px;
         height: 28px;
-        padding-left: 7px;
     }
 
     .estrellas p {
@@ -359,7 +355,6 @@
         flex-direction: row;
         justify-content: space-between;
         padding-top: 10px;
-        padding-left: 7px;
     }
 
     .texto-comentario {
@@ -376,7 +371,6 @@
     }
 
     .texto-descripcion {
-        padding-left: 7px;
         width: 100%;
         margin-top: -25px;
     }

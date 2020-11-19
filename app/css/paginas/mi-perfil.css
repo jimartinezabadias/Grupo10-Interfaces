@@ -4,7 +4,6 @@
 .contenido-bloque {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 7px;
     margin-top: -13px;
 }
 
@@ -119,8 +118,14 @@
 
 .info-perfil-large {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-right: 16px;
+}
+
+.estadisticas-simple {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 .info-mobile {
@@ -140,7 +145,6 @@
 
 .botones-perfil {
     height: 40px;
-    position: absolute;
     margin-left: 243px;
 }
 
