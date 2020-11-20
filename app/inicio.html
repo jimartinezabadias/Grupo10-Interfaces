@@ -6,12 +6,13 @@
 
     <!-- Estilos Generales -->
     <link rel="stylesheet" href="css/generales/style.css">
-    <link rel="stylesheet" href="css/paginas/ayuda.css">
+    <link rel="stylesheet" href="css/paginas/inicio.css">
     <link rel="stylesheet" href="css/generales/header.css">
     <link rel="stylesheet" href="css/generales/sidebar.css">
-    <link rel="stylesheet" href="css/generales/player.css">
     <link rel="stylesheet" href="css/generales/forms.css">
     <link rel="stylesheet" href="css/generales/navbar.css">
+    <link rel="stylesheet" href="css/generales/player.css">
+
 
     <!-- Estilos Particulares -->
 
@@ -19,12 +20,17 @@
     <!-- Fuente Google Fonts --> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <title>Sp5 - Ayuda</title>
+    <title>Sp5 - Template</title>
 
 </head>
 <body>
    
     <!-- Header -->
+    
+    <!-- Invitado -->
+    <!-- <div id="header" class="invitado"> -->
+    
+    <!-- User registrado -->
     <div id="header" class="user">
 
       <button id="hamb-button">
@@ -225,7 +231,7 @@
           </button>
           
           <div id="page-title">
-            <h3 class="text-normal">Ayuda</h3>
+            <h3 class="text-normal">Inicio</h3>
           </div>
           
           <div></div>
@@ -235,83 +241,7 @@
         
         <!-- Page Container -->
         <div class="page-container">
-            <h2>Preguntas Frecuentes</h2>
-            <div class="contenido-bloque-preguntas">
-              <div class="word-search">
 
-                <input type="search" name="search" id="search-input"
-                  placeholder="Busca por palabra...">
-        
-                <a href="resultados.html" id="search-action-btn">
-                 
-                </a>
-        
-              </div>
-              <div class="seccion-pregunta">
-                  <span class="subtitulo-bloque text-3"><h3>Utilización</h3></span>
-                  <div class="acordion-preguntas">
-                      <button class="accordion text-p">¿Como creo un playlist?</button>
-                      <div class="panel">
-                          <p>-Ve a Biblioteca</p>
-                          <p>-Dirigete a “Mis Playlists”</p>
-                          <p>-Clickea el signo "mas"</p>
-                          <p>-Rellena los campos de texto</p>
-                          <p>-Sube tus imagenes</p>
-                          <p>Ya estas listo para agregar tus canciones!</p>
-                      </div>
-                      
-                      <button class="accordion text-p">¿Como edito mi perfil?</button>
-                      <div class="panel">
-                          <p>Lorem ipsum...</p>
-                      </div>
-                      
-                      <button class="accordion text-p">¿Como creo un podcast?</button>
-                      <div class="panel">
-                          <p>Lorem ipsum...</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="seccion-pregunta">
-                  <span class="subtitulo-bloque text-3"><h3>Pagos</h3></span>
-                  <div class="acordion-preguntas">
-                      <button class="accordion text-p">¿Puedo utilizar debito?</button>
-                      <div class="panel">
-                          <p>Lorem ipsum...</p>
-                      </div>
-                      
-                      <button class="accordion text-p">¿Puedo utilizar crédito?</button>
-                      <div class="panel">
-                          <p>Lorem ipsum...</p>
-                      </div>
-                      
-                      <button class="accordion text-p">¿Cuando entra mi pago?</button>
-                      <div class="panel">
-                          <p>Lorem ipsum...</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="seccion-pregunta">
-                  <span class="subtitulo-bloque text-3"><h3>Políticas del sitio</h3></span>
-                  <div class="acordion-preguntas">
-                      <button class="accordion text-p">¿Para que se usa mi información?</button>
-                      <div class="panel">
-                          <p>Lorem ipsum...</p>
-                      </div>
-                      
-                      <button class="accordion text-p">¿Puedo reproducir en mi negocio?</button>
-                      <div class="panel">
-                          <p>Lorem ipsum...</p>
-                      </div>
-                      
-                      <button class="accordion text-p">¿Que porcentaje recibe el autor?</button>
-                      <div class="panel">
-                          <p>Lorem ipsum...</p>
-                      </div>
-                  </div>
-              </div>
-            </div>
         </div>
     </div>
 
@@ -320,16 +250,18 @@
       
         <div class="info-mini">
           
-          <span>
+          <span class="text-small">
             02:12 / 4:32
           </span>
           
-          <span>
-            Artista - Nombre de cancion
-          </span>
+          <div id="song-title">
+            <span class="text-small">
+              Artista - Nombre de cancion
+            </span>
+          </div>
   
-          <button>
-            <svg width="32px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <button id="open-playing-song">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 15l7-7 7 7" />
             </svg>
           </button>
@@ -376,6 +308,15 @@
             </button>
               
             <button id="play-button" class="playing">
+              <svg id="play-glow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <defs>
+                  <filter id="f1">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.72" />
+                  </filter>
+                </defs>
+                <!-- <path filter="url(#f1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.32" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /> -->
+                <path filter="url(#f1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -418,11 +359,12 @@
           </div>
   
         </div>
-  
+
     </div>
 
-  <script src="js/ayuda.js"></script>
   <script src="js/main.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/player.js"></script>
+
 </body>
 </html>
