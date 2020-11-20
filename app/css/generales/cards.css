@@ -1,18 +1,18 @@
 .album-card {
-    padding: 4px 7px;
-    min-width: 158px;
+    min-width: 134px;
 }
 
 .square-image {
-    width: auto;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     background-color: var(--color-gray5);
 }
 
 .card-bottom {
     display: flex;
+    padding-top: 2px;
 }
 
 .card-bottom h4 {
-    width: 135px;
+    width: 94px;
 }

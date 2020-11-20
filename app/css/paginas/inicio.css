@@ -1,0 +1,13 @@
+.ver-mas-top {
+    float: right;
+    margin-top: -57px;
+    margin-right: 29px;
+    color: var(--color-gray4);
+    text-decoration: underline;
+}
+
+.contenido-bloque {
+    display: flex;
+    flex-wrap: wrap;
+}
+
