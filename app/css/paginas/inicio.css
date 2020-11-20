@@ -1,13 +1,48 @@
 .ver-mas-top {
     float: right;
-    margin-top: -57px;
+    margin-top: -50px;
     margin-right: 29px;
     color: var(--color-gray4);
     text-decoration: underline;
 }
 
+.album-card {
+    min-width: 132px;
+}
+
 .contenido-bloque {
     display: flex;
     flex-wrap: wrap;
+}
+
+.lista {
+    width: 96%;
+}
+
+.li-play {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    /* align-items: flex-end; */
+    padding-top: 6px;
+}
+
+.dos-columnas {
+    display: flex;
+    flex-direction: row;
+}
+
+.columna {
+    width: 50%;
+}
+
+@media(max-width:768px) {
+    .dos-columnas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columna {
+        width: 100%;
+    }
 }
 

@@ -16,3 +16,22 @@
 .card-bottom h4 {
     width: 94px;
 }
+
+.top-card {
+    min-width: 176px;
+}
+
+.top-square-image {
+    width: 140px;
+    height: 140px;
+    background-color: var(--color-gray5);
+}
+
+.top-card-bottom {
+    display: flex;
+    padding-top: 4px;
+}
+
+.top-card-bottom h4 {
+    width: 113px;
+}

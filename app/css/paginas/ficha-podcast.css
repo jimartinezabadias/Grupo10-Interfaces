@@ -97,7 +97,7 @@
     width: 152px;
     height: 152px;
     background-color: var(--color-gray4);
-    background-image: url(https://i.imgur.com/TWTa9cB.png);
+    background-image: url('/app/assets/portada10.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
