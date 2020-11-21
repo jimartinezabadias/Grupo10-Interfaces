@@ -1,0 +1,62 @@
+.tags-container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 8px;
+}
+
+.tag-btn{
+    display: flex;
+    font-weight: 300;
+}
+
+.tag-btn:hover{
+    text-decoration: underline;
+}
+
+.tag-btn.selected{
+    font-weight: 500;
+}
+
+.tag-btn svg{
+    width: 18px;
+    margin-right: 4px;
+}
+
+.tag-icon-selected{
+    display: none;
+}
+
+.selected .tag-icon-selected{
+    display: block;
+}
+
+.selected .tag-icon{
+    display: none;
+}
+
+.tag-estudio{
+    color: var(--color-orange);
+}
+
+.tag-trabajo{
+    color: var(--color-blue2);
+}
+
+.tag-deporte{
+    color: var(--color-green2);
+}
+
+.tag-fiesta{
+    color: var(--color-yellow);
+}
+
+.tag-relax{
+    color: var(--color-purple2);
+}
+
+.tag-infantil{
+    color: var(--color-blue3);
+}
