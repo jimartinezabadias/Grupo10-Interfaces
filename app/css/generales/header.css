@@ -73,7 +73,7 @@
 .link-seccion {
     font-size: 30px;
     color: var(--color-gray5);
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .link-secundario {
@@ -102,13 +102,23 @@
     display: none;
 }
 
+.invitado .opcion-user-registrado{
+    display: none;
+}
+
+.user .opcion-user-invitado{
+    display: none;
+}
+
 #user-menu-btn span{
     display: none;
 }
 
 #logo-menu {
+    position: absolute;
+    bottom: 48px;
     width: 40px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 
 #header .search-bar{
