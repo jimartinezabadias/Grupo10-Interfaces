@@ -24,6 +24,7 @@
     row-gap: 8px;
 }
 
+
 #results-container{
     display: flex;
     flex-flow: column;

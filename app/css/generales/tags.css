@@ -5,6 +5,7 @@
     align-items: center;
     column-gap: 16px;
     row-gap: 8px;
+    margin-top: 4px;
 }
 
 .tag-btn{

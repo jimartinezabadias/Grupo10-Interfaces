@@ -43,7 +43,7 @@
 .list-footer{
     display: flex;
     justify-content: center;
-    margin-top: 14px;
+    margin-top: 8px;
 }
 
 .li-play-artista img{
@@ -77,7 +77,11 @@
     }
     
     .li-play-cancion img{
-        max-height: 44px;
+        display: none;
+    }
+    
+    .li-play-cancion .info{
+        margin-left: 0px;
     }
 
     .li-play-cancion .li-links{
