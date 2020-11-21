@@ -7,7 +7,7 @@
 }
 
 .album-card {
-    min-width: 132px;
+    min-width: 120px;
 }
 
 .contenido-bloque {
@@ -35,6 +35,20 @@
     width: 50%;
 }
 
+.novedades {
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.destacados {
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.top-tres {
+    display: flex;
+}
+
 @media(max-width:768px) {
     .dos-columnas {
         display: flex;
@@ -43,6 +57,28 @@
 
     .columna {
         width: 100%;
+    }
+
+    .text-small {
+        font-size: 16px;
+    }
+
+    .album-card {
+        min-width: 155px;
+    }
+
+    .top-tres {
+        display: none;
+    }
+
+    .square-image {
+        width: 155px;
+        height: 155px;
+        background-color: var(--color-gray5);
+    }
+
+    .card-bottom h4 {
+        width: 127px;
     }
 }
 
