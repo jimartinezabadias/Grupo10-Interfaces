@@ -90,6 +90,14 @@
         column-gap: 16px;
     }
 
+    .li-play-cancion .li-links > a h5{
+        font-size: 16px;
+    }
+    
+    .li-play-cancion .li-links > a h4{
+        font-size: 16px;
+    }
+
     .li-play-cancion .more-info{
         display: contents;
     }

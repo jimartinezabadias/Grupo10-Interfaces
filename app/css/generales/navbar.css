@@ -24,3 +24,7 @@
     margin: 0px 16px;
     float: left;
 }
+
+#back-btn-icon.hidden{
+    visibility: hidden;
+}

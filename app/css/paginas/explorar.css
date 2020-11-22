@@ -8,7 +8,7 @@
 
 
 #explorar-main .tags-container{
-    margin-top: 12px;
+    margin-top: 18px;
 }
 
 #novedades{
@@ -61,7 +61,7 @@
 }
 
 #top-playlist > .cards-container > div{
-    flex: 0 47%;
+    flex: 1 0 0;
 }
 
 #top-playlist > .cards-container > .list-footer{
