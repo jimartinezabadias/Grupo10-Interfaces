@@ -180,8 +180,10 @@
 }
 
 .texto-comentario {
-    width: 77%;
+    width: 100%;
     font-size: 14px;
+    text-align: left;
+    padding-left: 6px;
 }
 
 .opciones {
@@ -192,7 +194,41 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 8px;
+}
+
+.comentario-extra {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    height: 27px;
+    justify-content: space-between;
+}
+
+.comentario-extra svg {
+    width: 14px;
+    margin-right: 4px;
+    margin-top: -6px;
+}
+
+.seleccionado {
+    background-color: var(--color-tr1);
+    transition: background-color 0.3s ease;
+}
+
+.votado {
+    display: flex;
+    font-size: 17px;
+    color: var(--color-yellow);
+    margin-top: -3px;
+}
+
+.tags-bottom {
+    display: flex;
+}
+
+.tags-bottom p {
+    padding-right: 2px;
 }
 
 .dropdown {
@@ -266,14 +302,6 @@
         padding: 0px;
     }
 
-    .comentario-element {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 10px;
-        width: 96%;
-    }
-
     .dropdown {
         position: absolute;
         background-color: var(--color-black);
@@ -282,11 +310,6 @@
         text-align: right;
         margin-top: 0;
         margin-left: -63px;
-    }
-
-    .texto-comentario {
-        width: 77%;
-        font-size: 14px;
     }
 
     .dos-columnas {
@@ -326,14 +349,6 @@
         flex-flow: row;
         justify-content: space-between;
         margin-top: -10px;
-    }
-
-    .comentario-element {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 10px;
-        width: 100%;
     }
 
     .cancion-card {

@@ -89,6 +89,6 @@
 		.rating a:hover ~ a,
 		.rating a:focus,
 		.rating a:focus ~ a		{
-			color: orange;
+			color: var(--color-yellow);
 			cursor: pointer;
 		}
