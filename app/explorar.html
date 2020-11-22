@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/generales/navbar.css">
     <link rel="stylesheet" href="css/generales/player.css">
     <link rel="stylesheet" href="css/generales/listas.css">
+    <link rel="stylesheet" href="css/generales/tags.css">
+    <link rel="stylesheet" href="css/generales/cards.css">
     
     
     <!-- Estilos Particulares -->
@@ -66,9 +68,9 @@
 
       <div id="header-options">
           
-          <a id="link-planes" class="link-seccion" href="">Planes</a>
+          <a id="link-planes" class="link-seccion" href="planes.html">Planes</a>
           
-          <a id="link-ayuda" class="link-seccion" href="">Ayuda</a>
+          <a id="link-ayuda" class="link-seccion" href="ayuda.html">Ayuda</a>
 
           <a id="ingresar-btn" class="btn" href="">
             Ingresar
@@ -80,12 +82,12 @@
             </svg>
           </a>
     
-          <button id="user-menu-btn">
+          <a href="mi-perfil.html" id="user-menu-btn">
             <span class="text-small text-normal">Usuario</span>
             <svg class="user-header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-          </button>
+          </a>
 
       </div>
 
@@ -99,20 +101,24 @@
         
           <div id="main-menu-options">
             
+            <!-- Opciones de usuario registrado-->
+            <a class="link-seccion opcion-user-registrado" href="inicio.html">Inicio</a>
+            <a class="link-seccion opcion-user-registrado" href="explorar.html">Explorar</a>
+            <a class="link-seccion opcion-user-registrado" href="#">Biblioteca</a>
+
+            <!-- Opciones de invitato -->
             <a class="link-seccion" href="">Planes</a>
-          
-          
-            <a class="link-seccion" href="">Ayuda</a>
-          
-            <svg id="separador-main-menu" width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="link-seccion" href="ayuda.html">Ayuda</a>
+
+            <svg id="separador-main-menu" class="opcion-user-invitado" width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 1H42.5" stroke="#F4F4F6"/>
             </svg>
               
-            <a id="iniciar-session-btn" class="link-secundario" href="">
+            <a id="iniciar-session-btn" class="link-secundario opcion-user-invitado" href="">
               Iniciar Sesion
             </a>
             
-            <a id="registrarse-btn" class="link-secundario" href="">
+            <a id="registrarse-btn" class="link-secundario opcion-user-invitado" href="">
               Registrarse
             </a>
 
@@ -129,15 +135,15 @@
 
       <div id="user-menu">
        
-        <a class="text-3" href="">Perfil</a>
+        <a class="text-3" href="mi-perfil.html">Perfil</a>
         
-        <a class="text-3" href="">Preferencias</a>
+        <a class="text-3" href="preferencias.html">Preferencias</a>
           
         <svg width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 1H42.5" stroke="#F4F4F6"/>
         </svg>
           
-        <a id="cerrar-session-btn" class="text-small" href="">
+        <a id="cerrar-session-btn" class="text-small" href="index.html">
           Cerrar Sesion
         </a>
         
@@ -222,7 +228,7 @@
     </div>
 
     <!-- Main -->
-    <div class="main">
+    <div id="explorar-main" class="main">
         
         <!-- Nav -->
         <div id="nav">
@@ -240,95 +246,439 @@
           <div></div>
           
         </div>
-        
-        
+
+
         <!-- Page Container -->
         <div class="page-container">
+          
+          <!-- Tags -->
+          <div class="tags-container">
+            <button class="tag-btn tag-estudio selected">
+              <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+              <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+              Estudio
+            </button>
+            <button class="tag-btn tag-trabajo">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+              <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+              Trabajo
+            </button>
+            <button class="tag-btn tag-deporte">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+              <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+              Deporte
+            </button>
+            <button class="tag-btn tag-fiesta">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+              <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+              Fiesta
+            </button>
+            <button class="tag-btn tag-relax">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+              <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+              Relax
+            </button>
+            <button class="tag-btn tag-infantil">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+              <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+              Infantil
+            </button>
+          </div>
+
+          <!-- Seccion Novedades -->
+          <section id="novedades">
             
-          <section id="sugerencias">
-            <h1 class="text-medium">Sugerencias</h1>
-            <div id="tag-filter">
+            <h2 class="m0">Novedades</h2>
+
+            <!-- Card Container -->
+            <div class="cards-carousel">
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada1.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Novedades Matutinas</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+              
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada2.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias del Mercado</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada3.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticas Tecno</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias para todos</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
 
             </div>
-            
-            <!-- Lista de resultados -->
-            <ul id="lista-sugerencias">
-
-              <!-- Item Reproducible -->
-              <li class="li-play">
-                
-                <a href="album.html">
-                  <img src="assets/background4.jpg" alt="">
-                </a>
-                
-                <div class="info">
-                  
-                  <div class="li-links">
-                    <a href="#">
-                      <h4 class="m0 text-medium">Album de ejemplo</h4>
-                    </a>
-                    <a href="#">
-                      <h5 class="m0 text-normal">Nombre del autor</h5>
-                    </a>
-                  </div>
-  
-                  <div class="li-buttons">
-  
-                    <button class="play-btn">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                      </svg>
-                    </button>
-  
-                  </div>
-
-                </div>
-                
-              </li>
-
-              <!-- Item Reproducible -->
-              <li class="li-play album">
-                
-                <a href="album.html">
-                  <img src="https://i.imgur.com/LKxRDD5.png" alt="">
-                </a>
-                
-                <div class="info">
-                  
-                  <div class="li-links">
-                    <a href="#">
-                      <h4 class="m0 text-medium">Album de ejemplo</h4>
-                    </a>
-                    <a href="#">
-                      <h5 class="m0 text-normal">Nombre del autor</h5>
-                    </a>
-                  </div>
-  
-                  <div class="li-buttons">
-  
-                    <button class="play-btn">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                      </svg>
-                    </button>
-  
-                  </div>
-
-                </div>
-                
-              </li>
 
 
-            </ul>
-
-            <div class="list-footer text-small">
-              <a href="#">
-                ( +100 ) Ver más
-              </a>
-            </div>
-            
           </section>
           
+          <!-- Seccion Tendencias -->
+          <section id="tendencias">
+            
+            <h2 class="m0">Tendencias</h2>
+
+            <!-- Card Container -->
+            <div class="cards-carousel">
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada1.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Novedades Matutinas</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+              
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada2.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias del Mercado</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada3.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticas Tecno</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias para todos</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+            </div>
+
+
+          </section>
+
+          <!-- Seccion Top Playlist -->
+          <section id="top-playlist">
+            
+            <h2 class="m0">Top Playlist</h2>
+
+            <!-- Card Container -->
+            <div class="cards-container">
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada1.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Novedades Matutinas</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+              
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada2.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias del Mercado</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada3.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias Tecno</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias para todos</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <div class="list-footer text-small">
+                <a href="#">
+                  ( +100 ) Ver más
+                </a>
+              </div>
+
+            </div>
+
+
+          </section>
+
+          <!-- Seccion Top Podcast -->
+          <section id="top-podcast">
+            
+            <h2 class="m0">Top Podcast</h2>
+
+            <!-- Card Container -->
+            <div class="cards-container">
+
+              <!-- Item -->
+              <div class="card-con-play card-podcast">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada1.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <span class="text-small">Podcast</span>
+                    <!-- <span class="text-small color-green3">Nuevo</span> -->
+                    <h4 class="text-medium m0">Novedades Matutinas</h4>
+                    <p class="text-small m0">Escuchar ideas provocadoras y desarrolla nuevas maneras de pensar</p>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+              
+              <!-- Item -->
+              <!-- <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada2.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias del Mercado</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div> -->
+
+              <!-- Item -->
+              <!-- <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada3.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias Tecno</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div> -->
+
+              <!-- Item -->
+              <!-- <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias para todos</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-btn">
+                    <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div> -->
+
+              <div class="list-footer text-small">
+                <a href="#">
+                  ( +100 ) Ver más
+                </a>
+              </div>
+
+            </div>
+
+
+          </section>
+
 
         </div>
     </div>
