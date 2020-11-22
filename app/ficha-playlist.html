@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/generales/forms.css">
     <link rel="stylesheet" href="css/generales/navbar.css">
     <link rel="stylesheet" href="css/generales/player.css">
+    <link rel="stylesheet" href="css/generales/tags.css">
 
 
     <!-- Estilos Particulares -->
@@ -436,34 +437,90 @@
               <h2>Comentarios</h2>
               <div class="contenido-bloque">
                 <div class="comentarios-input">
-                  <div class="estrellas">
-                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.55286 0.919748C8.90564 -0.187605 10.4379 -0.187605 10.7895 0.919748L12.0478 4.87784C12.1247 5.1189 12.2741 5.32893 12.4747 5.47793C12.6754 5.62693 12.9169 5.70727 13.1649 5.70745H17.2361C18.3756 5.70745 18.8483 7.19835 17.9275 7.88368L14.6349 10.3292C14.4338 10.4784 14.2841 10.6887 14.2072 10.9302C14.1303 11.1717 14.1302 11.4319 14.2068 11.6735L15.4651 15.6315C15.8179 16.7389 14.5772 17.6611 13.6541 16.9758L10.3615 14.5302C10.1606 14.3811 9.91879 14.3008 9.6706 14.3008C9.4224 14.3008 9.18057 14.3811 8.97973 14.5302L5.68707 16.9758C4.76513 17.6611 3.52567 16.7389 3.87728 15.6315L5.13555 11.6735C5.21219 11.4319 5.21205 11.1717 5.13516 10.9302C5.05826 10.6887 4.90855 10.4784 4.7075 10.3292L1.41602 7.88489C0.495254 7.19955 0.969162 5.70866 2.10748 5.70866H6.17744C6.42562 5.70872 6.66746 5.62851 6.86834 5.47949C7.06921 5.33047 7.21883 5.12029 7.29577 4.87904L8.55403 0.92095L8.55286 0.919748Z" fill="#F2C94C"/>
-                      </svg>
-                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.55286 0.919748C8.90564 -0.187605 10.4379 -0.187605 10.7895 0.919748L12.0478 4.87784C12.1247 5.1189 12.2741 5.32893 12.4747 5.47793C12.6754 5.62693 12.9169 5.70727 13.1649 5.70745H17.2361C18.3756 5.70745 18.8483 7.19835 17.9275 7.88368L14.6349 10.3292C14.4338 10.4784 14.2841 10.6887 14.2072 10.9302C14.1303 11.1717 14.1302 11.4319 14.2068 11.6735L15.4651 15.6315C15.8179 16.7389 14.5772 17.6611 13.6541 16.9758L10.3615 14.5302C10.1606 14.3811 9.91879 14.3008 9.6706 14.3008C9.4224 14.3008 9.18057 14.3811 8.97973 14.5302L5.68707 16.9758C4.76513 17.6611 3.52567 16.7389 3.87728 15.6315L5.13555 11.6735C5.21219 11.4319 5.21205 11.1717 5.13516 10.9302C5.05826 10.6887 4.90855 10.4784 4.7075 10.3292L1.41602 7.88489C0.495254 7.19955 0.969162 5.70866 2.10748 5.70866H6.17744C6.42562 5.70872 6.66746 5.62851 6.86834 5.47949C7.06921 5.33047 7.21883 5.12029 7.29577 4.87904L8.55403 0.92095L8.55286 0.919748Z" fill="#F2C94C"/>
-                      </svg>
-                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.55286 0.919748C8.90564 -0.187605 10.4379 -0.187605 10.7895 0.919748L12.0478 4.87784C12.1247 5.1189 12.2741 5.32893 12.4747 5.47793C12.6754 5.62693 12.9169 5.70727 13.1649 5.70745H17.2361C18.3756 5.70745 18.8483 7.19835 17.9275 7.88368L14.6349 10.3292C14.4338 10.4784 14.2841 10.6887 14.2072 10.9302C14.1303 11.1717 14.1302 11.4319 14.2068 11.6735L15.4651 15.6315C15.8179 16.7389 14.5772 17.6611 13.6541 16.9758L10.3615 14.5302C10.1606 14.3811 9.91879 14.3008 9.6706 14.3008C9.4224 14.3008 9.18057 14.3811 8.97973 14.5302L5.68707 16.9758C4.76513 17.6611 3.52567 16.7389 3.87728 15.6315L5.13555 11.6735C5.21219 11.4319 5.21205 11.1717 5.13516 10.9302C5.05826 10.6887 4.90855 10.4784 4.7075 10.3292L1.41602 7.88489C0.495254 7.19955 0.969162 5.70866 2.10748 5.70866H6.17744C6.42562 5.70872 6.66746 5.62851 6.86834 5.47949C7.06921 5.33047 7.21883 5.12029 7.29577 4.87904L8.55403 0.92095L8.55286 0.919748Z" fill="#F2C94C"/>
-                      </svg>
-                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.55286 0.919748C8.90564 -0.187605 10.4379 -0.187605 10.7895 0.919748L12.0478 4.87784C12.1247 5.1189 12.2741 5.32893 12.4747 5.47793C12.6754 5.62693 12.9169 5.70727 13.1649 5.70745H17.2361C18.3756 5.70745 18.8483 7.19835 17.9275 7.88368L14.6349 10.3292C14.4338 10.4784 14.2841 10.6887 14.2072 10.9302C14.1303 11.1717 14.1302 11.4319 14.2068 11.6735L15.4651 15.6315C15.8179 16.7389 14.5772 17.6611 13.6541 16.9758L10.3615 14.5302C10.1606 14.3811 9.91879 14.3008 9.6706 14.3008C9.4224 14.3008 9.18057 14.3811 8.97973 14.5302L5.68707 16.9758C4.76513 17.6611 3.52567 16.7389 3.87728 15.6315L5.13555 11.6735C5.21219 11.4319 5.21205 11.1717 5.13516 10.9302C5.05826 10.6887 4.90855 10.4784 4.7075 10.3292L1.41602 7.88489C0.495254 7.19955 0.969162 5.70866 2.10748 5.70866H6.17744C6.42562 5.70872 6.66746 5.62851 6.86834 5.47949C7.06921 5.33047 7.21883 5.12029 7.29577 4.87904L8.55403 0.92095L8.55286 0.919748Z" fill="#F2C94C"/>
-                      </svg>
-                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.66592 1.65358C9.94355 0.782139 11.1494 0.782139 11.4261 1.65358L12.8318 6.07609C12.8923 6.26579 13.0099 6.43109 13.1678 6.54834C13.3257 6.6656 13.5158 6.72882 13.711 6.72897H18.2594C19.1562 6.72897 19.5282 7.90225 18.8036 8.44158L15.1241 11.1742C14.966 11.2917 14.8484 11.4573 14.7881 11.6473C14.7277 11.8373 14.7278 12.042 14.7882 12.232L16.193 16.6545C16.4706 17.5269 15.4943 18.2517 14.7697 17.7124L11.0902 14.9798C10.932 14.8622 10.7415 14.7989 10.546 14.7989C10.3505 14.7989 10.16 14.8622 10.0018 14.9798L6.32235 17.7124C5.59774 18.2517 4.62141 17.526 4.89904 16.6545L6.30384 12.232C6.36425 12.042 6.36429 11.8373 6.30394 11.6473C6.24359 11.4573 6.12597 11.2917 5.96791 11.1742L2.28841 8.44158C1.56287 7.90225 1.93675 6.72897 2.83256 6.72897H7.38011C7.57542 6.72902 7.76574 6.66589 7.92382 6.54862C8.08191 6.43135 8.19965 6.26595 8.26019 6.07609L9.66592 1.65358V1.65358Z" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                      <p>(149 votos)</p>
-                  </div>
-                  <button class="boton-comentario">
-                      <h3 class="text-medium">Opinar</h3>
+                  <button class="boton-comentario" onclick="mostrarInput()">
+                    <h3 class="m0 text-medium">Opinar</h3>
                   </button>
+                  <div class="estrellas">
+                    <p class="m0 text-color-secondary">(149 votos)</p>
+                    
+                    <div class="rating">
+                      <a href="#5" title="Give 5 stars">★</a>
+                      <a href="#4" title="Give 4 stars">★</a>
+                      <a href="#3" title="Give 3 stars">★</a>
+                      <a href="#2" title="Give 2 stars">★</a>
+                      <a href="#1" title="Give 1 star">★</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bloque-feedback ocultar">
+                  <textarea id="contenido-input" placeholder="Comparte lo que opinas..." class="comment-content" maxlength="1000"></textarea>
+                  <div class="feedback-bottom">
+                    <div class="tags-container">
+                      <button class="tag-btn tag-estudio" onclick="activarTag('tag-estudio')">
+                        <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                        Estudio
+                      </button>
+                      <button class="tag-btn tag-trabajo" onclick="activarTag('tag-trabajo')">
+                        <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                        Trabajo
+                      </button>
+                      <button class="tag-btn tag-deporte" onclick="activarTag('tag-deporte')">
+                        <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                        Deporte
+                      </button>
+                      <button class="tag-btn tag-fiesta" onclick="activarTag('tag-fiesta')">
+                        <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                        Fiesta
+                      </button>
+                      <button class="tag-btn tag-relax" onclick="activarTag('tag-relax')">
+                        <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                        Relax
+                      </button>
+                      <button class="tag-btn tag-infantil" onclick="activarTag('tag-infantil')">
+                        <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                        Infantil
+                      </button>
+                    </div>
+                    <button class="btn-publicar" onclick="publicar()">Publicar</button>
+                  </div>
                 </div>
     
                 <div class="lista-comentarios">
-                  <div class="comentario-element">
+                  <div id="comentario-oculto" class="comentario-element" style="display: none;">
                     <div class="avatar-round"></div>
-                    <div class="texto-comentario">
-                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta en análisis. 
+                    <div id="texto-oculto" class="texto-comentario">
+                        
                     </div>
                     <button onclick="showDropdown('uno')" class="opciones">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -478,7 +535,22 @@
                   <div class="comentario-element">
                     <div class="avatar-round"></div>
                     <div class="texto-comentario">
-                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta en análisis. 
+                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta...
+                    </div>
+                    <button onclick="showDropdown('uno')" class="opciones">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.5 4.79166V4.80125V4.79166ZM11.5 11.5V11.5096V11.5ZM11.5 18.2083V18.2179V18.2083ZM11.5 5.74999C11.2458 5.74999 11.0021 5.64903 10.8224 5.46931C10.6426 5.28958 10.5417 5.04583 10.5417 4.79166C10.5417 4.5375 10.6426 4.29374 10.8224 4.11402C11.0021 3.9343 11.2458 3.83333 11.5 3.83333C11.7542 3.83333 11.9979 3.9343 12.1776 4.11402C12.3574 4.29374 12.4583 4.5375 12.4583 4.79166C12.4583 5.04583 12.3574 5.28958 12.1776 5.46931C11.9979 5.64903 11.7542 5.74999 11.5 5.74999ZM11.5 12.4583C11.2458 12.4583 11.0021 12.3574 10.8224 12.1776C10.6426 11.9979 10.5417 11.7542 10.5417 11.5C10.5417 11.2458 10.6426 11.0021 10.8224 10.8224C11.0021 10.6426 11.2458 10.5417 11.5 10.5417C11.7542 10.5417 11.9979 10.6426 12.1776 10.8224C12.3574 11.0021 12.4583 11.2458 12.4583 11.5C12.4583 11.7542 12.3574 11.9979 12.1776 12.1776C11.9979 12.3574 11.7542 12.4583 11.5 12.4583ZM11.5 19.1667C11.2458 19.1667 11.0021 19.0657 10.8224 18.886C10.6426 18.7062 10.5417 18.4625 10.5417 18.2083C10.5417 17.9542 10.6426 17.7104 10.8224 17.5307C11.0021 17.351 11.2458 17.25 11.5 17.25C11.7542 17.25 11.9979 17.351 12.1776 17.5307C12.3574 17.7104 12.4583 17.9542 12.4583 18.2083C12.4583 18.4625 12.3574 18.7062 12.1776 18.886C11.9979 19.0657 11.7542 19.1667 11.5 19.1667Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div id="uno" class="dropdown" style="display: none;">
+                          <a href="#">Eliminar</a>
+                          <a href="#">Reportar</a>
+                        </div>
+                    </button>
+                  </div>
+                  <div class="comentario-element">
+                    <div class="avatar-round"></div>
+                    <div class="texto-comentario">
+                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta...
                     </div>
                     <button onclick="showDropdown('dos')" class="opciones">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -493,7 +565,7 @@
                   <div class="comentario-element">
                     <div class="avatar-round"></div>
                     <div class="texto-comentario">
-                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta en análisis. 
+                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta...
                     </div>
                     <button onclick="showDropdown('tres')" class="opciones">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -508,13 +580,58 @@
                   <div class="comentario-element">
                     <div class="avatar-round"></div>
                     <div class="texto-comentario">
-                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta en análisis. 
+                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta... 
                     </div>
                     <button onclick="showDropdown('cuatro')" class="opciones">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M11.5 4.79166V4.80125V4.79166ZM11.5 11.5V11.5096V11.5ZM11.5 18.2083V18.2179V18.2083ZM11.5 5.74999C11.2458 5.74999 11.0021 5.64903 10.8224 5.46931C10.6426 5.28958 10.5417 5.04583 10.5417 4.79166C10.5417 4.5375 10.6426 4.29374 10.8224 4.11402C11.0021 3.9343 11.2458 3.83333 11.5 3.83333C11.7542 3.83333 11.9979 3.9343 12.1776 4.11402C12.3574 4.29374 12.4583 4.5375 12.4583 4.79166C12.4583 5.04583 12.3574 5.28958 12.1776 5.46931C11.9979 5.64903 11.7542 5.74999 11.5 5.74999ZM11.5 12.4583C11.2458 12.4583 11.0021 12.3574 10.8224 12.1776C10.6426 11.9979 10.5417 11.7542 10.5417 11.5C10.5417 11.2458 10.6426 11.0021 10.8224 10.8224C11.0021 10.6426 11.2458 10.5417 11.5 10.5417C11.7542 10.5417 11.9979 10.6426 12.1776 10.8224C12.3574 11.0021 12.4583 11.2458 12.4583 11.5C12.4583 11.7542 12.3574 11.9979 12.1776 12.1776C11.9979 12.3574 11.7542 12.4583 11.5 12.4583ZM11.5 19.1667C11.2458 19.1667 11.0021 19.0657 10.8224 18.886C10.6426 18.7062 10.5417 18.4625 10.5417 18.2083C10.5417 17.9542 10.6426 17.7104 10.8224 17.5307C11.0021 17.351 11.2458 17.25 11.5 17.25C11.7542 17.25 11.9979 17.351 12.1776 17.5307C12.3574 17.7104 12.4583 17.9542 12.4583 18.2083C12.4583 18.4625 12.3574 18.7062 12.1776 18.886C11.9979 19.0657 11.7542 19.1667 11.5 19.1667Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <div id="cuatro" class="dropdown" style="display: none;">
+                          <a href="#">Eliminar</a>
+                          <a href="#">Reportar</a>
+                        </div>
+                    </button>
+                  </div>
+                  <div class="comentario-element">
+                    <div class="avatar-round"></div>
+                    <div class="texto-comentario">
+                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta... 
+                    </div>
+                    <button onclick="showDropdown('cinco')" class="opciones">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.5 4.79166V4.80125V4.79166ZM11.5 11.5V11.5096V11.5ZM11.5 18.2083V18.2179V18.2083ZM11.5 5.74999C11.2458 5.74999 11.0021 5.64903 10.8224 5.46931C10.6426 5.28958 10.5417 5.04583 10.5417 4.79166C10.5417 4.5375 10.6426 4.29374 10.8224 4.11402C11.0021 3.9343 11.2458 3.83333 11.5 3.83333C11.7542 3.83333 11.9979 3.9343 12.1776 4.11402C12.3574 4.29374 12.4583 4.5375 12.4583 4.79166C12.4583 5.04583 12.3574 5.28958 12.1776 5.46931C11.9979 5.64903 11.7542 5.74999 11.5 5.74999ZM11.5 12.4583C11.2458 12.4583 11.0021 12.3574 10.8224 12.1776C10.6426 11.9979 10.5417 11.7542 10.5417 11.5C10.5417 11.2458 10.6426 11.0021 10.8224 10.8224C11.0021 10.6426 11.2458 10.5417 11.5 10.5417C11.7542 10.5417 11.9979 10.6426 12.1776 10.8224C12.3574 11.0021 12.4583 11.2458 12.4583 11.5C12.4583 11.7542 12.3574 11.9979 12.1776 12.1776C11.9979 12.3574 11.7542 12.4583 11.5 12.4583ZM11.5 19.1667C11.2458 19.1667 11.0021 19.0657 10.8224 18.886C10.6426 18.7062 10.5417 18.4625 10.5417 18.2083C10.5417 17.9542 10.6426 17.7104 10.8224 17.5307C11.0021 17.351 11.2458 17.25 11.5 17.25C11.7542 17.25 11.9979 17.351 12.1776 17.5307C12.3574 17.7104 12.4583 17.9542 12.4583 18.2083C12.4583 18.4625 12.3574 18.7062 12.1776 18.886C11.9979 19.0657 11.7542 19.1667 11.5 19.1667Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div id="cinco" class="dropdown" style="display: none;">
+                          <a href="#">Eliminar</a>
+                          <a href="#">Reportar</a>
+                        </div>
+                    </button>
+                  </div>
+                  <div class="comentario-element">
+                    <div class="avatar-round"></div>
+                    <div class="texto-comentario">
+                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta... 
+                    </div>
+                    <button onclick="showDropdown('seis')" class="opciones">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.5 4.79166V4.80125V4.79166ZM11.5 11.5V11.5096V11.5ZM11.5 18.2083V18.2179V18.2083ZM11.5 5.74999C11.2458 5.74999 11.0021 5.64903 10.8224 5.46931C10.6426 5.28958 10.5417 5.04583 10.5417 4.79166C10.5417 4.5375 10.6426 4.29374 10.8224 4.11402C11.0021 3.9343 11.2458 3.83333 11.5 3.83333C11.7542 3.83333 11.9979 3.9343 12.1776 4.11402C12.3574 4.29374 12.4583 4.5375 12.4583 4.79166C12.4583 5.04583 12.3574 5.28958 12.1776 5.46931C11.9979 5.64903 11.7542 5.74999 11.5 5.74999ZM11.5 12.4583C11.2458 12.4583 11.0021 12.3574 10.8224 12.1776C10.6426 11.9979 10.5417 11.7542 10.5417 11.5C10.5417 11.2458 10.6426 11.0021 10.8224 10.8224C11.0021 10.6426 11.2458 10.5417 11.5 10.5417C11.7542 10.5417 11.9979 10.6426 12.1776 10.8224C12.3574 11.0021 12.4583 11.2458 12.4583 11.5C12.4583 11.7542 12.3574 11.9979 12.1776 12.1776C11.9979 12.3574 11.7542 12.4583 11.5 12.4583ZM11.5 19.1667C11.2458 19.1667 11.0021 19.0657 10.8224 18.886C10.6426 18.7062 10.5417 18.4625 10.5417 18.2083C10.5417 17.9542 10.6426 17.7104 10.8224 17.5307C11.0021 17.351 11.2458 17.25 11.5 17.25C11.7542 17.25 11.9979 17.351 12.1776 17.5307C12.3574 17.7104 12.4583 17.9542 12.4583 18.2083C12.4583 18.4625 12.3574 18.7062 12.1776 18.886C11.9979 19.0657 11.7542 19.1667 11.5 19.1667Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div id="seis" class="dropdown" style="display: none;">
+                          <a href="#">Eliminar</a>
+                          <a href="#">Reportar</a>
+                        </div>
+                    </button>
+                  </div>
+                  <div class="comentario-element">
+                    <div class="avatar-round"></div>
+                    <div class="texto-comentario">
+                        Un comentario es una apreciación o escrito sobre cualquier cosa puesta... 
+                    </div>
+                    <button onclick="showDropdown('siete')" class="opciones">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.5 4.79166V4.80125V4.79166ZM11.5 11.5V11.5096V11.5ZM11.5 18.2083V18.2179V18.2083ZM11.5 5.74999C11.2458 5.74999 11.0021 5.64903 10.8224 5.46931C10.6426 5.28958 10.5417 5.04583 10.5417 4.79166C10.5417 4.5375 10.6426 4.29374 10.8224 4.11402C11.0021 3.9343 11.2458 3.83333 11.5 3.83333C11.7542 3.83333 11.9979 3.9343 12.1776 4.11402C12.3574 4.29374 12.4583 4.5375 12.4583 4.79166C12.4583 5.04583 12.3574 5.28958 12.1776 5.46931C11.9979 5.64903 11.7542 5.74999 11.5 5.74999ZM11.5 12.4583C11.2458 12.4583 11.0021 12.3574 10.8224 12.1776C10.6426 11.9979 10.5417 11.7542 10.5417 11.5C10.5417 11.2458 10.6426 11.0021 10.8224 10.8224C11.0021 10.6426 11.2458 10.5417 11.5 10.5417C11.7542 10.5417 11.9979 10.6426 12.1776 10.8224C12.3574 11.0021 12.4583 11.2458 12.4583 11.5C12.4583 11.7542 12.3574 11.9979 12.1776 12.1776C11.9979 12.3574 11.7542 12.4583 11.5 12.4583ZM11.5 19.1667C11.2458 19.1667 11.0021 19.0657 10.8224 18.886C10.6426 18.7062 10.5417 18.4625 10.5417 18.2083C10.5417 17.9542 10.6426 17.7104 10.8224 17.5307C11.0021 17.351 11.2458 17.25 11.5 17.25C11.7542 17.25 11.9979 17.351 12.1776 17.5307C12.3574 17.7104 12.4583 17.9542 12.4583 18.2083C12.4583 18.4625 12.3574 18.7062 12.1776 18.886C11.9979 19.0657 11.7542 19.1667 11.5 19.1667Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div id="siete" class="dropdown" style="display: none;">
                           <a href="#">Eliminar</a>
                           <a href="#">Reportar</a>
                         </div>
@@ -649,6 +766,7 @@
 
     </div>
 
+  <script src="js/tags.js"></script>
   <script src="js/mi-perfil.js"></script>  
   <script src="js/main.js"></script>
   <script src="js/header.js"></script>
