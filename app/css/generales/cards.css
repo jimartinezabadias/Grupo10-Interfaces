@@ -35,3 +35,57 @@
 .top-card-bottom h4 {
     width: 113px;
 }
+
+.card-con-play{
+    display: flex;
+    flex-flow: column;
+    min-width: 130px;
+    /* max-width: 45%; */
+}
+
+.card-con-play > a{
+    display: flex;
+}
+
+.card-con-play img{
+    width: 100%;
+}
+
+.card-con-play-info{
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin-top: 8px;
+    align-items: center;
+}
+
+.card-con-play-info > a{
+    line-height: 20px;
+}
+
+.card-con-play-info button{
+   width: 24px;
+   margin-right: 4px;
+}
+
+/* Card Podcast */
+.card-con-play.card-podcast{
+    display: flex;
+    flex-flow: row;
+    column-gap: 8px;
+    /* min-width: 130px; */
+    /* max-width: 45%; */
+}
+
+.card-con-play.card-podcast img{
+    min-width: 96px;
+}
+
+.card-con-play.card-podcast p{
+    margin-top: 8px;
+    line-height: 18px;
+}
+
+.card-podcast .card-con-play-info{
+    margin: 0;
+    column-gap: 10px;
+}

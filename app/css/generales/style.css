@@ -39,7 +39,7 @@ body {
 }
 
 .page-container {
-    padding: 0px 12px;
+    padding: 0px 12px 32px 12px;
 }
 
 .main {
@@ -161,7 +161,7 @@ ul{
     }
 
     .page-container {
-        padding: 0px 32px;
+        padding: 0px 32px 96px 32px;
     }
 
 

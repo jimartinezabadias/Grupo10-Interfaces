@@ -1,6 +1,70 @@
-#lista-sugerencias{
+/* Del explorar anterior */
+/* #lista-sugerencias{
     display: flex;
     flex-flow: column;
     margin-top: 16px;
     row-gap: 8px;
+} */
+
+
+#explorar-main .tags-container{
+    margin-top: 12px;
+}
+
+#novedades{
+    margin-top: 18px;
+}
+
+#novedades > h2{
+    margin-bottom: 12px;
+}
+
+#tendencias{
+    margin-top: 32px;
+}
+
+#tendencias > h2{
+    margin-bottom: 12px;
+}
+
+#top-playlist{
+    margin-top: 32px;
+}
+
+#top-playlist > h2{
+    margin-bottom: 12px;
+}
+
+#top-podcast{
+    margin-top: 32px;
+}
+
+#top-podcast > h2{
+    margin-bottom: 12px;
+}
+
+.cards-carousel{
+    display: flex;
+    column-gap: 16px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.cards-container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    column-gap: 16px;
+    row-gap: 16px;
+    
+}
+
+#top-playlist > .cards-container > div{
+    flex: 0 47%;
+}
+
+#top-playlist > .cards-container > .list-footer{
+    flex: 100%;
+    margin-top: 0;
 }
