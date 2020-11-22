@@ -56,6 +56,20 @@
     padding-top: 16px;
 }
 
+.central-playlist {
+    padding-left: 7px;
+}
+
+.cabecera-left {
+    display: flex;
+}
+
+.cabecera-right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
 .cancion-square-image {
     width: 31%;
     height: 80px;
@@ -95,7 +109,7 @@
     width: 152px;
     height: 152px;
     background-color: var(--color-gray4);
-    background-image: url(https://i.imgur.com/8umkZVc.png);
+    background-image: url('../../assets/portada9.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,43 +123,9 @@
     width: 100%;
 }
 
-.central-playlist {
-    display: flex;
-    flex-direction: column;
-    margin-left: 9px;
-    height: 152px;
-    width: 50%;
-}
-
-.central-playlist h1 {
-    margin-top: -7px;
-    height: 27px;
-}
-
-.central-playlist p {
-    margin-top: -2px;
-    color: var(--color-gray4);
-}
-
-.botones-playlist {
-    display: flex;
-    margin-left: -10px;
-}
-
-.botones-playlist button {
-    padding-left: 7px;
-}
-
 .info-playlist {
-    width: 27%;
     text-align: right;
-    padding-top: 61px;
     color: var(--color-gray4);
-    padding-left: 57px;
-}
-
-.info-mobile {
-    display: none;
 }
 
 .comentarios-input {
@@ -236,18 +216,7 @@
         display: flex;
         flex-direction: column;
         padding-left: 0px;
-        padding-top: 32px;
-        text-align: center;
-    }
-
-    .central-episodio {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-        height: 150px;
-    }
-
-    .central-episodio h1 {
+        padding-top: 16px;
         text-align: center;
     }
 
@@ -279,20 +248,10 @@
         width: 57%;
         text-align: right;
     }
-
-    .info-playlist {
-        display: none;
-    }
     
     .bloque {
         width: 100%;
         padding: 0px;
-    }
-
-    .botones-perfil {
-        height: 40px;
-        position: unset;
-        margin-left: 0px;
     }
 
     .comentario-element {
@@ -334,19 +293,6 @@
         float: right;
     }
 
-    .botones-episodio {
-        padding-top: 0px;
-        padding-left: 16px;
-    }
-
-    .info-episodio {
-        width: 96%;
-        text-align: right;
-        padding-top: 10px;
-        color: var(--color-gray4);
-        float: right;
-    }
-
     .dos-columnas {
         display: flex;
         flex-direction: column;
@@ -356,13 +302,34 @@
         width: 100%;
     }
 
+    .cabecera-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #play svg {
+        width: 63px;
+        height: 63px;
+    }
+
+    .botones-playlist {
+        height: 71px;
+    }
+
+    .botones-playlist svg {
+        width: 50px;
+        height: 36px;
+    }
+
     .bloque-secundario {
         width: 100%;
     }
 
-    .botones-playlist {
+    .cabecera-right {
         display: flex;
-        margin: 0 auto;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-top: -10px;
     }
 
     .comentario-element {
@@ -418,7 +385,7 @@
     .descripcion {
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
+        margin: -25px auto;
         width: 100%;
     }
 
@@ -439,14 +406,5 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0 auto;
-    }
-
-    .central-playlist {
-        display: flex;
-        flex-direction: column;
-        height: 152px;
-        width: 100%;
-        margin: 0 auto;
-        padding-top: 12px;
     }
 }
