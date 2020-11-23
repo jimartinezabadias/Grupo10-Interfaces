@@ -306,135 +306,365 @@
               <h2>Canciones</h2>
               <div class="contenido-bloque canciones">
                 <ul id="lista-canciones">
-                  <li class="li-play">
-              
-                    <a href="album.html" class="info">
-                      <img src="assets/background4.jpg" alt="">
-                      <div class="textos">
-                        <h4 class="m0 text-medium">Cancion de ejemplo</h4>
-                        <h5 class="m0 text-normal">Nombre del autor</h5>
-                      </div>
+                  <!-- Item Reproducible (Cancion) -->
+                  <li class="li-play li-play-cancion">
+                      
+                    <a href="album.html">
+                      <img src="assets/portada3.png" alt="">
                     </a>
-      
-                    <div class="li-buttons">
-      
-                      <button class="play-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-      
+                    
+                    <div class="info">
+                      
+                      <div class="li-links">
+                        
+                        <a href="#">
+                          <h4 class="m0 text-medium">Ayer me llamo mi ex - Remix</h4>
+                        </a>
+                        <a href="#">
+                          <h5 class="m0 text-normal">KEA</h5>
+                        </a>
+
+                        <!-- <span class="more-info text-small">03:54</span> -->
+
+                      </div>
+
+                      <span class="more-info text-small">03:54</span>
+
+                      <div class="li-buttons">
+
+
+                        <button class="opciones-btn" onclick="agregarFavoritoLista(0)">
+                          <svg id="0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </button>
+
+                        <button id="play-playlist" class="play-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+
+                      </div>
+
                     </div>
                     
                   </li>
-                  <li class="li-play">
-              
-                    <a href="album.html" class="info">
-                      <img src="assets/background4.jpg" alt="">
-                      <div class="textos">
-                        <h4 class="m0 text-medium">Cancion de ejemplo</h4>
-                        <h5 class="m0 text-normal">Nombre del autor</h5>
-                      </div>
+
+                  <!-- Item Reproducible (Cancion) -->
+                  <li class="li-play li-play-cancion">
+                      
+                    <a href="album.html">
+                      <img src="assets/portada3.png" alt="">
                     </a>
-      
-                    <div class="li-buttons">
-      
-                      <button class="play-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-      
+                    
+                    <div class="info">
+                      
+                      <div class="li-links">
+                        <a href="#">
+                          <h4 class="m0 text-medium">Nombre Cancion</h4>
+                        </a>
+                        <a href="#">
+                          <h5 class="m0 text-normal">Nombre Artista</h5>
+                        </a>
+
+                        <!-- <span class="more-info text-small">03:54</span> -->
+
+                      </div>
+
+                      <span class="more-info text-small">03:54</span>
+
+                      <div class="li-buttons">
+
+
+                        <button class="opciones-btn" onclick="agregarFavoritoLista(1)">
+                          <svg id="1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </button>
+
+                        <button id="play-playlist" class="play-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+
+                      </div>
+
                     </div>
                     
                   </li>
-                  <li class="li-play">
-              
-                    <a href="album.html" class="info">
-                      <img src="assets/background4.jpg" alt="">
-                      <div class="textos">
-                        <h4 class="m0 text-medium">Cancion de ejemplo</h4>
-                        <h5 class="m0 text-normal">Nombre del autor</h5>
-                      </div>
+
+                  <!-- Item Reproducible (Cancion) -->
+                  <li class="li-play li-play-cancion">
+                      
+                    <a href="album.html">
+                      <img src="assets/portada3.png" alt="">
                     </a>
-      
-                    <div class="li-buttons">
-      
-                      <button class="play-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-      
+                    
+                    <div class="info">
+                      
+                      <div class="li-links">
+                        <a href="#">
+                          <h4 class="m0 text-medium">Nombre Cancion</h4>
+                        </a>
+                        <a href="#">
+                          <h5 class="m0 text-normal">Nombre Artista</h5>
+                        </a>
+
+                        <!-- <span class="more-info text-small">03:54</span> -->
+
+                      </div>
+
+                      <span class="more-info text-small">03:54</span>
+
+                      <div class="li-buttons">
+
+
+                        <button class="opciones-btn" onclick="agregarFavoritoLista(2)">
+                          <svg id="2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </button>
+
+                        <button id="play-playlist" class="play-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+
+                      </div>
+
                     </div>
                     
                   </li>
-                  <li class="li-play">
-              
-                    <a href="album.html" class="info">
-                      <img src="assets/background4.jpg" alt="">
-                      <div class="textos">
-                        <h4 class="m0 text-medium">Cancion de ejemplo</h4>
-                        <h5 class="m0 text-normal">Nombre del autor</h5>
-                      </div>
+
+                  <!-- Item Reproducible (Cancion) -->
+                  <li class="li-play li-play-cancion">
+                      
+                    <a href="album.html">
+                      <img src="assets/portada3.png" alt="">
                     </a>
-      
-                    <div class="li-buttons">
-      
-                      <button class="play-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-      
+                    
+                    <div class="info">
+                      
+                      <div class="li-links">
+                        <a href="#">
+                          <h4 class="m0 text-medium">Nombre Cancion</h4>
+                        </a>
+                        <a href="#">
+                          <h5 class="m0 text-normal">Nombre Artista</h5>
+                        </a>
+
+                        <!-- <span class="more-info text-small">03:54</span> -->
+
+                      </div>
+
+                      <span class="more-info text-small">03:54</span>
+
+                      <div class="li-buttons">
+
+
+                        <button class="opciones-btn" onclick="agregarFavoritoLista(3)">
+                          <svg id="3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </button>
+
+                        <button id="play-playlist" class="play-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+
+                      </div>
+
                     </div>
                     
                   </li>
-                  <li class="li-play">
-              
-                    <a href="album.html" class="info">
-                      <img src="assets/background4.jpg" alt="">
-                      <div class="textos">
-                        <h4 class="m0 text-medium">Cancion de ejemplo</h4>
-                        <h5 class="m0 text-normal">Nombre del autor</h5>
-                      </div>
+
+                  <!-- Item Reproducible (Cancion) -->
+                  <li class="li-play li-play-cancion">
+                      
+                    <a href="album.html">
+                      <img src="assets/portada3.png" alt="">
                     </a>
-      
-                    <div class="li-buttons">
-      
-                      <button class="play-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-      
+                    
+                    <div class="info">
+                      
+                      <div class="li-links">
+                        <a href="#">
+                          <h4 class="m0 text-medium">Nombre Cancion</h4>
+                        </a>
+                        <a href="#">
+                          <h5 class="m0 text-normal">Nombre Artista</h5>
+                        </a>
+
+                        <!-- <span class="more-info text-small">03:54</span> -->
+
+                      </div>
+
+                      <span class="more-info text-small">03:54</span>
+
+                      <div class="li-buttons">
+
+
+                        <button class="opciones-btn" onclick="agregarFavoritoLista(4)">
+                          <svg id="4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </button>
+
+                        <button id="play-playlist" class="play-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+
+                      </div>
+
                     </div>
                     
                   </li>
-                  <li class="li-play">
-              
-                    <a href="album.html" class="info">
-                      <img src="assets/background4.jpg" alt="">
-                      <div class="textos">
-                        <h4 class="m0 text-medium">Cancion de ejemplo</h4>
-                        <h5 class="m0 text-normal">Nombre del autor</h5>
-                      </div>
+
+                  <!-- Item Reproducible (Cancion) -->
+                  <li class="li-play li-play-cancion">
+    
+                    <a href="album.html">
+                      <img src="assets/portada3.png" alt="">
                     </a>
-      
-                    <div class="li-buttons">
-      
-                      <button class="play-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-      
+                    
+                    <div class="info">
+                      
+                      <div class="li-links">
+                        <a href="#">
+                          <h4 class="m0 text-medium">Nombre Cancion</h4>
+                        </a>
+                        <a href="#">
+                          <h5 class="m0 text-normal">Nombre Artista</h5>
+                        </a>
+
+                        <!-- <span class="more-info text-small">03:54</span> -->
+
+                      </div>
+
+                      <span class="more-info text-small">03:54</span>
+
+                      <div class="li-buttons">
+
+
+                        <button class="opciones-btn" onclick="agregarFavoritoLista(5)">
+                          <svg id="5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </button>
+
+                        <button id="play-playlist" class="play-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                    
+                  </li>
+
+                  <!-- Item Reproducible (Cancion) -->
+                  <li class="li-play li-play-cancion">
+
+                    <a href="album.html">
+                      <img src="assets/portada3.png" alt="">
+                    </a>
+                    
+                    <div class="info">
+                      
+                      <div class="li-links">
+                        <a href="#">
+                          <h4 class="m0 text-medium">Nombre Cancion</h4>
+                        </a>
+                        <a href="#">
+                          <h5 class="m0 text-normal">Nombre Artista</h5>
+                        </a>
+
+                        <!-- <span class="more-info text-small">03:54</span> -->
+
+                      </div>
+
+                      <span class="more-info text-small">03:54</span>
+
+                      <div class="li-buttons">
+
+
+                        <button class="opciones-btn" onclick="agregarFavoritoLista(6)">
+                          <svg id="6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </button>
+
+                        <button id="play-playlist" class="play-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                    
+                  </li>
+
+                  <!-- Item Reproducible (Cancion) -->
+                  <li class="li-play li-play-cancion">
+
+                    <a href="album.html">
+                      <img src="assets/portada3.png" alt="">
+                    </a>
+                    
+                    <div class="info">
+                      
+                      <div class="li-links">
+                        <a href="#">
+                          <h4 class="m0 text-medium">Nombre Cancion</h4>
+                        </a>
+                        <a href="#">
+                          <h5 class="m0 text-normal">Nombre Artista</h5>
+                        </a>
+
+                        <!-- <span class="more-info text-small">03:54</span> -->
+
+                      </div>
+
+                      <span class="more-info text-small">03:54</span>
+
+                      <div class="li-buttons">
+
+
+                        <button class="opciones-btn" onclick="agregarFavoritoLista(7)">
+                          <svg id="7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </button>
+
+                        <button id="play-playlist" class="play-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+
+                      </div>
+
                     </div>
                     
                   </li>
                 </ul>
     
-                <span class="ver-mas">Ver más</span>
+                <div class="list-footer text-small">
+                  <a href="#">
+                    ( +100 ) Ver más
+                  </a>
+                </div>
               </div>
 
             </div>
@@ -909,7 +1139,11 @@
     
                 </div>
     
-                <span class="ver-mas">Ver más</span>            
+                <div class="list-footer text-small">
+                  <a href="#">
+                    ( +100 ) Ver más
+                  </a>
+                </div>            
               </div>
             </div>
             

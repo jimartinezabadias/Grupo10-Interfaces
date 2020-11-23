@@ -17,6 +17,18 @@ function agregarFavorito() {
     document.getElementById("cora-playlist").setAttribute("stroke", "#EB5757");
 }
 
+function agregarFavoritoLista(numero) {
+    elemento.classList.add("elemento-agregado");
+    elemento.style.display = "flex";
+
+    for(let i = 0; i <= 8; i++) {
+        if(i == numero) {
+            document.getElementById(numero).setAttribute("fill", "#EB5757");
+            document.getElementById(numero).setAttribute("stroke", "#EB5757");
+        }
+    }
+}
+
 function mostrarCompartir() {
     let opciones = document.getElementById("opciones-compartir");
     

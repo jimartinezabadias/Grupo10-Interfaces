@@ -107,7 +107,7 @@
     flex-flow: column;
     margin-top: -7px;
     row-gap: 8px;
-    width: 100%;
+    width: 97%;
 }
 
 .info-playlist {
@@ -182,7 +182,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 8px;
+    padding-top: 9px;
 }
 
 .comentario-extra {
@@ -236,12 +236,6 @@
     display: block;
 }
 
-.ver-mas {
-    color: var(--color-gray4);
-    text-decoration: underline;
-    margin: 0 auto;
-}
-
 .votado-mobile {
     display: none;
 }
@@ -262,6 +256,9 @@
     margin-left: -66px;
 }
 
+.list-footer {
+    width: 97%;
+}
 
 @media(max-width:768px) {
     .votado {
