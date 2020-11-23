@@ -1,7 +1,7 @@
 "use strict";
 
 let btnComenzar = document.querySelector(".btn-comenzar");
-let btnIngresar = document.querySelector(".btn-ingresar");
+let btnIngresar = document.querySelector("#ingresar-btn");
 let heroText = document.querySelector("#hero-text");
 let modal = document.querySelector(".modal");
 
