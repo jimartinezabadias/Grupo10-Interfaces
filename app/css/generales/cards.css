@@ -40,7 +40,8 @@
     display: flex;
     flex-flow: column;
     min-width: 130px;
-    /* max-width: 45%; */
+    background-color: unset;
+    transition: background-color 0.3s ease;
 }
 
 .card-con-play > a{
@@ -56,15 +57,18 @@
     grid-template-columns: 1fr min-content;
     margin-top: 8px;
     align-items: center;
+    column-gap: 8px;
 }
 
 .card-con-play-info > a{
     line-height: 20px;
 }
 
-.card-con-play-info button{
+.card-play-btn{
    width: 24px;
    margin-right: 4px;
+   color: var(--color-gray5);
+   transition: color 0.3s ease;
 }
 
 /* Card Podcast */
@@ -72,8 +76,6 @@
     display: flex;
     flex-flow: row;
     column-gap: 8px;
-    /* min-width: 130px; */
-    /* max-width: 45%; */
 }
 
 .card-con-play.card-podcast img{
@@ -88,4 +90,28 @@
 .card-podcast .card-con-play-info{
     margin: 0;
     column-gap: 10px;
+}
+
+@media(min-width:768px) {
+
+    .card-con-play:hover{
+        outline: 6px solid var(--color-tr1);
+        background-color: var(--color-tr1);
+        transition: background-color 0.3s ease;
+    }
+
+    .card-con-play-info > a > h4:hover{
+        text-decoration: underline;
+    }
+
+    .cards-carousel .card-con-play{
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .card-play-btn:hover {
+        color: var(--color-green3);
+        transition: color 0.3s ease;
+    }
+
 }

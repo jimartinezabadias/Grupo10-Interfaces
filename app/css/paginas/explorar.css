@@ -46,7 +46,7 @@
 .cards-carousel{
     display: flex;
     column-gap: 16px;
-    overflow: hidden;
+    overflow-x: hidden;
     overflow-x: scroll;
 }
 
@@ -67,4 +67,27 @@
 #top-playlist > .cards-container > .list-footer{
     flex: 100%;
     margin-top: 0;
+}
+
+@media(min-width:768px) {
+
+    .cards-carousel{
+        overflow-x: hidden;
+    }
+
+    #tops-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+    }
+
+    .tags-container{
+        justify-content: center;
+    }
+
+    #top-playlist .card-con-play{
+        /* min-width: 150px; */
+        max-width: 150px;
+    }
+
 }
