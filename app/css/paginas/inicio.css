@@ -1,13 +1,15 @@
 .ver-mas-top {
     float: right;
-    margin-top: -50px;
-    margin-right: 29px;
-    color: var(--color-gray4);
-    text-decoration: underline;
+    margin-top: -45px;
+}
+.ver-mas-top:hover{
+    outline: 4px solid var(--color-tr1);
+    background-color: var(--color-tr1);
+    transition: background-color 0.3s ease;
 }
 
-.album-card {
-    min-width: 120px;
+.ver-mas-top a:hover{
+    text-decoration: underline;
 }
 
 .contenido-bloque {
@@ -15,70 +17,17 @@
     flex-wrap: wrap;
 }
 
-.lista {
-    width: 96%;
-}
-
-.li-play {
-    display: grid;
-    grid-template-columns: 10fr 2fr;
-    /* align-items: flex-end; */
-    padding-top: 6px;
-}
-
-.dos-columnas {
-    display: flex;
-    flex-direction: row;
-}
-
-.columna {
-    width: 50%;
-}
-
-.novedades {
+.gustos {
     column-gap: 10px;
     row-gap: 5px;
 }
 
-.destacados {
-    column-gap: 10px;
-    row-gap: 5px;
-}
-
-.top-tres {
-    display: flex;
+.card-con-play {
+    width: 167px;
 }
 
 @media(max-width:768px) {
-    .dos-columnas {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .columna {
-        width: 100%;
-    }
-
-    .text-small {
-        font-size: 16px;
-    }
-
-    .album-card {
-        min-width: 155px;
-    }
-
-    .top-tres {
-        display: none;
-    }
-
-    .square-image {
-        width: 155px;
-        height: 155px;
-        background-color: var(--color-gray5);
-    }
-
-    .card-bottom h4 {
-        width: 127px;
+    .card-con-play {
+        width: 163px;
     }
 }
-
