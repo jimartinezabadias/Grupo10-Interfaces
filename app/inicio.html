@@ -7,13 +7,14 @@
     <!-- Estilos Generales -->
     <link rel="stylesheet" href="css/generales/style.css">
     <link rel="stylesheet" href="css/generales/cards.css">
-    <link rel="stylesheet" href="css/paginas/inicio.css">
     <link rel="stylesheet" href="css/generales/listas.css">
+    <link rel="stylesheet" href="css/paginas/inicio.css">
     <link rel="stylesheet" href="css/generales/header.css">
     <link rel="stylesheet" href="css/generales/sidebar.css">
     <link rel="stylesheet" href="css/generales/forms.css">
     <link rel="stylesheet" href="css/generales/navbar.css">
     <link rel="stylesheet" href="css/generales/player.css">
+    <link rel="stylesheet" href="css/generales/carousel.css">
 
 
     <!-- Estilos Particulares -->
@@ -254,132 +255,864 @@
         <!-- Page Container -->
         <div class="page-container">
 
-          <div class="bloque">
-            <h2>Según tus gustos</h2>
-            <div class="ver-mas-top text-small">
-              <a href="#">
-                ( +100 ) Ver más
-              </a>
-            </div>
-            <div class="contenido-bloque gustos">
-
-            <!-- Item -->
-            <div class="card-con-play">
-
-              <a href="ficha-episodio.html"><img src="assets/portada1.png" alt=""></a>
-              
-              <div class="card-con-play-info">
-                <a href="ficha-episodio.html">
-                  <h4 class="text-medium m0">Novedades Matutinas</h4>
-                  <span class="text-small">Podcast</span>
-                </a>
-                <button id="play-btn">
-                  <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
-                  </svg>
-                </button>
-              </div> 
-
-            </div>
+          <!-- Seccion Gustos -->
+          <section id="novedades">
             
-            <!-- Item -->
-            <div class="card-con-play">
+            <h2 class="m0">Según tus gustos</h2>
+
+            <div class="carousel-controls">
+
+              <button class="carousel-btn carousel-left-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>              
               
-              <a href="ficha-episodio.html"><img src="assets/portada2.png" alt=""></a>
+              <button class="carousel-btn carousel-rigth-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+            </div>
+
+            <!-- Card Container -->
+            <div class="cards-carousel">
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-album.html"><img src="assets/album1.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-album.html">
+                    <h4 class="text-medium m0">#Anonimato</h4>
+                    <span class="text-small">Album</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
               
-              <div class="card-con-play-info">
-                <a href="ficha-episodio.html">
-                  <h4 class="text-medium m0">Noticias del Mercado</h4>
-                  <span class="text-small">Podcast</span>
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-album.html"><img src="assets/album2.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-album.html">
+                    <h4 class="text-medium m0">Realize</h4>
+                    <span class="text-small">Album</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-playlist.html"><img src="assets/playlist1.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-playlist.html">
+                    <h4 class="text-medium m0">Indie Argentina</h4>
+                    <span class="text-small">Playlist</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-playlist.html"><img src="assets/playlist2.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-playlist.html">
+                    <h4 class="text-medium m0">Rock Argentino</h4>
+                    <span class="text-small">Playlist</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-playlist.html"><img src="assets/playlist3.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-playlist.html">
+                    <h4 class="text-medium m0">In English</h4>
+                    <span class="text-small">Playlist</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+              
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada2.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias del Mercado</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada3.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticas Tecno</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias para todos</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <!-- Seccion Escuchaste -->
+          <section id="novedades">
+            
+            <h2 class="m0">Por que escuchaste CHECKPOINT TV!</h2>
+
+            <div class="carousel-controls">
+
+              <button class="carousel-btn carousel-left-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>              
+              
+              <button class="carousel-btn carousel-rigth-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+            </div>
+
+            <!-- Card Container -->
+            <div class="cards-carousel">
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-podcast.html"><img src="assets/podcast1.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-podcast.html">
+                    <h4 class="text-medium m0">Rayos Catódicos</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+              
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-podcast.html"><img src="assets/podcast2.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-podcast.html">
+                    <h4 class="text-medium m0">DC Oficialista</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-podcast.html"><img src="assets/podcast3.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-podcast.html">
+                    <h4 class="text-medium m0">El Sinso</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-podcast.html"><img src="assets/podcast4.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-podcast.html">
+                    <h4 class="text-medium m0">El Futuro</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-podcast.html"><img src="assets/podcast5.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-podcast.html">
+                    <h4 class="text-medium m0">Geekylegal</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+              
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-podcast.html"><img src="assets/podcast6.jpg" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-podcast.html">
+                    <h4 class="text-medium m0">No lo Testeamos</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada3.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticas Tecno</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+              <!-- Item -->
+              <div class="card-con-play">
+                
+                <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
+                
+                <div class="card-con-play-info">
+                  <a href="ficha-episodio.html">
+                    <h4 class="text-medium m0">Noticias para todos</h4>
+                    <span class="text-small">Podcast</span>
+                  </a>
+                  <button id="play-playlist" class="card-play-btn">
+                    <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+                    </svg>
+                  </button>
+                </div> 
+
+              </div>
+
+            </div>
+
+          </section>
+        
+
+          <section class="dos-columnas">
+
+            <!-- Lista segun horario -->
+            <ul class="lista-playlists columna">
+
+              <h2 class="m0">Para estudiar</h2>
+              
+              <!-- Item Reproducible -->
+              <li class="li-play li-play-playlist">
+                  
+                <a href="ficha-playlist.html">
+                  <img src="assets/playlist4.jpg" alt="">
                 </a>
-                <button id="play-btn">
-                  <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
-                  </svg>
-                </button>
-              </div> 
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="ficha-playlist.html">
+                      <h4 class="m0 text-medium">Impulso Creativo</h4>
+                    </a>
+                    <a href="perfil.html">
+                      <h5 class="m0 text-normal">Pepito</h5>
+                    </a>
+                  </div>
 
-            </div>
+                  <span class="more-info text-small">5:59:00</span>
 
-            <!-- Item -->
-            <div class="card-con-play">
-              
-              <a href="ficha-episodio.html"><img src="assets/portada3.png" alt=""></a>
-              
-              <div class="card-con-play-info">
-                <a href="ficha-episodio.html">
-                  <h4 class="text-medium m0">Noticas Tecno</h4>
-                  <span class="text-small">Podcast</span>
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button id="play-playlist" class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+              <!-- Item Reproducible -->
+              <li class="li-play li-play-playlist">
+                  
+                <a href="ficha-playlist.html">
+                  <img src="assets/playlist5.jpg" alt="">
                 </a>
-                <button id="play-btn">
-                  <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
-                  </svg>
-                </button>
-              </div> 
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="ficha-playlist.html">
+                      <h4 class="m0 text-medium">Entre los Andes</h4>
+                    </a>
+                    <a href="perfil.html">
+                      <h5 class="m0 text-normal">Pepito</h5>
+                    </a>
+                  </div>
 
-            </div>
+                  <span class="more-info text-small">4:03:00</span>
 
-            <!-- Item -->
-            <div class="card-con-play">
-              
-              <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
-              
-              <div class="card-con-play-info">
-                <a href="ficha-episodio.html">
-                  <h4 class="text-medium m0">Noticias para todos</h4>
-                  <span class="text-small">Podcast</span>
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button id="play-playlist" class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+              <!-- Item Reproducible -->
+              <li class="li-play li-play-playlist">
+                  
+                <a href="ficha-playlist.html">
+                  <img src="assets/playlist6.jpg" alt="">
                 </a>
-                <button id="play-btn">
-                  <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
-                  </svg>
-                </button>
-              </div> 
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="ficha-playlist.html">
+                      <h4 class="m0 text-medium">Lo-Fi Beats</h4>
+                    </a>
+                    <a href="perfil.html">
+                      <h5 class="m0 text-normal">Pepito</h5>
+                    </a>
+                  </div>
 
-            </div>
+                  <span class="more-info text-small">15:03:00</span>
 
-            <!-- Item -->
-            <div class="card-con-play">
-  
-              <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
-              
-              <div class="card-con-play-info">
-                <a href="ficha-episodio.html">
-                  <h4 class="text-medium m0">Noticias para todos</h4>
-                  <span class="text-small">Podcast</span>
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button id="play-playlist" class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+              <!-- Item Reproducible -->
+              <li class="li-play li-play-playlist">
+                  
+                <a href="ficha-playlist.html">
+                  <img src="assets/playlist7.jpg" alt="">
                 </a>
-                <button id="play-btn">
-                  <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
-                  </svg>
-                </button>
-              </div> 
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="ficha-playlist.html">
+                      <h4 class="m0 text-medium">Tarea Casual</h4>
+                    </a>
+                    <a href="perfil.html">
+                      <h5 class="m0 text-normal">Pepito</h5>
+                    </a>
+                  </div>
 
-            </div>
+                  <span class="more-info text-small">5:28:00</span>
 
-            <!-- Item -->
-            <div class="card-con-play">
+                  <div class="li-buttons">
 
-              <a href="ficha-episodio.html"><img src="assets/portada4.png" alt=""></a>
-              
-              <div class="card-con-play-info">
-                <a href="ficha-episodio.html">
-                  <h4 class="text-medium m0">Noticias para todos</h4>
-                  <span class="text-small">Podcast</span>
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button id="play-playlist" class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+              <!-- Item Reproducible -->
+              <li class="li-play li-play-playlist">
+                  
+                <a href="ficha-playlist.html">
+                  <img src="assets/playlist8.jpg" alt="">
                 </a>
-                <button id="play-btn">
-                  <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z" fill="#F2F2F2"/>
-                  </svg>
-                </button>
-              </div> 
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="ficha-playlist.html">
+                      <h4 class="m0 text-medium">Café, Libros.</h4>
+                    </a>
+                    <a href="perfil.html">
+                      <h5 class="m0 text-normal">Pepito</h5>
+                    </a>
+                  </div>
 
-            </div>
+                  <span class="more-info text-small">8:30:00</span>
 
-            </div>
-          </div>
+                  <div class="li-buttons">
 
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button id="play-playlist" class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+              
+              <!-- Item Reproducible -->
+              <li class="li-play li-play-playlist">
+                  
+                <a href="ficha-playlist.html">
+                  <img src="assets/playlist9.jpg" alt="">
+                </a>
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="ficha-playlist.html">
+                      <h4 class="m0 text-medium">Peaceful Piano</h4>
+                    </a>
+                    <a href="perfil.html">
+                      <h5 class="m0 text-normal">Pepito</h5>
+                    </a>
+                  </div>
+
+                  <span class="more-info text-small">12:45:00</span>
+
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button id="play-playlist" class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+              <div class="list-footer text-small">
+                <a href="#">
+                  ( +100 ) Ver más
+                </a>
+              </div>
+
+            </ul>
+            
+            <!-- Lista artistas -->
+            <ul class="lista-playlists columna">
+
+              <h2 class="m0">Quizas te gusten</h2>
+              
+              <!-- Item Reproducible -->
+              <li class="li-play li-play-artista">
+                  
+                <a href="ficha-artista.html">
+                  <img src="assets/artista1.jpg" alt="">
+                </a>
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="ficha-artista.html">
+                      <h4 class="m0 text-medium">Acru</h4>
+                    </a>
+
+                    <h5 class="m0 text-normal">31 Canciones</h5>
+
+                  </div>
+
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+              <!-- Item Reproducible -->
+              <li class="li-play li-play-artista">
+                  
+                <a href="album.html">
+                  <img src="assets/portada1.png" alt="">
+                </a>
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="#">
+                      <h4 class="m0 text-medium">Nombre del artista</h4>
+                    </a>
+
+                    <h5 class="m0 text-normal">20 Canciones</h5>
+
+                  </div>
+
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+                            <!-- Item Reproducible -->
+              <li class="li-play li-play-artista">
+                  
+                <a href="album.html">
+                  <img src="assets/portada1.png" alt="">
+                </a>
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="#">
+                      <h4 class="m0 text-medium">Nombre del artista</h4>
+                    </a>
+
+                    <h5 class="m0 text-normal">20 Canciones</h5>
+
+                  </div>
+
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+                            <!-- Item Reproducible -->
+              <li class="li-play li-play-artista">
+                  
+                <a href="album.html">
+                  <img src="assets/portada1.png" alt="">
+                </a>
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="#">
+                      <h4 class="m0 text-medium">Nombre del artista</h4>
+                    </a>
+
+                    <h5 class="m0 text-normal">20 Canciones</h5>
+
+                  </div>
+
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+                            <!-- Item Reproducible -->
+              <li class="li-play li-play-artista">
+                  
+                <a href="album.html">
+                  <img src="assets/portada1.png" alt="">
+                </a>
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="#">
+                      <h4 class="m0 text-medium">Nombre del artista</h4>
+                    </a>
+
+                    <h5 class="m0 text-normal">20 Canciones</h5>
+
+                  </div>
+
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+                            <!-- Item Reproducible -->
+              <li class="li-play li-play-artista">
+                  
+                <a href="album.html">
+                  <img src="assets/portada1.png" alt="">
+                </a>
+                
+                <div class="info">
+                  
+                  <div class="li-links">
+                    <a href="#">
+                      <h4 class="m0 text-medium">Nombre del artista</h4>
+                    </a>
+
+                    <h5 class="m0 text-normal">20 Canciones</h5>
+
+                  </div>
+
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
+
+              <div class="list-footer text-small">
+                <a href="#">
+                  ( +100 ) Ver más
+                </a>
+              </div>
+
+            </ul>
+
+          </section>
         </div>
     </div>
 
@@ -503,6 +1236,6 @@
   <script src="js/main.js"></script>
   <script src="js/header.js"></script>
   <script src="js/player.js"></script>
-
+  <script src="js/carousel.js"></script>
 </body>
 </html>
