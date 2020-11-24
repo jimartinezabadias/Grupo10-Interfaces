@@ -261,6 +261,23 @@
 }
 
 @media(max-width:768px) {
+    .central-playlist svg {
+        width: 55px;
+        height: 55px;
+    }
+
+    .opciones-compartir {
+        background-image: url(../../assets/opciones-compartir.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100px;
+        height: 117px;
+        z-index: 1;
+        background-size: contain;
+        margin-left: 0px;
+    }
+
     .votado {
         display: none;
     }
@@ -341,7 +358,7 @@
 
     .botones-playlist svg {
         width: 50px;
-        height: 36px;
+        height: 34px;
     }
 
     .bloque-secundario {

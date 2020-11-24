@@ -139,6 +139,14 @@ ul{
     text-decoration: underline;
 }
 
+.titulo-fav {
+    display: flex;
+}
+
+.titulo-fav svg {
+    padding-left: 4px;
+}
+
 @media(min-width:768px) {
     body {
         display: grid;
