@@ -65,9 +65,9 @@
 
       <div id="header-options">
           
-          <a id="link-planes" class="link-seccion" href="">Planes</a>
+          <a id="link-planes" class="link-seccion" href="planes.html">Planes</a>
           
-          <a id="link-ayuda" class="link-seccion" href="">Ayuda</a>
+          <a id="link-ayuda" class="link-seccion" href="ayuda.html">Ayuda</a>
 
           <a id="ingresar-btn" class="btn" href="">
             Ingresar
@@ -79,12 +79,12 @@
             </svg>
           </a>
     
-          <button id="user-menu-btn">
+          <a href="mi-perfil.html" id="user-menu-btn">
             <span class="text-small text-normal">Usuario</span>
             <svg class="user-header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-          </button>
+          </a>
 
       </div>
 
@@ -98,20 +98,24 @@
         
           <div id="main-menu-options">
             
+            <!-- Opciones de usuario registrado-->
+            <a class="link-seccion opcion-user-registrado" href="inicio.html">Inicio</a>
+            <a class="link-seccion opcion-user-registrado" href="explorar.html">Explorar</a>
+            <a class="link-seccion opcion-user-registrado" href="#">Biblioteca</a>
+
+            <!-- Opciones de invitato -->
             <a class="link-seccion" href="">Planes</a>
-          
-          
-            <a class="link-seccion" href="">Ayuda</a>
-          
-            <svg id="separador-main-menu" width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="link-seccion" href="ayuda.html">Ayuda</a>
+
+            <svg id="separador-main-menu" class="opcion-user-invitado" width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 1H42.5" stroke="#F4F4F6"/>
             </svg>
               
-            <a id="iniciar-session-btn" class="link-secundario" href="">
+            <a id="iniciar-session-btn" class="link-secundario opcion-user-invitado" href="">
               Iniciar Sesion
             </a>
             
-            <a id="registrarse-btn" class="link-secundario" href="">
+            <a id="registrarse-btn" class="link-secundario opcion-user-invitado" href="">
               Registrarse
             </a>
 
@@ -128,15 +132,15 @@
 
       <div id="user-menu">
        
-        <a class="text-3" href="">Perfil</a>
+        <a class="text-3" href="mi-perfil.html">Perfil</a>
         
-        <a class="text-3" href="">Preferencias</a>
+        <a class="text-3" href="preferencias.html">Preferencias</a>
           
         <svg width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 1H42.5" stroke="#F4F4F6"/>
         </svg>
           
-        <a id="cerrar-session-btn" class="text-small" href="">
+        <a id="cerrar-session-btn" class="text-small" href="index.html">
           Cerrar Sesion
         </a>
         
@@ -262,7 +266,6 @@
 
           </div>
           
-
           <!-- Result text -->
           <!-- <h3 id="result-text" class="text-normal m0 text-p">Resultados para <span id="search-text" class="text-medium">Busqueda 1</span></h3> -->
 
@@ -345,7 +348,6 @@
             </div>
 
           </div>
-
 
           <div id="results-container">
 
@@ -726,6 +728,43 @@
             <ul class="lista-resultados">
 
               <h2 class="m0">Podcast</h2>
+
+              <!-- Item Reproducible (Episodio) -->  
+              <li class="li-play li-play-episodio">
+                  
+                <a href="#">
+                  <h4 class="m0 text-medium">Nombre del Podcast</h4>
+                </a>
+                
+                <div class="info">
+                  
+                  <a href="album.html">
+                    <img src="assets/portada2.png" alt="">
+                  </a>
+  
+                  <p class="m0 text-small">Un programa de debate , novedades, secciones y mucho mas del mundo de los videojuegos.</p>
+
+                  <span class="more-info text-small">45:12</span>
+
+                  <div class="li-buttons">
+
+                    <button class="opciones-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </button>
+
+                    <button class="play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+
+                  </div>
+
+                </div>
+                
+              </li>
 
             </ul>
 
