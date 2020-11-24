@@ -1,0 +1,31 @@
+.carousel-controls {
+    display: none;
+}
+
+@media(min-width:768px) {
+
+    .carousel-controls {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 8px;
+    }
+    
+    .carousel-btn{
+        width: 32px;
+        height: 32px;
+        padding: 4px;
+        border-radius: 50%;
+        background-color: unset;
+        color: var(--color-gray4);
+        transition: background-color 0.3s ease, color 0.3s ease;;
+    }
+    
+    
+    .carousel-btn:hover{
+        background-color: var(--color-tr1);
+        color: var(--color-gray6);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+}

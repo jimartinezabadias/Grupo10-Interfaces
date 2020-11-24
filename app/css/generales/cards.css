@@ -56,7 +56,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     margin-top: 8px;
-    align-items: center;
+    align-items: flex-start;
     column-gap: 8px;
 }
 
@@ -67,6 +67,7 @@
 .card-play-btn{
    width: 24px;
    margin-right: 4px;
+   margin-top: 2px;
    color: var(--color-gray5);
    transition: color 0.3s ease;
 }
@@ -90,6 +91,7 @@
 .card-podcast .card-con-play-info{
     margin: 0;
     column-gap: 10px;
+    align-items: center;
 }
 
 @media(min-width:768px) {
