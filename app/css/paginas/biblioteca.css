@@ -1,8 +1,8 @@
 .content-playlist {
     position: relative;
-    top: 80px;
+    top: 20px;
     display: grid;
-    grid-template-columns: auto 370px auto;
+    grid-template-columns: 10px 370px 10px;
     grid-template-rows: repeat(7, 72px);
 }
 
@@ -10,8 +10,12 @@
     position: relative;
     top: 40px;
     display: grid;
-    grid-template-columns: auto 370px auto;
+    grid-template-columns: 10px 370px 10px;
     grid-template-rows: repeat(7, 72px);
+}
+
+.container-reciente{
+    display: none;
 }
 
 .title-fav{
@@ -68,3 +72,83 @@
     top: 32px;
 }
 
+@media(min-width:768px){
+    .content-biblio{
+        position: relative;
+        top: 30px;
+        display: grid;
+        grid-template-columns: 530px auto 530px;
+    }
+    .container-reciente{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .titulo-reciente{
+        margin-left: 10px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .canciones-recientes{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-columns: repeat(6,auto);
+    }
+    .segunda-col{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .album-card {
+        padding: 4px 7px;
+        min-width: 158px;
+    }
+    
+    .square-image {
+        width: 161px;
+        height: 160px;
+        background-color: var(--color-gray5);
+    }
+    
+    .card-bottom {
+        display: flex;
+    }
+    
+    .card-bottom h5 {
+        width: 135px;
+    }
+    .page-container{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .content-playlist{
+        position: relative;
+        top: 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .content-favs{
+        position: relative;
+        top: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .delet-cancion{
+        position: relative;
+        left: 390px;
+        top: 30px;
+    }
+    .ver-mas-top {
+        float: right;
+        margin-top: -57px;
+        margin-right: 29px;
+        color: var(--color-gray4);
+        text-decoration: underline;
+    }
+}
