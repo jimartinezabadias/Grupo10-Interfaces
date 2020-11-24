@@ -16,9 +16,10 @@ btnComenzar.addEventListener("click", function(){
     }
 });
 
-if(width > 768){
-    btnIngresar.addEventListener("click", function(){
+
+btnIngresar.addEventListener("click", function(){
+    if(width > 768){
         modal.style.display = "grid";
         heroText.style.display = "none";
-    });
-}
+    }
+});

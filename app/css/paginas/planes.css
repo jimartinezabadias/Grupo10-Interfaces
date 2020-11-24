@@ -2,6 +2,11 @@ p{
     margin: 2px;
 }
 
+.main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
 .info-planActual{
     line-height: 133%;
     position: relative;
@@ -19,6 +24,7 @@ p{
 .cards{
     display: grid;
     grid-template-columns: auto 324px auto;
+    grid-template-rows: 600px 40px 600px 40px 600px 40px 600px 40px;
     position: relative;
     top: 160px;
 }
@@ -85,8 +91,8 @@ p{
 }
 .cards div p:nth-child(20){
     position: relative;
-    left: 190px;
-    width: 100px;
+    left: 135px;
+    width: 150px;
     text-align: end;
 }
 
@@ -112,12 +118,8 @@ p{
 
 .cards button{
     position: relative;
-    top: 20px;
-    left: 90px;
-    font-size: 18px;
-    background-color: #2599df;
-    width: 145px;
-    height: 49px;
+    top: 42px;
+    left: 110px;
 }
 
 
@@ -140,6 +142,8 @@ p{
     border: 3px solid #2599df;
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     width: 324px;
     height: 489px;
     background-color: #4F4F4F;
@@ -171,6 +175,8 @@ p{
     border: 2px solid #755097;
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     width: 324px;
     height: 489px;
     background-color: #4F4F4F;
@@ -202,6 +208,8 @@ p{
     border: 2px solid #29804e;
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
     width: 324px;
     height: 489px;
     background-color: #4F4F4F;
@@ -233,6 +241,8 @@ p{
     border: 2px solid #aa9043;
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
     width: 324px;
     height: 489px;
     background-color: #4F4F4F;
@@ -304,7 +314,7 @@ p{
     .cards{
         display: grid;
         grid-template-columns: auto 330px 80px 330px auto;
-        grid-template-rows: auto 40px auto;
+        grid-template-rows: auto 70px auto;
         position: relative;
         top: 160px;
     }
@@ -315,7 +325,7 @@ p{
 
     .info-planActual {
         position: relative;
-        top: 120px;
+        top: 70px;
     }
 
     .info-planActual div:nth-child(1){
@@ -323,6 +333,8 @@ p{
     }
 
     .cards div:nth-child(2){
+        grid-row-start: 1;
+        grid-row-end: 2;
         grid-column-start: 4;
         grid-column-end: 5;
     }

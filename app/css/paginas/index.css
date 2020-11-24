@@ -1,7 +1,7 @@
 .modal{
     z-index: 1;
     position: fixed;
-    top: 200px;
+    top: 170px;
     display: grid;
     grid-template-columns: 5fr 2fr 5fr;
     grid-template-rows: 400px;
@@ -10,15 +10,15 @@
 .modal-content{
     grid-column-start: 2;
     background-color: var(--color-gray1);
-    width: 600px;
-    height: 400px;
+    width: 650px;
+    height: 440px;
 }
 
 .contentlr{
     margin-left: 25px;
     display: grid;
-    grid-template-columns: 250px 50px 250px;
-    grid-template-rows: 30px 60px 60px 60px 60px 60px;
+    grid-template-columns: 280px 50px 280px;
+    grid-template-rows: 30px 75px 75px 75px 75px 75px;
 }
 
 .user{
@@ -45,12 +45,6 @@
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
-}
-
-.btnRegistrar{
-    width: 80px;
-    height: 35px;
-    background-color: var(--color-blue1);
 }
 
 .buttonReg{
@@ -102,16 +96,14 @@
     margin-top: 13px;
 }
 
-.btnIniciar{
-    width: 95px;
-    height: 35px;
-    background-color: var(--color-green2);
-}
-
 .view{
     position: relative;
     left: -26px;
     top: 3px;
+}
+
+.color-green{
+    background-color: var(--color-green2);
 }
 
 .resetPass{

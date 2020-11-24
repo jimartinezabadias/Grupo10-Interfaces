@@ -1,11 +1,9 @@
-body{
-    margin: 0;
-}
+
 .containerLogin{
     position: relative;
     top: 20px;
     display: grid;
-    grid-template-columns: auto 315px auto;
+    grid-template-columns: auto 335px auto;
     grid-template-rows: 100px 12px 100px 32px 160px 25px 120px;
 }
 
@@ -52,15 +50,6 @@ body{
     padding-left: 15px;
 }
 
-.btnConfirm button{
-    font-size: 18px;
-    margin-bottom: 20px;
-    width: 145px;
-    height: 49px;
-    background-color: var(--color-blue1);
-    box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.25);
-    margin-right: 35px;
-}
 
 .btnConfirm{
     text-align: center;
@@ -112,15 +101,6 @@ body{
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
-}
-
-.init button{
-    font-size: 18px;
-    margin-bottom: 20px;
-    width: 145px;
-    height: 49px;
-    background-color: var(--color-blue1);
-    box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.25);
 }
 
 .link{
@@ -175,13 +155,4 @@ body{
     grid-column-end: 3;
     grid-row-start: 7;
     grid-row-end: 8;
-}
-
-.btnRegis{
-    margin-top: 12px;
-    font-size: 18px;
-    margin-bottom: 20px;
-    width: 145px;
-    height: 49px;
-    background-color: var(--color-gray3);
 }
