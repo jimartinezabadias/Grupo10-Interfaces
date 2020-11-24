@@ -188,6 +188,13 @@
 
 
 @media(max-width:768px) {
+    .notification-element {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6px;
+    }
+
     .bloques {
         display: flex;
         flex-direction: column;
@@ -202,7 +209,7 @@
     }
 
     .notification-element h4 {
-        height: 25px;
+        height: 45px;
     }
     
     .info-perfil-large {

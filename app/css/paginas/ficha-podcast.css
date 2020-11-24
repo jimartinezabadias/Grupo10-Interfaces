@@ -1,3 +1,7 @@
+.ocultar {
+    display: none;
+}
+
 .contenido-bloque {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +16,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: -21px;
 }
 
 .bloque-primario {
@@ -22,25 +27,7 @@
     width: 35%;
 }
 
-.cabecera {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.cabecera-podcast {
-    background-color: var(--color-gray6);
-    background-image: url(https://i.imgur.com/BkcuP81.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 160px;
-    width: 80%;
-    float: right;
-}
-
-.episodio-card {
+.cancion-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,28 +37,40 @@
     padding-top: 3px;
 }
 
-.bloque-podcast {
+.bloque-playlist {
     display: flex;
     flex-direction: row;
     padding-top: 16px;
 }
 
-.episodio-square-image {
-    width: 117px;
-    height: 66px;
-    float: left;
-    background-image: url(https://i.imgur.com/LKxRDD5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.central-playlist {
+    padding-left: 7px;
 }
 
-.episodio-info {
+.cabecera-left {
+    display: flex;
+}
+
+.cabecera-right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+.cancion-square-image {
+    width: 31%;
+    height: 80px;
+    background-color: var(--color-gray5);
+    float: left;
+    max-width: 82px;
+}
+
+.cancion-info {
     width: 87%;
 }
 
 .info-left {
-    width: 53%;
+    width: 68%;
     float: right;
     margin-top: -23px;
 }
@@ -80,102 +79,83 @@
     color: var(--color-gray4);
 }
 
-.episodio-play {
+.cancion-play {
     width: 12%;
 }
 
-.episodio-play .fa {
-    padding-left: 12px;
-    font-size: 32px;
+.cancion-play .fa {
+    padding-left: 16px;
+    font-size: 27px;
 }
 
-.episodio-play p {
+.cancion-play p {
     color: var(--color-gray4);
 }
 
-#portada-podcast {
+#portada-playlist {
     width: 152px;
     height: 152px;
     background-color: var(--color-gray4);
-    background-image: url('/app/assets/portada10.png');
+    background-image: url('../../assets/portada10.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.central-podcast {
+#lista-canciones {
     display: flex;
-    flex-direction: column;
-    margin-left: 9px;
-    height: 152px;
-    width: 50%;
-}
-
-.central-podcast h1 {
+    flex-flow: column;
     margin-top: -7px;
-    height: 27px;
+    row-gap: 8px;
+    width: 97%;
 }
 
-.central-podcast p {
-    margin-top: -2px;
-    color: var(--color-gray4);
-}
-
-.botones-podcast {
-    display: flex;
-    margin-left: -10px;
-}
-
-
-.botones-podcast button {
-    padding-left: 7px;
-}
-
-.info-podcast {
-    width: 27%;
+.info-playlist {
     text-align: right;
-    padding-top: 61px;
     color: var(--color-gray4);
-    padding-left: 57px;
-}
-
-.info-mobile {
-    display: none;
-}
-
-.titulo-bloque h2 {
-    padding-left: 8px;
-}
-
-.comentarios-input {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.estrellas {
-    width: 240px;
-    height: 28px;
-}
-
-.estrellas p {
-    text-align: right;
-    margin-top: -27px;
-    margin-right: 38px;
-    color: var(--color-gray4);
-}
-
-.boton-comentario {
-    width: 20%;
-    color: var(--color-blue3);
-    margin-top: -19px;
 }
 
 .avatar-round {
-    width: 54px;
-    height: 54px;
+    width: 43px;
+    height: 43px;
     background-color: var(--color-gray4);
     border-radius: 65px;
+}
+
+.comentarios-input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.boton-comentario {
+    width: 54px;
+    color: var(--color-blue3);
+}
+.boton-comentario:hover {
+    text-decoration: underline;
+}
+
+.estrellas {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.bloque-feedback {
+    width: 100%;
+}
+
+.feedback-bottom {
+    display: flex;
+}
+
+.btn-publicar {
+    background-color: var(--color-blue1);
+    color: var(--color-gray6);
+    padding: 7px 11px;
+    float: right;
 }
 
 .lista-comentarios {
@@ -183,36 +163,70 @@
 }
 
 .texto-comentario {
-    width: 77%;
-    margin-top: -4px;
+    width: 100%;
     font-size: 14px;
+    text-align: left;
     padding-left: 6px;
+}
+
+.opciones {
+    padding-top: 8px;
+    position: relative;
+}
+
+.expandido {
+    margin-top: -8px;
 }
 
 .comentario-element {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 9px;
 }
 
-#lista-episodios {
+.comentario-extra {
     display: flex;
-    flex-flow: column;
-    margin-top: -7px;
-    row-gap: 8px;
     width: 100%;
+    flex-flow: row;
+    height: 27px;
+    justify-content: space-between;
+    padding-left: 4px;
+}
+
+.comentario-extra svg {
+    width: 14px;
+    margin-right: 4px;
+    margin-top: -6px;
+}
+
+.seleccionado {
+    background-color: var(--color-tr1);
+    transition: background-color 0.3s ease;
+}
+
+.votado {
+    display: flex;
+    font-size: 17px;
+    color: var(--color-yellow);
+    margin-top: -3px;
+}
+
+.tags-bottom {
+    display: flex;
+}
+
+.tags-bottom p {
+    padding-right: 2px;
 }
 
 .dropdown {
-    position: absolute;
-    margin-top: 0px;
     background-color: var(--color-black);
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 3px 2px 9px 0px rgb(202 202 202 / 20%);
     z-index: 1;
-    text-align: left;
-    margin-left: -61px;
+    text-align: right;
+    position: absolute;
+    margin-left: -66px;
 }
 
 .dropdown a {
@@ -222,58 +236,100 @@
     display: block;
 }
 
-.ver-mas {
-    color: var(--color-gray4);
-    text-decoration: underline;
-    margin: 0 auto;
+.votado-mobile {
+    display: none;
+}
+
+#compartir {
+    position: relative;
+}
+
+.opciones-compartir {
+    background-image: url(../../assets/opciones-compartir.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 117px;
+    z-index: 1;
+    background-size: contain;
+    margin-left: -66px;
+}
+
+.list-footer {
+    width: 97%;
+}
+
+.titulo {
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
 }
 
 .select-dropdown {
-    float: right;
-    margin-top: -57px;
-    margin-right: 16px;
+    position: relative;
+    display: inline-flex;
+    margin-top: 18px;
+    height: 36px;
 }
-
-.li-play img {
-    max-height: 43px;
-}
-
-.li-play .textos {
-    margin-left: 3px;
-}
-
 
 @media(max-width:768px) {
-    .select-dropdown {
-        float: right;
-        margin-top: -60px;
-        margin-right: 12px;
+    .central-playlist svg {
+        width: 55px;
+        height: 55px;
     }
 
-    .cabecera-podcast {
+    .opciones-compartir {
+        background-image: url(../../assets/opciones-compartir.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100px;
+        height: 117px;
+        z-index: 1;
+        background-size: contain;
+        margin-left: 0px;
+    }
+
+    .votado {
         display: none;
     }
 
-    .bloque-podcast {
+    .votado-mobile {
+        display: flex;
+        font-size: 17px;
+        color: var(--color-yellow);
+        margin-top: -3px;   
+    }
+
+    .votado-mobile h5 {
+        padding-top: 4px;
+    }
+
+    .bloque-playlist {
         display: flex;
         flex-direction: column;
         padding-left: 0px;
-        padding-top: 32px;
+        padding-top: 16px;
         text-align: center;
+    }
+
+    #lista-canciones {
+        display: flex;
+        flex-flow: column;
+        margin-top: 2px;
+        row-gap: 8px;
+        width: 100%;
+    }
+
+    .segunda {
+        display: none;
     }
 
     .info-mobile {
-        display: flex;
-        text-align: center;
-        margin-top: -17px;
-    }
-
-    .info-mobile p {
-
-    }
-
-    .info-podcast {
-        display: none;
+        display: inline;
+        width: 57%;
+        text-align: right;
     }
     
     .bloque {
@@ -281,51 +337,13 @@
         padding: 0px;
     }
 
-    .comentario-element {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 10px;
-        width: 96%;
-    }
-
-    .texto-comentario {
-        width: 77%;
-        margin-top: 0px;
-        font-size: 14px;
-        padding-left: 6px;
-    }
-
-    .estrellas {
-        width: 204px;
-        height: 28px;
-    }
-
-    .estrellas p {
+    .dropdown {
+        background-color: var(--color-black);
+        box-shadow: 3px 2px 9px 0px rgb(202 202 202 / 20%);
+        z-index: 1;
         text-align: right;
-        margin-top: 0;
-        margin-right: 0;
-        color: var(--color-gray4);
-        width: 89px;
-        float: right;
-    }
-
-    .botones-episodio {
-        padding-top: 0px;
-        padding-left: 16px;
-    }
-
-    .info-episodio {
-        width: 96%;
-        text-align: right;
-        padding-top: 10px;
-        color: var(--color-gray4);
-        float: right;
-    }
-
-    .botones-podcast {
-        display: flex;
-        margin: 0 auto;
+        position: absolute;
+        margin-left: -66px;
     }
 
     .dos-columnas {
@@ -337,32 +355,37 @@
         width: 100%;
     }
 
+    .cabecera-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #play svg {
+        width: 63px;
+        height: 63px;
+    }
+
+    .botones-playlist {
+        height: 71px;
+    }
+
+    .botones-playlist svg {
+        width: 50px;
+        height: 34px;
+    }
+
     .bloque-secundario {
         width: 100%;
     }
 
-    .comentario-element {
+    .cabecera-right {
         display: flex;
-        flex-direction: row;
+        flex-flow: row;
         justify-content: space-between;
-        padding-top: 10px;
-        width: 100%;
+        margin-top: -10px;
     }
 
-    .texto-comentario {
-        width: 77%;
-        margin-top: 0px;
-        font-size: 14px;
-        padding-left: 6px;
-    }
-
-    .boton-comentario {
-        width: 120px;
-        color: var(--color-blue3);
-        text-align: right;
-    }
-
-    .episodio-card {
+    .cancion-card {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -373,61 +396,27 @@
     }
 
     .info-left {
-        width: 56%;
+        width: 67%;
         float: left;
         margin-top: -23px;
         padding-left: 6px;
     }
 
-    .cabecera-podcast {
-        background-color: var(--color-gray6);
-        background-image: url(https://i.imgur.com/eoNdWRk.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 160px;
-        width: 80%;
-        float: right;
-        display: none;
-    }
-
     .descripcion {
         display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .descripcion p {
+        flex-direction: row;
+        margin: -25px auto;
         width: 100%;
     }
 
-    .cabecera {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        text-align: center;
-    }
-
-    #portada-podcast {
+    #portada-playlist {
         width: 202px;
         height: 202px;
         background-color: var(--color-gray4);
-        background-image: url(https://i.imgur.com/TWTa9cB.png);
+        background-image: url('../../assets/portada10.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0 auto;
-    }
-
-    .central-podcast {
-        display: flex;
-        flex-direction: column;
-        height: 152px;
-        width: 100%;
-        margin: 0 auto;
-        padding-top: 12px;
     }
 }
