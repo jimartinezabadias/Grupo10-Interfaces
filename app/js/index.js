@@ -5,10 +5,10 @@ let btnIngresar = document.querySelector("#ingresar-btn");
 let heroText = document.querySelector("#hero-text");
 let modal = document.querySelector(".modal");
 
-let width = window.innerWidth;
+let widthc = window.innerWidth;
 
 btnComenzar.addEventListener("click", function(){
-    if(width > 768){
+    if(widthc > 768){
         modal.style.display = "grid";
         heroText.style.display = "none";
     }else{
@@ -18,7 +18,7 @@ btnComenzar.addEventListener("click", function(){
 
 
 btnIngresar.addEventListener("click", function(){
-    if(width > 768){
+    if(widthc > 768){
         modal.style.display = "grid";
         heroText.style.display = "none";
     }
