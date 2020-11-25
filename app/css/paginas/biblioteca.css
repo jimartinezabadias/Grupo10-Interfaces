@@ -1,17 +1,49 @@
-.content-playlist {
-    position: relative;
-    top: 20px;
-    display: grid;
-    grid-template-columns: 10px 370px 10px;
-    grid-template-rows: repeat(7, 72px);
+
+#explorar-main .tags-container{
+    margin-top: 18px;
 }
 
-.content-favs {
-    position: relative;
-    top: 40px;
-    display: grid;
-    grid-template-columns: 10px 370px 10px;
-    grid-template-rows: repeat(7, 72px);
+#novedades {
+    margin-top: 0px;
+}
+
+#novedades > h2{
+    margin-bottom: 12px;
+}
+
+#tendencias{
+    margin-top: 32px;
+}
+
+#tendencias > h2{
+    margin-bottom: 12px;
+}
+
+#top-playlist{
+    margin-top: 32px;
+}
+
+#top-playlist > h2{
+    margin-bottom: 12px;
+}
+
+#top-podcast{
+    margin-top: 32px;
+}
+
+#top-podcast > h2{
+    margin-bottom: 12px;
+}
+
+.columna {
+    width: 100%;
+    padding-top: 24px;
+}
+
+.lista-playlists {
+    display: flex;
+    flex-flow: column;
+    row-gap: 8px;
 }
 
 .cards-carousel{
@@ -21,65 +53,36 @@
     overflow-x: scroll;
 }
 
-.container-reciente > h2{
-    margin-bottom: 12px;
+.cards-container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    column-gap: 16px;
+    row-gap: 16px;
+    
 }
 
-.title-fav{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+#top-playlist > .cards-container > div{
+    flex: 1 0 0;
 }
 
-.title-biblioteca{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+#top-playlist > .cards-container > .list-footer{
+    flex: 100%;
+    margin-top: 0;
 }
 
-#lista-canciones{
-    grid-column-start: 2;
-    grid-column-end: 3;
+.titulo {
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
 }
 
-.li-play{
-    margin-top: 15px;
+.li-play {
+    max-width: 520px;
 }
 
-.add-cancion{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    position: relative;
-    left: 345px;
-    top: 27px;
-}
-
-.ver-mas {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 7;
-    grid-row-end: 8;
-    text-align: center;
-    color: var(--color-gray4);
-    text-decoration: underline;
-    margin: 0 auto;
-}
-
-.delet-cancion{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    position: relative;
-    left: 350px;
-    top: 32px;
-}
-
-@media(min-width:768px){
+@media(min-width:768px) {
     .dos-columnas {
         display: flex;
         flex-direction: row;
@@ -89,82 +92,45 @@
         width: 100%;
         padding-top: 24px;
     }
-    .container-reciente{
+
+    .li-play-playlist {
+        max-width: 460px;
+    }
+
+    .lista-playlists {
+        display: flex;
+        flex-flow: column;
+        row-gap: 8px;
+    }
+
+    .cards-carousel{
+        overflow-x: hidden;
+    }
+
+    #tops-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+    }
+
+    .tags-container{
+        justify-content: center;
+    }
+
+    #top-playlist .card-con-play{
+        max-width: 150px;
+    }
+
+    #novedades{
         display: grid;
         grid-template-columns: 11fr 1fr;
     }
 
-    .container-reciente .cards-carousel{
+    #novedades > .cards-carousel{
         grid-column: span 2;
         padding: 8px;
         transform: translate(-8px,-8px);
         scroll-behavior: smooth;
     }
 
-    .canciones-recientes{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        display: grid;
-        grid-template-columns: repeat(6,auto);
-    }
-    .album-card {
-        padding: 4px 7px;
-        min-width: 158px;
-    }
-    
-    .square-image {
-        width: 161px;
-        height: 160px;
-        background-color: var(--color-gray5);
-    }
-    
-    .card-bottom {
-        display: flex;
-    }
-    
-    .card-bottom h5 {
-        width: 135px;
-    }
-    .page-container{
-        display: grid;
-        grid-template-rows: auto auto;
-    }
-    .content-playlist{
-        position: relative;
-        top: 0;
-        display: grid;
-        grid-template-columns:10px auto;
-        max-width: 470px;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .content-favs{
-        position: relative;
-        top: 0;
-        display: grid;
-        max-width: 600px;
-        grid-template-columns: auto;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .delet-cancion{
-        position: relative;
-        left: 95%;
-        top: 30px;
-    }
-    .add-cancion{
-        position: relative;
-        left: 93%;
-        top: 27px;
-    }
-    .ver-mas-top {
-        float: right;
-        margin-top: -32px;
-        margin-right: 29px;
-        color: var(--color-gray4);
-        text-decoration: underline;
-    }
-    .cards-carousel{
-        overflow-x: hidden;
-    }
 }
