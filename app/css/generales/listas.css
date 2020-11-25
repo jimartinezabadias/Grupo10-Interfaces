@@ -80,7 +80,7 @@
 
 .li-play-episodio .li-buttons{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
 }
 
@@ -124,8 +124,10 @@
         font-size: 16px;
     }
 
-    .li-play-cancion .more-info{
-        display: contents;
+    .li-play .more-info{
+        display: inline-flex;
+        margin-right: 8px;
+        column-gap: 4px;
     }
 
     .li-play .li-buttons{
@@ -156,7 +158,7 @@
     }
 
     .li-play-episodio .more-info{
-        margin-right: 16px;
+        margin-right: 2px;
     }
 
     .li-play-episodio a:hover{
