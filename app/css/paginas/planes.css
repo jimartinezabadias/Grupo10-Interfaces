@@ -316,7 +316,7 @@ p{
         grid-template-columns: auto 330px 80px 330px auto;
         grid-template-rows: auto 70px auto;
         position: relative;
-        top: 65px;
+        top: 18px;
     }
 
     .bar-back{
@@ -325,7 +325,7 @@ p{
 
     .info-planActual {
         position: relative;
-        top: 70px;
+        top: 30px;
     }
 
     .info-planActual div:nth-child(1){
