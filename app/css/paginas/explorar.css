@@ -65,6 +65,16 @@
     /* max-width: 150px; */
 }
 
+.lista-resultados {
+    row-gap: 6px;
+    display: flex;
+    flex-flow: column;
+}
+
+.list-footer {
+    text-align: center;
+}
+
 @media(min-width:768px) {
 
     .cards-carousel{
