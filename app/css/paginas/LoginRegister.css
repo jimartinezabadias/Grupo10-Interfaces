@@ -174,15 +174,17 @@
     top: 20px;
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
 }
 
 .registrarse > h3{
     position: relative;
-    left: 65px;
+    left: 70px;
 }
 
 .registrarse > a{
     position: relative;
-    left: 88px;
+    left: 90px;
     top: 10px;
 }
