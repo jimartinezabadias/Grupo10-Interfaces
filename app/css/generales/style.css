@@ -157,6 +157,7 @@ ul{
 
 .titulo-fav svg {
     padding-left: 4px;
+    width: 20px;
 }
 
 @media(min-width:768px) {

@@ -185,6 +185,17 @@
         font-size: initial;
         margin-bottom: 0px;
         margin-right: 32px;
+        color: var(--color-gray5);
+    }
+
+    .link-seccion:hover {
+        color: var(--color-gray6);
+        outline: 10px solid var(--color-tr2);
+        background-color: var(--color-tr2);
+    }
+
+    #user-menu-btn:hover span{
+        text-decoration: underline;
     }
 
     .link-secundario {
@@ -225,6 +236,20 @@
 
     #menu-search-button{
         display: none !important;
+    }
+
+    #search-button{
+        background-color: var(--color-tr1);
+        border-bottom: 1px solid var(--color-gray4);
+    }
+
+    #header .search-bar .header-icon{
+        width: 24px;
+        color: var(--color-gray4);
+    }
+    
+    #header .search-bar .header-icon:hover{
+        color: var(--color-gray6);
     }
 
 }

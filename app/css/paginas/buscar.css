@@ -2,22 +2,22 @@
     margin-top: 16px;
 }
 
-.search-bar{
-    display: flex;
+.page-container .search-bar{
+    display: flex;   
     align-items: flex-end;
 }
 
-#search-input{
+.page-container #search-input{
     width: 100%;
 }
 
-#search-action-btn{
+.page-container #search-action-btn{
     width: 30px;
     margin-left: 16px;
 }
 
 @media(min-width:768px) {
-    .search-bar{
+    .page-container .search-bar{
         align-items: flex-start;
     }
 }

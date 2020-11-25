@@ -71,7 +71,6 @@
 }
 
 .menu-extensible li {
-    /* margin-top: 0px; */
     display: flex;
     justify-content: space-between;
     padding-left: 18px;
@@ -82,16 +81,27 @@
     display: inline-block;
 }
 
+.menu-extensible button svg{
+    width: 16px;
+}
+
+.menu-extensible button:hover{
+    color: var(--color-green3);
+}
+
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
     width: 100%;
+    color: var(--color-gray5);
+    background-color: unset;
+    transition: background-color 0.3s ease;
 }
 
 .sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+    color: var(--color-gray6);
+    background-color: var(--color-tr1);
+    transition: background-color 0.3s ease;
 }
 
 .sidebar-nav li a:active,
