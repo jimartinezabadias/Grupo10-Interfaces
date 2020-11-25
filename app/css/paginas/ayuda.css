@@ -76,6 +76,16 @@
     padding-top: 32px;
 }
 
+.search-help{
+    margin-top: 18px;
+    align-items: flex-end !important;
+    justify-content: center;
+}
+
+.search-help input{
+    max-width: 400px;
+}
+
 @media(max-width:768px) {
     .bloques {
         display: flex;
@@ -102,4 +112,5 @@
     .acordion-preguntas {
         width: 96%;
     }
+
 }
