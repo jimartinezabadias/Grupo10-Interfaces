@@ -2,8 +2,9 @@
 .containerLogin{
     position: relative;
     top: 20px;
+    left: 10px;
     display: grid;
-    grid-template-columns: auto 335px auto;
+    grid-template-columns: auto 325px auto;
     grid-template-rows: 100px 12px 100px 32px 160px 25px 120px;
 }
 
@@ -12,8 +13,12 @@
     top: 20px;
     display: grid;
     grid-template-columns: auto 335px auto;
-    grid-template-rows: 100px 5px 100px 5px 100px 5px 100px 30px 50px;
+    grid-template-rows: 100px 100px 100px 100px 90px;
     padding-left: 20px;
+}
+
+.containerRegistro > div > h4{
+    margin-bottom: 10px;
 }
 
 .usuario{
@@ -25,8 +30,8 @@
 .registerEmail{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     padding-left: 15px;
 }
 
@@ -37,26 +42,30 @@
 .passw{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
     padding-left: 15px;
 }
 
 .confirmPassw{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
     padding-left: 15px;
 }
 
-
 .btnConfirm{
+    width: 80px;
+    height: 20px;
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 9;
-    grid-row-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    position: relative;
+    top: 10px;
+    left: 92px;
 }
 
 .check{
@@ -104,13 +113,26 @@
     grid-row-end: 6;
 }
 
+.init > .btn{
+    position: relative;
+    left: 105px;
+}
+
+.init > h3{
+    position: relative;
+    left: 35px;
+    margin-top: 40px;
+}
+
+.init > h4{
+    position: relative;
+    left: 80px;
+    width: 150px;
+}
+
 .link{
     color: var(--color-blue1);
     text-decoration: underline;
-}
-
-.center{
-    text-align: center;
 }
 
 .opt{
@@ -126,23 +148,22 @@
 
 .opt p:nth-child(1){
     position: relative;
-    left: 10px;
-    top: 12px;
-    width: 100px;
+    left: 20px;
+    width: 105px;
     height: 2px;
     background-color: white;
 }
 
 .opt p:nth-child(2){
     position: relative;
-    left: 34px;
+    left: 37px;
+    top: -12px;
 }
 
 .opt p:nth-child(3){
     position: relative;
     left: 56px;
-    top: 12px;
-    width: 100px;
+    width: 105px;
     height: 2px;
     background-color: white;
 }
@@ -151,9 +172,17 @@
     width: 200px;
     position: relative;
     top: 20px;
-    left: 80px;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 7;
-    grid-row-end: 8;
+}
+
+.registrarse > h3{
+    position: relative;
+    left: 65px;
+}
+
+.registrarse > a{
+    position: relative;
+    left: 88px;
+    top: 10px;
 }
