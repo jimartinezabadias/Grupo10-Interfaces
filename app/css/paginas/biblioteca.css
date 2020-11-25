@@ -14,8 +14,15 @@
     grid-template-rows: repeat(7, 72px);
 }
 
-.container-reciente{
-    display: none;
+.cards-carousel{
+    display: flex;
+    column-gap: 16px;
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
+
+.container-reciente > h2{
+    margin-bottom: 12px;
 }
 
 .title-fav{
@@ -47,7 +54,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     position: relative;
-    left: 340px;
+    left: 345px;
     top: 27px;
 }
 
@@ -73,31 +80,32 @@
 }
 
 @media(min-width:768px){
-    .content-biblio{
-        position: relative;
-        top: 30px;
-        display: grid;
-        grid-template-columns: 530px auto 530px;
+    .dos-columnas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .columna {
+        width: 100%;
+        padding-top: 24px;
     }
     .container-reciente{
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
+        grid-template-columns: 11fr 1fr;
     }
-    .titulo-reciente{
-        margin-left: 10px;
-        grid-row-start: 1;
-        grid-row-end: 2;
+
+    .container-reciente .cards-carousel{
+        grid-column: span 2;
+        padding: 8px;
+        transform: translate(-8px,-8px);
+        scroll-behavior: smooth;
     }
+
     .canciones-recientes{
         grid-row-start: 2;
         grid-row-end: 3;
         display: grid;
         grid-template-columns: repeat(6,auto);
-    }
-    .segunda-col{
-        grid-column-start: 2;
-        grid-column-end: 3;
     }
     .album-card {
         padding: 4px 7px;
@@ -124,8 +132,9 @@
     .content-playlist{
         position: relative;
         top: 0;
-        grid-column-start: 1;
-        grid-column-end: 2;
+        display: grid;
+        grid-template-columns:10px auto;
+        max-width: 470px;
         grid-row-start: 2;
         grid-row-end: 3;
     }
@@ -133,22 +142,29 @@
         position: relative;
         top: 0;
         display: grid;
+        max-width: 600px;
         grid-template-columns: auto;
-        grid-column-start: 3;
-        grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
     }
     .delet-cancion{
         position: relative;
-        left: 390px;
+        left: 95%;
         top: 30px;
+    }
+    .add-cancion{
+        position: relative;
+        left: 93%;
+        top: 27px;
     }
     .ver-mas-top {
         float: right;
-        margin-top: -57px;
+        margin-top: -32px;
         margin-right: 29px;
         color: var(--color-gray4);
         text-decoration: underline;
+    }
+    .cards-carousel{
+        overflow-x: hidden;
     }
 }
