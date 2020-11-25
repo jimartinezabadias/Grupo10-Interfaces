@@ -95,6 +95,7 @@
     .more-info{
         display: inline-flex;
         align-self: center;
+        color: var(--color-gray4);
     }
     
     .li-links a:hover{
@@ -160,6 +161,16 @@
 
     .li-play-episodio a:hover{
         text-decoration: underline;
+    }
+
+    .li-buttons .play-btn:hover{
+        color: var(--color-green3);
+        transition: color 0.3s ease;
+    }
+
+    .li-buttons .opciones-btn:hover{
+        color: var(--color-red);
+        transition: color 0.3s ease;
     }
 
 }
