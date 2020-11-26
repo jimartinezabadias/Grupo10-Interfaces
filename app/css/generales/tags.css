@@ -92,4 +92,9 @@
 		.rating a:focus ~ a		{
 			color: var(--color-yellow);
 			cursor: pointer;
-		}
+        }
+        
+.animar-estrella {
+    transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
