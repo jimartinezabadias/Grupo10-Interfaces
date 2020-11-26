@@ -16,6 +16,7 @@
     flex-direction: row;
     width: 100%;
     margin-top: -21px;
+    column-gap: 20px;
 }
 
 .bloque-primario {
@@ -106,7 +107,7 @@
     flex-flow: column;
     margin-top: -7px;
     row-gap: 8px;
-    width: 97%;
+    width: 100%;
 }
 
 .info-playlist {
@@ -185,7 +186,7 @@
 }
 
 .texto-comentario {
-    width: 100%;
+    width: 96%;
     font-size: 13px;
     text-align: left;
     padding-left: 8px;
@@ -314,7 +315,7 @@
 }
 
 .votacion-promedio svg {
-    width: 30px;
+    width: 24px;
 }
 
 .votacion-promedio p {

@@ -16,6 +16,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: -21px;
+    column-gap: 20px;
 }
 
 .bloque-primario {
@@ -28,7 +30,6 @@
 
 .texto-descripcion {
     margin-top: -17px;
-    width: 96%;
 }
 
 .cancion-card {
@@ -48,7 +49,7 @@
 }
 
 .central-playlist {
-    padding-left: 7px;
+    padding-left: 12px;
 }
 
 .cabecera-left {
@@ -122,8 +123,8 @@
 }
 
 .avatar-round {
-    width: 43px;
-    height: 43px;
+    width: 40px;
+    height: 40px;
     background-color: var(--color-gray4);
     border-radius: 65px;
 }
@@ -166,13 +167,21 @@
 
 .lista-comentarios {
     width: 100%;
+    flex-flow: column;
+    display: flex;
+    row-gap: 12px;
+    padding-top: 8px;
 }
 
 .texto-comentario {
-    width: 100%;
-    font-size: 14px;
+    width: 96%;
+    font-size: 13px;
     text-align: left;
-    padding-left: 6px;
+    padding-left: 8px;
+}
+
+.texto-comentario a:hover {
+    text-decoration: underline;
 }
 
 .opciones {
@@ -188,7 +197,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 9px;
+    outline: unset;
+    background-color: unset;
+    transition: background-color 0.3s ease;
+}
+
+.comentario-element:hover {
+    outline: 4px solid var(--color-tr1);
+    background-color: var(--color-tr1);
+    transition: background-color 0.3s ease;
 }
 
 .comentario-extra {
@@ -267,23 +284,95 @@
 }
 
 .central-playlist svg {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
 }
 
 .central-playlist h1 {
     padding-top: 17px;
 }
 
+.boton-play {
+    margin-left: -4px;
+}
+
+.boton-play:hover {
+    color: var(--color-green3);
+    transition: color 0.3s ease;
+}
+
+.boton-playlist {
+    color: var(--color-gray4);
+    transition: color 0.3s ease;
+}
+
+.boton-playlist:hover {
+    color: var(--color-red);
+    transition: color 0.3s ease;
+}
+
+.info-playlist {
+    text-align: right;
+    color: var(--color-gray4);
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    padding-top: 12px;
+    row-gap: 6px;
+}
+
+.info-elemento {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.info-elemento p {
+    padding-right: 5px;
+}
+
+.votacion-promedio {
+    display: flex;
+    transform: translateX(-3px);
+    align-items: center;
+}
+
+.votacion-promedio svg {
+    width: 24px;
+}
+
+.votacion-promedio p {
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.titulo-mobile {
+    margin-top: -14px;
+}
+
 @media(max-width:768px) {
-    .central-playlist h1 {
-        padding-top: 17px;
-        font-size: 31px;
+    .votacion-promedio {
+        justify-content: center;
+        align-items: center;
     }
-    
+
     .central-playlist svg {
         width: 55px;
         height: 55px;
+    }
+
+    .votacion-promedio p {
+        padding-top: 0px;
+        padding-left: 11px;
+    }
+
+    .votacion-promedio svg {
+        width: 28px;
+    }
+    
+    .central-playlist h1 {
+        padding-top: 17px;
+        font-size: 31px;
     }
 
     .opciones-compartir {
@@ -374,14 +463,12 @@
     }
 
     .botones-playlist {
-        height: 117px;
-        display: flex;
-        flex-flow: column;
+        height: 71px;
     }
 
     .botones-playlist svg {
-        width: 55px;
-        height: 39px;
+        width: 50px;
+        height: 34px;
     }
 
     .bloque-secundario {
