@@ -16,8 +16,8 @@
 
     <!-- Header -->
     
-  <!-- Invitado -->
-  <div id="header" class="invitado">
+    <!-- Invitado -->
+    <div id="header" class="invitado">
   
     <!-- User registrado -->
     <!-- <div id="header" class="user"> -->
@@ -138,31 +138,34 @@
         
       <!-- Nav -->
       <div id="nav">
-        <a href="index.html">
+          
+        <button id="nav-back-btn">
+          <!-- Opcional class="hidden" en el svg -->
           <svg id="back-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
-        </a>
-  
+        </button>
+        
         <div id="page-title">
           <h3 class="text-normal">Login</h3>
         </div>
-
+        
         <div></div>
+        
       </div>
       
       <!-- Page Container -->
       <div class="page-container">
         <div class="containerLogin">
           <div class="email">
-              <h4>Email</h4>
+              <h4 class="text-normal">Email</h4>
               <input type="text" name="Email" value="usuario@test.com">
               <svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 13L9 17L19 7" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>     
           </div>
           <div class="pass">
-              <h4>Password</h4>
+              <h4 class="text-normal">Password</h4>
               <input type="password" name="Password" value="contrasenia123">
               <svg class="check" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10Z" stroke="#E6E6E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -175,9 +178,9 @@
               Ingresar
             </a>
 
-            <h3>¿Olvidaste la contraseña?</h3>
+            <h3 class="text-medium">¿Olvidaste la contraseña?</h3>
 
-            <h4 class="link">Reiniciar Password</h4>
+            <h4 class="link text-normal">Reiniciar Password</h4>
             
           </div>
 
@@ -188,7 +191,7 @@
           </div>
   
           <div class="registrarse">
-              <h3>¿No tenes cuenta?</h3>
+              <h3 class="text-normal">¿No tenes cuenta?</h3>
               <a href="register.html" class="btn">
                 Registrarse
               </a>

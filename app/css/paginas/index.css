@@ -1,7 +1,7 @@
 .modal{
     z-index: 1;
     position: fixed;
-    top: 170px;
+    top: 210px;
     display: grid;
     grid-template-columns: 5fr 2fr 5fr;
     grid-template-rows: 400px;
@@ -151,6 +151,7 @@
     justify-content: center;
     min-height: 100vh;
     background-image: url(../../assets/background4.jpg);
+    background-position: 0px 40px;
     background-size: cover;
     grid-column: span 2;
     background-position-x: 80%;

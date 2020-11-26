@@ -5,14 +5,14 @@
     left: 10px;
     display: grid;
     grid-template-columns: auto 325px auto;
-    grid-template-rows: 100px 12px 100px 32px 160px 25px 120px;
+    grid-template-rows: 100px 12px 70px 32px 140px 25px 120px;
 }
 
 .containerRegistro{
     position: relative;
     top: 20px;
     display: grid;
-    grid-template-columns: auto 335px auto;
+    grid-template-columns: auto 320px auto;
     grid-template-rows: 100px 100px 100px 100px 90px;
     padding-left: 20px;
 }
@@ -20,6 +20,11 @@
 .containerRegistro > div > h4{
     margin-bottom: 10px;
 }
+
+.containerLogin > div > h4 {
+    margin-bottom: 10px;
+}
+
 
 .usuario{
     grid-column-start: 2;
@@ -115,19 +120,25 @@
 
 .init > .btn{
     position: relative;
-    left: 105px;
+    left: 100px;
 }
 
 .init > h3{
+    width: 240px;
     position: relative;
-    left: 35px;
-    margin-top: 40px;
+    left: 42px;
+    margin-top: 30px;
 }
 
 .init > h4{
     position: relative;
     left: 80px;
     width: 150px;
+}
+
+h4{
+    margin: 0;
+    width: fit-content;
 }
 
 .link{
@@ -169,9 +180,7 @@
 }
 
 .registrarse{
-    width: 200px;
-    position: relative;
-    top: 20px;
+    width: 240px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 7;
@@ -180,11 +189,11 @@
 
 .registrarse > h3{
     position: relative;
-    left: 70px;
+    left: 75px;
 }
 
 .registrarse > a{
     position: relative;
-    left: 90px;
+    left: 95px;
     top: 10px;
 }
