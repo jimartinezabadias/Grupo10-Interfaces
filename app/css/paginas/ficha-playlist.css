@@ -126,6 +126,10 @@
     transition: transform 0.3s ease;
 }
 
+.favorita .li-links {
+    padding-left: 12px;
+}
+
 .info-playlist {
     text-align: right;
     color: var(--color-gray4);
