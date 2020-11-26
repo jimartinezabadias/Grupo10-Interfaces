@@ -17,7 +17,7 @@
     flex-direction: row;
     width: 100%;
     margin-top: -21px;
-    column-gap: 20px;
+    column-gap: 32px;
 }
 
 .bloque-primario {
@@ -56,6 +56,7 @@
     display: flex;
     flex-flow: column;
     align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .cancion-square-image {
@@ -110,6 +111,21 @@
     margin-top: -7px;
     row-gap: 8px;
     width: 100%;
+
+    transform-style: preserve-3d;
+    perspective: 500px;
+    perspective-origin: 50%;
+}
+
+.li-play-cancion{
+    transform: translateZ(0em);
+    transition: transform 0.3s ease;
+}
+
+.li-play-cancion.favorita{
+    background-color: var(--color-tr1);
+    transform: translateZ(1em);
+    transition: transform 0.3s ease;
 }
 
 .info-playlist {
@@ -119,7 +135,6 @@
     flex-flow: column;
     align-items: flex-end;
     padding-top: 12px;
-    row-gap: 6px;
 }
 
 .info-elemento {
@@ -165,6 +180,7 @@
 
 .bloque-feedback {
     width: 100%;
+    margin-top: 8px;
 }
 
 .feedback-bottom {
@@ -212,6 +228,12 @@
     justify-content: space-between;
     outline: unset;
     background-color: unset;
+    
+
+    transform-style: preserve-3d;
+    perspective: 500px;
+    perspective-origin: 50%;
+    
     transition: background-color 0.3s ease;
 }
 
@@ -351,6 +373,7 @@
 
 .votacion-promedio svg {
     width: 24px;
+    color: var(--color-yellow);
 }
 
 .votacion-promedio p {
