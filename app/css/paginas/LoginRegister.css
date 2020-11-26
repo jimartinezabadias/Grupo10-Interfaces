@@ -124,15 +124,15 @@
 }
 
 .init > h3{
-    width: 240px;
+    width: 250px;
     position: relative;
-    left: 42px;
+    left: 30px;
     margin-top: 30px;
 }
 
 .init > h4{
     position: relative;
-    left: 80px;
+    left: 79px;
     width: 150px;
 }
 
@@ -167,7 +167,7 @@ h4{
 
 .opt p:nth-child(2){
     position: relative;
-    left: 37px;
+    left: 39px;
     top: -12px;
 }
 
@@ -189,11 +189,11 @@ h4{
 
 .registrarse > h3{
     position: relative;
-    left: 75px;
+    left: 65px;
 }
 
 .registrarse > a{
     position: relative;
-    left: 95px;
+    left: 88px;
     top: 10px;
 }
