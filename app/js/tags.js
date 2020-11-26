@@ -64,11 +64,11 @@ function expandirComentario(nombre) {
 
     if(texto[1].classList.contains("expandido")) {
         texto[1].classList.remove("expandido");
-        texto[1].innerHTML = 'Un comentario es una apreciación o escrito sobre cualquier cosa puesta...';
+        texto[1].innerHTML = '<a class="text-medium" href="perfil.html">Usuario:</a> Un comentario es una apreciación o escrito sobre cualquier cosa puesta...';
         texto[0].setAttribute("style", "display: none;");
     }else {
         texto[1].classList.add("expandido");
-        texto[1].innerHTML = 'Un comentario es una apreciación o escrito sobre cualquier cosa puesta en análisis.';
+        texto[1].innerHTML = '<a class="text-medium" href="perfil.html">Usuario:</a> Un comentario es una apreciación o escrito sobre cualquier cosa puesta en análisis.';
         texto[0].setAttribute("style", "display: flex;");
     }
 }
