@@ -59,7 +59,7 @@ function activarTag(nombre) {
 
 let texto;
 
-function expandirComentario(nombre) {
+function expandirComentario(nombre,element) {
     texto = document.getElementsByClassName(nombre);
 
     if(texto[1].classList.contains("expandido")) {
@@ -72,3 +72,5 @@ function expandirComentario(nombre) {
         texto[0].setAttribute("style", "display: flex;");
     }
 }
+
+

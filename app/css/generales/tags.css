@@ -64,7 +64,9 @@
 }
 
 .rating {
-    font-size: 26px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    transform: translateY(4px);
 }
 
 .rating input {
