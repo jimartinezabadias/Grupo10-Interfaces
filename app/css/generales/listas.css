@@ -53,6 +53,7 @@
 .li-links{
     display: flex;
     flex-flow: column;
+    line-height: 20px;
 }
 
 .more-info{

@@ -121,6 +121,20 @@
         padding: 8px;
         transform: translate(-8px,-8px);
         scroll-behavior: smooth;
+
+        transform-style: preserve-3d;
+        perspective: 500px;
+        perspective-origin: 50%;
+    }
+
+    #novedades .card-con-play{
+        transform: translateZ(0em);
+        transition: transform 0.3s ease;
+    }
+    
+    #novedades .card-con-play:hover{
+        transform: translateZ(1em);
+        transition: transform 0.3s ease;
     }
 
 }
