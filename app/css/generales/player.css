@@ -43,7 +43,7 @@
     animation: playerSongName 10s 1s infinite linear;
 }
 
-#open-playing-song{
+#open-playing-song-mobile{
     width: 32px;
     color: var(--color-gray6);
 }
@@ -140,7 +140,13 @@
         display: flex;
         align-items: center;
         margin-left: 32px;
-        width: 25%;
+        margin-right: 18px;
+        color: var(--color-gray5);
+    }
+    
+    .info-large:hover{
+        background-color: var(--color-tr1);
+        color: var(--color-gray6);
     }
     
     .controles{
@@ -171,7 +177,12 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        margin-left: 12px;
+        margin-left: 8px;
+        line-height: 18px;
+    }
+
+    .info-texto a:hover{
+        text-decoration: underline;
     }
 
     #vol-control{
@@ -264,6 +275,22 @@
     #play-next-button{
         margin-left: 4px;
         width: 18px;
+    }
+
+    #open-playing-song-desktop{
+        width: 28px;
+        height: 28px;
+        color: var(--color-gray5);
+        align-self: baseline;
+        margin-left: 4px;
+        /* border-radius: 50%; */
+        margin-top: 2px;
+    }
+
+    #open-playing-song-desktop:hover{
+        background-color: var(--color-tr2);
+        border-radius: 50%;
+        color: var(--color-gray6);
     }
    
 }

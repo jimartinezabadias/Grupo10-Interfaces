@@ -1,0 +1,95 @@
+.song-header {
+    display: flex;
+    flex-flow: column;
+    line-height: 32px;
+    margin-top: 18px;
+    row-gap: 18px;
+}
+
+.song-header img{
+    align-self: center;
+    max-height: 185px;
+}
+
+.song-info{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+#playing-song-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-10px);
+}
+
+#playing-song-range{
+    width: 200px;
+}
+
+#playing-song-range::-webkit-slider-runnable-track{
+    background: var(--color-green3);
+}
+
+.player-range{
+    cursor: pointer;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 3px;
+    border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: var(--color-gray5);
+    margin-top: -6px;
+}
+
+#comentar{
+    margin-top: 18px;
+}
+
+.lista-reproduccion{
+    margin-top: 18px;
+    display: flex;
+    flex-flow: column;
+    row-gap: 8px;
+}
+
+#song-header-buttons{
+    position: absolute;
+    right: 18px;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    row-gap: 8px;
+}
+
+#song-share-btn svg{
+    width: 24px;
+}
+
+#song-playlist-btn{
+    transform: translateX(2px);
+}
+
+#song-playlist-btn svg{
+    width: 28px;    
+}
+

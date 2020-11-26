@@ -337,6 +337,8 @@
         text-align: left;
         margin-right: auto;
         margin-top: 12px;
+        line-height: 32px;
+        column-gap: 8px;
     }
 
     .info-playlist {

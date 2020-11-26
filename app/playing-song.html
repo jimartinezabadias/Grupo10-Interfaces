@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos Generales -->
+    <link rel="stylesheet" href="css/generales/style.css">
+    <link rel="stylesheet" href="css/generales/header.css">
+    <link rel="stylesheet" href="css/generales/sidebar.css">
+    <link rel="stylesheet" href="css/generales/forms.css">
+    <link rel="stylesheet" href="css/generales/navbar.css">
+    <link rel="stylesheet" href="css/generales/player.css">
+    <link rel="stylesheet" href="css/generales/tags.css">
+    <link rel="stylesheet" href="css/generales/listas.css">
+    
+    
+    <!-- Estilos Particulares -->
+    <link rel="stylesheet" href="css/paginas/playing-song.css">
+    <link rel="stylesheet" href="css/paginas/ficha-playlist.css">
+
+
+    <!-- Fuente Google Fonts --> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Sp5 - Playing Song</title>
+
+</head>
+<body>
+   
+    <!-- Header -->
+    
+    <!-- Invitado -->
+    <!-- <div id="header" class="invitado"> -->
+    
+    <!-- User registrado -->
+    <div id="header" class="user">
+
+      <button id="hamb-button">
+        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <div id="link-logo">
+        <a href="index.html" >
+          <svg id="logo-header" viewBox="0 0 93 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.4455 35.0443C10.7663 35.0443 8.20293 34.6711 5.75528 33.9248C3.30763 33.1785 1.38921 32.2212 0 31.0531L2.7288 26.0885C4.18415 27.2242 5.90412 28.1327 7.8887 28.8142C9.90636 29.4631 11.9571 29.7876 14.0409 29.7876C16.5878 29.7876 18.6054 29.3658 20.0939 28.5221C21.6154 27.646 22.3761 26.4617 22.3761 24.969C22.3761 24.1254 22.0619 23.4277 21.4335 22.8761C20.8381 22.292 20.0773 21.8215 19.1512 21.4646C18.2581 21.1077 17.0012 20.7021 15.3805 20.2478C13.1313 19.5988 11.3121 18.9823 9.92289 18.3982C8.53369 17.7817 7.34294 16.8732 6.35065 15.6726C5.35836 14.472 4.86222 12.9145 4.86222 11C4.86222 8.79351 5.49067 6.86283 6.74757 5.20796C8.03754 3.5531 9.82366 2.27139 12.1059 1.36283C14.3882 0.454277 17.0178 0 19.9946 0C22.2438 0 24.3772 0.259588 26.3949 0.778763C28.4126 1.26549 30.1491 1.96313 31.6044 2.87168L29.0741 7.88496C27.7841 7.0413 26.3287 6.39233 24.708 5.93806C23.0873 5.48378 21.4004 5.25664 19.6473 5.25664C17.0674 5.25664 15.0166 5.72714 13.4951 6.66814C12.0067 7.5767 11.2625 8.79351 11.2625 10.3186C11.2625 11.1947 11.5767 11.9248 12.2052 12.5089C12.8336 13.0929 13.5944 13.5634 14.4874 13.9204C15.3805 14.2448 16.687 14.6667 18.407 15.1858C20.59 15.8024 22.3761 16.4027 23.7653 16.9867C25.1545 17.5708 26.3287 18.4307 27.288 19.5664C28.2803 20.7021 28.7764 22.1785 28.7764 23.9956C28.7764 26.2345 28.1314 28.1814 26.8414 29.8363C25.5845 31.4912 23.7819 32.7729 21.4335 33.6814C19.1181 34.59 16.4555 35.0443 13.4455 35.0443Z" fill="#F2F2F2"/>
+            <path d="M50.9494 8.27434C53.1324 8.27434 55.1005 8.72861 56.8535 9.63717C58.6397 10.5457 60.0454 11.8599 61.0708 13.5796C62.0961 15.2994 62.6088 17.3274 62.6088 19.6637C62.6088 22.5516 61.9473 25.1637 60.6242 27.5C59.3343 29.8038 57.5481 31.6209 55.2659 32.9513C53.0167 34.2493 50.5029 34.8982 47.7245 34.8982C45.6407 34.8982 43.8215 34.5413 42.2669 33.8274C40.7123 33.1136 39.505 32.0752 38.645 30.7124L35.9658 44H29.764L36.9581 8.56637H42.8623L42.3165 11.292C44.6318 9.28024 47.5095 8.27434 50.9494 8.27434ZM47.2283 29.6903C48.9814 29.6903 50.536 29.2847 51.8921 28.4735C53.2813 27.6298 54.3728 26.4779 55.1666 25.0177C55.9605 23.5251 56.3574 21.8378 56.3574 19.9558C56.3574 17.9115 55.7455 16.3215 54.5217 15.1858C53.2978 14.0177 51.5779 13.4336 49.3617 13.4336C47.6087 13.4336 46.0376 13.8555 44.6484 14.6991C43.2922 15.5103 42.2173 16.6622 41.4234 18.1549C40.6296 19.615 40.2327 21.2861 40.2327 23.1681C40.2327 25.2124 40.8446 26.8186 42.0684 27.9867C43.2922 29.1224 45.0122 29.6903 47.2283 29.6903Z" fill="#F2F2F2"/>
+            <path d="M77.0738 5.79204L74.6426 13.677H77.2722C81.6052 13.677 84.8632 14.4882 87.0463 16.1106C89.2293 17.733 90.3208 20.0044 90.3208 22.9248C90.3208 25.326 89.6758 27.4513 88.3859 29.3009C87.0959 31.118 85.2767 32.5295 82.9283 33.5354C80.6129 34.5413 77.9503 35.0443 74.9403 35.0443C72.3273 35.0443 69.9458 34.6873 67.7958 33.9735C65.6459 33.2596 63.8763 32.2537 62.4871 30.9558L65.712 26.1372C66.7705 27.1755 68.1431 28.003 69.83 28.6195C71.5169 29.236 73.3527 29.5442 75.3372 29.5442C78.0495 29.5442 80.1333 29.0251 81.5887 27.9867C83.0771 26.9484 83.8213 25.4882 83.8213 23.6062C83.8213 20.556 81.2248 19.031 76.0318 19.031H67.1012L72.6084 0.486725H93L91.9085 5.79204H77.0738Z" fill="#F2F2F2"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="search-bar">
+
+        <input type="search" name="search" id="search-input"
+          placeholder="Artistas, playlist, podcast ...">
+
+        <a id="search-button" href="resultados.html">
+          <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </a>
+
+      </div>
+
+      <div id="header-options">
+          
+          <a id="link-planes" class="link-seccion" href="planes.html">Planes</a>
+          
+          <a id="link-ayuda" class="link-seccion" href="ayuda.html">Ayuda</a>
+
+          <a id="ingresar-btn" class="btn" href="">
+            Ingresar
+          </a>
+
+          <a id="menu-search-button" href="buscar.html">
+            <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </a>
+    
+          <a href="mi-perfil.html" id="user-menu-btn">
+            <span class="text-small text-normal">Usuario</span>
+            <svg class="user-header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </a>
+
+      </div>
+
+      <div id="main-menu">
+
+          <button id="close-menu">
+            <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        
+          <div id="main-menu-options">
+            
+            <!-- Opciones de usuario registrado-->
+            <a class="link-seccion opcion-user-registrado" href="inicio.html">Inicio</a>
+            <a class="link-seccion opcion-user-registrado" href="explorar.html">Explorar</a>
+            <a class="link-seccion opcion-user-registrado" href="#">Biblioteca</a>
+
+            <!-- Opciones de invitato -->
+            <a class="link-seccion" href="">Planes</a>
+            <a class="link-seccion" href="ayuda.html">Ayuda</a>
+
+            <svg id="separador-main-menu" class="opcion-user-invitado" width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1H42.5" stroke="#F4F4F6"/>
+            </svg>
+              
+            <a id="iniciar-session-btn" class="link-secundario opcion-user-invitado" href="">
+              Iniciar Sesion
+            </a>
+            
+            <a id="registrarse-btn" class="link-secundario opcion-user-invitado" href="">
+              Registrarse
+            </a>
+
+            <svg id="logo-menu" viewBox="0 0 93 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.4455 35.0443C10.7663 35.0443 8.20293 34.6711 5.75528 33.9248C3.30763 33.1785 1.38921 32.2212 0 31.0531L2.7288 26.0885C4.18415 27.2242 5.90412 28.1327 7.8887 28.8142C9.90636 29.4631 11.9571 29.7876 14.0409 29.7876C16.5878 29.7876 18.6054 29.3658 20.0939 28.5221C21.6154 27.646 22.3761 26.4617 22.3761 24.969C22.3761 24.1254 22.0619 23.4277 21.4335 22.8761C20.8381 22.292 20.0773 21.8215 19.1512 21.4646C18.2581 21.1077 17.0012 20.7021 15.3805 20.2478C13.1313 19.5988 11.3121 18.9823 9.92289 18.3982C8.53369 17.7817 7.34294 16.8732 6.35065 15.6726C5.35836 14.472 4.86222 12.9145 4.86222 11C4.86222 8.79351 5.49067 6.86283 6.74757 5.20796C8.03754 3.5531 9.82366 2.27139 12.1059 1.36283C14.3882 0.454277 17.0178 0 19.9946 0C22.2438 0 24.3772 0.259588 26.3949 0.778763C28.4126 1.26549 30.1491 1.96313 31.6044 2.87168L29.0741 7.88496C27.7841 7.0413 26.3287 6.39233 24.708 5.93806C23.0873 5.48378 21.4004 5.25664 19.6473 5.25664C17.0674 5.25664 15.0166 5.72714 13.4951 6.66814C12.0067 7.5767 11.2625 8.79351 11.2625 10.3186C11.2625 11.1947 11.5767 11.9248 12.2052 12.5089C12.8336 13.0929 13.5944 13.5634 14.4874 13.9204C15.3805 14.2448 16.687 14.6667 18.407 15.1858C20.59 15.8024 22.3761 16.4027 23.7653 16.9867C25.1545 17.5708 26.3287 18.4307 27.288 19.5664C28.2803 20.7021 28.7764 22.1785 28.7764 23.9956C28.7764 26.2345 28.1314 28.1814 26.8414 29.8363C25.5845 31.4912 23.7819 32.7729 21.4335 33.6814C19.1181 34.59 16.4555 35.0443 13.4455 35.0443Z" fill="#F2F2F2"/>
+              <path d="M50.9494 8.27434C53.1324 8.27434 55.1005 8.72861 56.8535 9.63717C58.6397 10.5457 60.0454 11.8599 61.0708 13.5796C62.0961 15.2994 62.6088 17.3274 62.6088 19.6637C62.6088 22.5516 61.9473 25.1637 60.6242 27.5C59.3343 29.8038 57.5481 31.6209 55.2659 32.9513C53.0167 34.2493 50.5029 34.8982 47.7245 34.8982C45.6407 34.8982 43.8215 34.5413 42.2669 33.8274C40.7123 33.1136 39.505 32.0752 38.645 30.7124L35.9658 44H29.764L36.9581 8.56637H42.8623L42.3165 11.292C44.6318 9.28024 47.5095 8.27434 50.9494 8.27434ZM47.2283 29.6903C48.9814 29.6903 50.536 29.2847 51.8921 28.4735C53.2813 27.6298 54.3728 26.4779 55.1666 25.0177C55.9605 23.5251 56.3574 21.8378 56.3574 19.9558C56.3574 17.9115 55.7455 16.3215 54.5217 15.1858C53.2978 14.0177 51.5779 13.4336 49.3617 13.4336C47.6087 13.4336 46.0376 13.8555 44.6484 14.6991C43.2922 15.5103 42.2173 16.6622 41.4234 18.1549C40.6296 19.615 40.2327 21.2861 40.2327 23.1681C40.2327 25.2124 40.8446 26.8186 42.0684 27.9867C43.2922 29.1224 45.0122 29.6903 47.2283 29.6903Z" fill="#F2F2F2"/>
+              <path d="M77.0738 5.79204L74.6426 13.677H77.2722C81.6052 13.677 84.8632 14.4882 87.0463 16.1106C89.2293 17.733 90.3208 20.0044 90.3208 22.9248C90.3208 25.326 89.6758 27.4513 88.3859 29.3009C87.0959 31.118 85.2767 32.5295 82.9283 33.5354C80.6129 34.5413 77.9503 35.0443 74.9403 35.0443C72.3273 35.0443 69.9458 34.6873 67.7958 33.9735C65.6459 33.2596 63.8763 32.2537 62.4871 30.9558L65.712 26.1372C66.7705 27.1755 68.1431 28.003 69.83 28.6195C71.5169 29.236 73.3527 29.5442 75.3372 29.5442C78.0495 29.5442 80.1333 29.0251 81.5887 27.9867C83.0771 26.9484 83.8213 25.4882 83.8213 23.6062C83.8213 20.556 81.2248 19.031 76.0318 19.031H67.1012L72.6084 0.486725H93L91.9085 5.79204H77.0738Z" fill="#F2F2F2"/>
+            </svg>
+
+
+          </div>
+        
+      </div>
+
+      <div id="user-menu">
+       
+        <a class="text-3" href="mi-perfil.html">Perfil</a>
+        
+        <a class="text-3" href="preferencias.html">Preferencias</a>
+          
+        <svg width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1H42.5" stroke="#F4F4F6"/>
+        </svg>
+          
+        <a id="cerrar-session-btn" class="text-small" href="index.html">
+          Cerrar Sesion
+        </a>
+        
+      </div>
+        
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li>
+          <a href="inicio.html" class="text-3">Inicio</a>
+        </li>
+        <li>
+          <a href="explorar.html" class="text-3">Explorar</a>
+        </li>
+        <li>
+          <a href="biblioteca.html" class="text-3">Biblioteca</a>
+        </li>
+        
+        <ul class="menu-extensible">
+          <span class="titulo-fav">
+            <h4 class="m0 text-medium">Tus Favoritos</h4>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80641 6.20641C4.70654 5.30655 5.92722 4.80104 7.20001 4.80104C8.47279 4.80104 9.69347 5.30655 10.5936 6.20641L12 7.61161L13.4064 6.20641C13.8492 5.74796 14.3788 5.38229 14.9645 5.13072C15.5501 4.87916 16.1799 4.74675 16.8173 4.74121C17.4546 4.73567 18.0867 4.85712 18.6766 5.09847C19.2665 5.33982 19.8024 5.69623 20.2531 6.14691C20.7038 6.5976 21.0602 7.13353 21.3015 7.72343C21.5429 8.31333 21.6643 8.9454 21.6588 9.58274C21.6533 10.2201 21.5209 10.8499 21.2693 11.4356C21.0177 12.0212 20.6521 12.5508 20.1936 12.9936L12 21.1884L3.80641 12.9936C2.90655 12.0935 2.40103 10.8728 2.40103 9.60001C2.40103 8.32722 2.90655 7.10654 3.80641 6.20641Z" fill="#F2F2F2"/>
+            </svg>
+          </span>
+          <li id="elemento-agregado" style="display: none;">
+            <button id="play-playlist">
+              <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+              </svg>
+            </button>
+            <a class="text-small" href="#">Nombre de la cancion</a>
+          </li>
+          <li>
+            <button id="play-playlist">
+              <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+              </svg>
+            </button>
+            <a class="text-small" href="ficha-podcast.html">CHECKPOINT TV!</a>
+          </li>
+          <li>
+            <button id="play-playlist">
+              <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+              </svg>
+            </button>
+            <a class="text-small" href="ficha-playlist.html">Cumbia Viejita</a>
+          </li>
+          <li>
+            <button id="play-playlist">
+              <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+              </svg>
+            </button>
+            <a class="text-small" href="ficha-playlist.html">Para limpiar la casa</a>
+          </li>
+          <li>
+            <button id="play-playlist">
+              <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+              </svg>
+            </button>
+            <a class="text-small" href="ficha-playlist.html">Cachenge a full</a>
+          </li>
+          <li>
+            <button id="play-playlist">
+              <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+              </svg>
+            </button>
+            <a class="text-small" href="ficha-playlist.html">Rock nacional</a>
+          </li>
+          <li>
+            <button id="play-playlist">
+              <svg viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C16.4478 26 19.7544 24.6304 22.1924 22.1924C24.6304 19.7544 26 16.4478 26 13C26 9.55219 24.6304 6.24558 22.1924 3.80761C19.7544 1.36964 16.4478 0 13 0C9.55219 0 6.24558 1.36964 3.80761 3.80761C1.36964 6.24558 0 9.55219 0 13C0 16.4478 1.36964 19.7544 3.80761 22.1924C6.24558 24.6304 9.55219 26 13 26ZM12.2769 8.398C12.0321 8.23472 11.7477 8.14094 11.4538 8.12667C11.16 8.1124 10.8678 8.17816 10.6084 8.31695C10.349 8.45575 10.1321 8.66235 9.98095 8.91474C9.82978 9.16712 9.74996 9.45581 9.75 9.75V16.25C9.74996 16.5442 9.82978 16.8329 9.98095 17.0853C10.1321 17.3376 10.349 17.5443 10.6084 17.683C10.8678 17.8218 11.16 17.8876 11.4538 17.8733C11.7477 17.8591 12.0321 17.7653 12.2769 17.602L17.1519 14.352C17.3744 14.2036 17.5569 14.0026 17.6831 13.7667C17.8093 13.5309 17.8754 13.2675 17.8754 13C17.8754 12.7325 17.8093 12.4691 17.6831 12.2333C17.5569 11.9974 17.3744 11.7964 17.1519 11.648L12.2769 8.398Z"/>
+              </svg>
+            </button>
+            <a class="text-small" href="ficha-playlist.html">HITS DEL VERANO!</a>
+          </li>
+        </ul>  
+      </ul>
+    </div>
+
+    <!-- Main -->
+    <div id="playing-song-main" class="main">
+
+        <!-- Nav -->
+        <div id="nav" style="display: none;">
+          
+          <button id="nav-back-btn">
+            <!-- Opcional class="hidden" en el svg -->
+            <svg id="back-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+          </button>
+          
+          <div id="page-title">
+            <h3 class="text-normal">Perfil</h3>
+          </div>
+          
+          <div></div>
+          
+        </div>
+
+        <!-- Page Container -->
+        <div class="page-container">
+            
+          <section class="song-header">
+
+            <div id="song-header-buttons">
+
+              <button id="song-share-btn">
+                <!-- <svg id="corazon-player" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg> -->
+                <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.57751 14.7889C8.84684 14.2503 8.99884 13.6423 8.99884 12.9997C8.99884 12.3571 8.84684 11.7491 8.57751 11.2105V14.7889ZM8.57751 14.7889C8.17444 15.5947 7.51111 16.2408 6.69496 16.6226C5.87881 17.0044 4.95766 17.0994 4.08074 16.8924C3.20382 16.6853 2.4225 16.1883 1.86336 15.4818C1.30421 14.7753 1 13.9007 1 12.9997C1 12.0987 1.30421 11.2241 1.86336 10.5176C2.4225 9.81113 3.20382 9.31408 4.08074 9.10702C4.95766 8.89996 5.87881 8.99502 6.69496 9.37679C7.51111 9.75856 8.17444 10.4047 8.57751 11.2105V14.7889ZM8.57751 14.7889L17.4202 19.21L8.57751 14.7889ZM8.57751 11.2105L17.4202 6.78944L8.57751 11.2105ZM17.4202 6.78944C17.6552 7.25928 17.9804 7.67824 18.3773 8.02239C18.7742 8.36655 19.235 8.62917 19.7335 8.79525C20.2319 8.96133 20.7581 9.02763 21.2821 8.99035C21.8062 8.95307 22.3177 8.81295 22.7876 8.57799C23.2575 8.34303 23.6764 8.01782 24.0206 7.62094C24.3648 7.22407 24.6274 6.76329 24.7935 6.26492C24.9596 5.76655 25.0259 5.24034 24.9887 4.71635C24.9514 4.19236 24.8112 3.68084 24.5763 3.211C24.1017 2.26212 23.2696 1.54061 22.263 1.20519C21.2564 0.869769 20.1578 0.947921 19.2089 1.42245C18.2599 1.89698 17.5384 2.72902 17.2029 3.73552C16.8675 4.74203 16.9457 5.84055 17.4202 6.78944V6.78944ZM17.4202 19.21C16.9457 20.159 16.8676 21.2577 17.2031 22.2644C17.5387 23.271 18.2604 24.1031 19.2096 24.5776C20.1587 25.0522 21.2575 25.1302 22.2642 24.7947C23.2709 24.4591 24.103 23.7375 24.5776 22.7884C25.0522 21.8393 25.1302 20.7406 24.7947 19.734C24.4591 18.7274 23.7374 17.8953 22.7882 17.4208C22.3183 17.1858 21.8066 17.0457 21.2825 17.0084C20.7584 16.9712 20.2321 17.0375 19.7337 17.2037C18.727 17.5392 17.8948 18.2609 17.4202 19.21V19.21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+              </button>
+              
+              <button id="song-playlist-btn">
+                <svg viewBox="0 0 33 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.3636 5.79254H0V8.68881H19.3636V5.79254ZM19.3636 0H0V2.89627H19.3636V0ZM25.8182 11.5851V5.79254H22.5909V11.5851H16.1364V14.4814H22.5909V20.2739H25.8182V14.4814H32.2727V11.5851H25.8182ZM0 14.4814H12.9091V11.5851H0V14.4814Z" fill="currentColor"/>
+                </svg>            
+              </button>
+
+            </div>
+
+            <img src="assets/album6.jpg" alt="">
+
+            <div class="song-info">
+              <a href="ficha-artista.html" class="m0 text-1 text-bold">Nombre de la cancion</a>
+              <a href="ficha-artista.html" class="m0 text-4 text-normal">Autor</a>
+            </div>
+
+            <div id="playing-song-nav">
+          
+              <span id="current-time" class="text-small">02:24</span>
+              <input type="range" name="volume" id="playing-song-range" value="148" max="242" class="player-range">
+              <span id="total-time" class="text-small">4:02</span>
+    
+            </div>
+
+          </section>
+
+
+          <section id="comentar">
+            <div class="comentarios-input">
+              <button class="boton-comentario" onclick="mostrarInput()">
+                <h3 class="m0 text-medium">Opinar</h3>
+              </button>
+              <div class="estrellas">
+                
+                <div class="rating">
+                  <a href="#5" title="Give 5 stars">★</a>
+                  <a href="#4" title="Give 4 stars">★</a>
+                  <a href="#3" title="Give 3 stars">★</a>
+                  <a href="#2" title="Give 2 stars">★</a>
+                  <a href="#1" title="Give 1 star">★</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bloque-feedback ocultar">
+              <textarea id="contenido-input" placeholder="Comparte lo que opinas..." class="comment-content" maxlength="1000"></textarea>
+              <div class="feedback-bottom">
+                <div class="tags-container">
+                  <button class="tag-btn tag-estudio" onclick="activarTag('tag-estudio')">
+                    <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                    </svg>
+                    Estudio
+                  </button>
+                  <button class="tag-btn tag-trabajo" onclick="activarTag('tag-trabajo')">
+                    <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                    </svg>
+                    Trabajo
+                  </button>
+                  <button class="tag-btn tag-deporte" onclick="activarTag('tag-deporte')">
+                    <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                    </svg>
+                    Deporte
+                  </button>
+                  <button class="tag-btn tag-fiesta" onclick="activarTag('tag-fiesta')">
+                    <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                    </svg>
+                    Fiesta
+                  </button>
+                  <button class="tag-btn tag-relax" onclick="activarTag('tag-relax')">
+                    <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                    </svg>
+                    Relax
+                  </button>
+                  <button class="tag-btn tag-infantil" onclick="activarTag('tag-infantil')">
+                    <svg class="tag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                    </svg>
+                    <svg class="tag-icon-selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                    </svg>
+                    Infantil
+                  </button>
+                </div>
+                <button class="btn-publicar" onclick="publicar()">Publicar</button>
+              </div>
+            </div>
+
+            <div class="lista-comentarios">
+              <div id="comentario-oculto" class="comentario-element" style="display: none;">
+                <a href="perfil.html"><div class="avatar-round"></div></a>
+                <button onclick="expandirComentario('ocho-extra')">
+                  <div class="ocho-extra comentario-extra" style="display: none;">
+                    <div class="votado">
+                      <p class="m0">★★★★</p>
+                      <p class="m0 text-color-secondary">★</p>
+                    </div>
+                    <div class="votado-mobile">
+                      <p class="m0">★</p>
+                      <h5 class="m0 text-small text-normal">4/5</h5>
+                    </div>
+                    <div class="tags-bottom">
+                      <div class="tag-btn tag-estudio">
+                        <p class="m0 text-small">Estudio</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <div class="tag-btn tag-trabajo">
+                        <p class="m0 text-small">Trabajo</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <div class="tag-btn tag-deporte">
+                        <p class="m0 text-small">Deporte</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="texto-oculto" class="ocho-extra texto-comentario text-normal">
+                    <a class="text-medium" href="perfil.html">Usuario:</a> Un comentario es una apreciación o escrito sobre cualquier cosa puesta...
+                  </div>
+                </button>
+                <button onclick="showDropdown('ocho')" class="opciones">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.5 4.79166V4.80125V4.79166ZM11.5 11.5V11.5096V11.5ZM11.5 18.2083V18.2179V18.2083ZM11.5 5.74999C11.2458 5.74999 11.0021 5.64903 10.8224 5.46931C10.6426 5.28958 10.5417 5.04583 10.5417 4.79166C10.5417 4.5375 10.6426 4.29374 10.8224 4.11402C11.0021 3.9343 11.2458 3.83333 11.5 3.83333C11.7542 3.83333 11.9979 3.9343 12.1776 4.11402C12.3574 4.29374 12.4583 4.5375 12.4583 4.79166C12.4583 5.04583 12.3574 5.28958 12.1776 5.46931C11.9979 5.64903 11.7542 5.74999 11.5 5.74999ZM11.5 12.4583C11.2458 12.4583 11.0021 12.3574 10.8224 12.1776C10.6426 11.9979 10.5417 11.7542 10.5417 11.5C10.5417 11.2458 10.6426 11.0021 10.8224 10.8224C11.0021 10.6426 11.2458 10.5417 11.5 10.5417C11.7542 10.5417 11.9979 10.6426 12.1776 10.8224C12.3574 11.0021 12.4583 11.2458 12.4583 11.5C12.4583 11.7542 12.3574 11.9979 12.1776 12.1776C11.9979 12.3574 11.7542 12.4583 11.5 12.4583ZM11.5 19.1667C11.2458 19.1667 11.0021 19.0657 10.8224 18.886C10.6426 18.7062 10.5417 18.4625 10.5417 18.2083C10.5417 17.9542 10.6426 17.7104 10.8224 17.5307C11.0021 17.351 11.2458 17.25 11.5 17.25C11.7542 17.25 11.9979 17.351 12.1776 17.5307C12.3574 17.7104 12.4583 17.9542 12.4583 18.2083C12.4583 18.4625 12.3574 18.7062 12.1776 18.886C11.9979 19.0657 11.7542 19.1667 11.5 19.1667Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div id="ocho" class="dropdown" style="display: none;">
+                      <a href="#">Eliminar</a>
+                      <a href="#">Reportar</a>
+                    </div>
+                </button>
+              </div>
+
+              <!-- <div class="comentario-element">
+                <a href="perfil.html"><div class="avatar-round"></div></a>
+                <button onclick="expandirComentario('uno-extra')">
+                  <div class="uno-extra comentario-extra" style="display: none;">
+                    <div class="votado">
+                      <p class="m0">★★★★</p>
+                      <p class="m0 text-color-secondary">★</p>
+                    </div>
+                    <div class="votado-mobile">
+                      <p class="m0">★</p>
+                      <h5 class="m0 text-small text-normal">4/5</h5>
+                    </div>
+                    <div class="tags-bottom">
+                      <div class="tag-btn tag-estudio">
+                        <p class="m0 text-small">Estudio</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <div class="tag-btn tag-trabajo">
+                        <p class="m0 text-small">Trabajo</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <div class="tag-btn tag-deporte">
+                        <p class="m0 text-small">Deporte</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uno-extra texto-comentario text-normal">
+                    <a class="text-medium" href="perfil.html">Usuario:</a> Un comentario es una apreciación o escrito sobre cualquier cosa puesta...
+                  </div>
+                </button>
+                <button onclick="showDropdown('uno')" class="opciones">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.5 4.79166V4.80125V4.79166ZM11.5 11.5V11.5096V11.5ZM11.5 18.2083V18.2179V18.2083ZM11.5 5.74999C11.2458 5.74999 11.0021 5.64903 10.8224 5.46931C10.6426 5.28958 10.5417 5.04583 10.5417 4.79166C10.5417 4.5375 10.6426 4.29374 10.8224 4.11402C11.0021 3.9343 11.2458 3.83333 11.5 3.83333C11.7542 3.83333 11.9979 3.9343 12.1776 4.11402C12.3574 4.29374 12.4583 4.5375 12.4583 4.79166C12.4583 5.04583 12.3574 5.28958 12.1776 5.46931C11.9979 5.64903 11.7542 5.74999 11.5 5.74999ZM11.5 12.4583C11.2458 12.4583 11.0021 12.3574 10.8224 12.1776C10.6426 11.9979 10.5417 11.7542 10.5417 11.5C10.5417 11.2458 10.6426 11.0021 10.8224 10.8224C11.0021 10.6426 11.2458 10.5417 11.5 10.5417C11.7542 10.5417 11.9979 10.6426 12.1776 10.8224C12.3574 11.0021 12.4583 11.2458 12.4583 11.5C12.4583 11.7542 12.3574 11.9979 12.1776 12.1776C11.9979 12.3574 11.7542 12.4583 11.5 12.4583ZM11.5 19.1667C11.2458 19.1667 11.0021 19.0657 10.8224 18.886C10.6426 18.7062 10.5417 18.4625 10.5417 18.2083C10.5417 17.9542 10.6426 17.7104 10.8224 17.5307C11.0021 17.351 11.2458 17.25 11.5 17.25C11.7542 17.25 11.9979 17.351 12.1776 17.5307C12.3574 17.7104 12.4583 17.9542 12.4583 18.2083C12.4583 18.4625 12.3574 18.7062 12.1776 18.886C11.9979 19.0657 11.7542 19.1667 11.5 19.1667Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div id="uno" class="dropdown" style="display: none;">
+                      <a href="#">Eliminar</a>
+                      <a href="#">Reportar</a>
+                    </div>
+                </button>
+              </div>
+
+              <div class="comentario-element">
+                <a href="perfil.html"><div class="avatar-round"></div></a>
+                <button onclick="expandirComentario('dos-extra')">
+                  <div class="dos-extra comentario-extra" style="display: none;">
+                    <div class="votado">
+                      <p class="m0">★★★★</p>
+                      <p class="m0 text-color-secondary">★</p>
+                    </div>
+                    <div class="votado-mobile">
+                      <p class="m0">★</p>
+                      <h5 class="m0 text-small text-normal">4/5</h5>
+                    </div>
+                    <div class="tags-bottom">
+                      <div class="tag-btn tag-estudio">
+                        <p class="m0 text-small">Estudio</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <div class="tag-btn tag-trabajo">
+                        <p class="m0 text-small">Trabajo</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <div class="tag-btn tag-deporte">
+                        <p class="m0 text-small">Deporte</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dos-extra texto-comentario text-normal">
+                    <a class="text-medium" href="perfil.html">Usuario:</a> Un comentario es una apreciación o escrito sobre cualquier cosa puesta...
+                  </div>
+                </button>
+                <button onclick="showDropdown('dos')" class="opciones">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.5 4.79166V4.80125V4.79166ZM11.5 11.5V11.5096V11.5ZM11.5 18.2083V18.2179V18.2083ZM11.5 5.74999C11.2458 5.74999 11.0021 5.64903 10.8224 5.46931C10.6426 5.28958 10.5417 5.04583 10.5417 4.79166C10.5417 4.5375 10.6426 4.29374 10.8224 4.11402C11.0021 3.9343 11.2458 3.83333 11.5 3.83333C11.7542 3.83333 11.9979 3.9343 12.1776 4.11402C12.3574 4.29374 12.4583 4.5375 12.4583 4.79166C12.4583 5.04583 12.3574 5.28958 12.1776 5.46931C11.9979 5.64903 11.7542 5.74999 11.5 5.74999ZM11.5 12.4583C11.2458 12.4583 11.0021 12.3574 10.8224 12.1776C10.6426 11.9979 10.5417 11.7542 10.5417 11.5C10.5417 11.2458 10.6426 11.0021 10.8224 10.8224C11.0021 10.6426 11.2458 10.5417 11.5 10.5417C11.7542 10.5417 11.9979 10.6426 12.1776 10.8224C12.3574 11.0021 12.4583 11.2458 12.4583 11.5C12.4583 11.7542 12.3574 11.9979 12.1776 12.1776C11.9979 12.3574 11.7542 12.4583 11.5 12.4583ZM11.5 19.1667C11.2458 19.1667 11.0021 19.0657 10.8224 18.886C10.6426 18.7062 10.5417 18.4625 10.5417 18.2083C10.5417 17.9542 10.6426 17.7104 10.8224 17.5307C11.0021 17.351 11.2458 17.25 11.5 17.25C11.7542 17.25 11.9979 17.351 12.1776 17.5307C12.3574 17.7104 12.4583 17.9542 12.4583 18.2083C12.4583 18.4625 12.3574 18.7062 12.1776 18.886C11.9979 19.0657 11.7542 19.1667 11.5 19.1667Z" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div id="dos" class="dropdown" style="display: none;">
+                      <a href="#">Eliminar</a>
+                      <a href="#">Reportar</a>
+                    </div>
+                </button>
+              </div> -->
+
+            </div>
+
+            <!-- <div class="list-footer text-small">
+              <a href="#">
+                ( +100 ) Ver más
+              </a>
+            </div>   -->
+                      
+          </section>
+
+          <!-- Lista de Canciones -->
+          <ul class="lista-reproduccion">
+
+            <h2 class="m0 text-medium">Cola de reproducción</h2>
+            
+            <!-- Item Reproducible (Cancion) -->
+            <li class="li-play li-play-cancion">
+                
+              <a href="album.html">
+                <img src="assets/portada3.png" alt="">
+              </a>
+              
+              <div class="info">
+                
+                <div class="li-links">
+                  
+                  <a href="#">
+                    <h4 class="m0 text-medium">ROCKSTAR</h4>
+                  </a>
+                  <a href="#">
+                    <h5 class="m0 text-normal">DaBaby, Roddy Ricch</h5>
+                  </a>
+
+                </div>
+
+                
+                <div class="li-buttons">
+                  
+                  <span class="more-info text-small">
+                    <svg width="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    4</span>
+
+                  <button class="opciones-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                  </button>
+
+                  <button class="play-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+
+                </div>
+
+              </div>
+              
+            </li>
+
+            <!-- Item Reproducible (Cancion) -->
+            <li class="li-play li-play-cancion">
+                
+              <a href="album.html">
+                <img src="assets/portada3.png" alt="">
+              </a>
+              
+              <div class="info">
+                
+                <div class="li-links">
+                  <a href="#">
+                    <h4 class="m0 text-medium">Rock del Gato</h4>
+                  </a>
+                  <a href="#">
+                    <h5 class="m0 text-normal">Ratones Paranoicos</h5>
+                  </a>
+
+                  <!-- <span class="more-info text-small">03:54</span> -->
+
+                </div>
+
+                <div class="li-buttons">
+                  
+                  <span class="more-info text-small">
+                    <svg width="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    3.9</span>
+
+                  <button class="opciones-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                  </button>
+
+                  <button class="play-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+
+                </div>
+
+              </div>
+              
+            </li>
+
+            <!-- Item Reproducible (Cancion) -->
+            <li class="li-play li-play-cancion">
+                
+              <a href="album.html">
+                <img src="assets/portada3.png" alt="">
+              </a>
+              
+              <div class="info">
+                
+                <div class="li-links">
+                  <a href="#">
+                    <h4 class="m0 text-medium">rockstar (feat.21 Savage)</h4>
+                  </a>
+                  <a href="#">
+                    <h5 class="m0 text-normal">Post Malone</h5>
+                  </a>
+
+                </div>
+
+                <div class="li-buttons">
+
+                  <span class="more-info text-small">
+                    <svg width="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    4.5</span>
+
+                  <button class="opciones-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                  </button>
+
+                  <button class="play-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+
+                </div>
+
+              </div>
+              
+            </li>
+
+            <!-- Item Reproducible (Cancion) -->
+            <li class="li-play li-play-cancion">
+                
+              <a href="album.html">
+                <img src="assets/portada3.png" alt="">
+              </a>
+              
+              <div class="info">
+                
+                <div class="li-links">
+                  <a href="#">
+                    <h4 class="m0 text-medium">Rockstar</h4>
+                  </a>
+                  <a href="#">
+                    <h5 class="m0 text-normal">Duki</h5>
+                  </a>
+
+                </div>
+
+                <div class="li-buttons">
+
+                  <span class="more-info text-small">
+                    <svg width="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    4.7</span>
+
+                  <button class="opciones-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                  </button>
+
+                  <button class="play-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+
+                </div>
+
+              </div>
+              
+            </li>
+
+            <!-- Item Reproducible (Cancion) -->
+            <li class="li-play li-play-cancion">
+                
+              <a href="album.html">
+                <img src="assets/portada3.png" alt="">
+              </a>
+              
+              <div class="info">
+                
+                <div class="li-links">
+                  <a href="#">
+                    <h4 class="m0 text-medium">Rock And Roll All Nite</h4>
+                  </a>
+                  <a href="#">
+                    <h5 class="m0 text-normal">KISS</h5>
+                  </a>
+
+                </div>
+
+                <div class="li-buttons">
+
+                  <span class="more-info text-small">
+                    <svg width="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    4.8</span>
+
+                  <button class="opciones-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                  </button>
+
+                  <button class="play-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+
+                </div>
+
+              </div>
+              
+            </li>
+
+          </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Player -->
+    <div id="player">
+      
+        <div class="info-mini">
+          
+          <span class="text-small" style="display: flex;">
+            <div id="current-time">02:12</div> / 4:32
+          </span>
+          
+          <div id="song-title">
+            <span class="text-small">
+              Artista - Nombre de cancion
+            </span>
+          </div>
+  
+          <a href="playing-song.html" id="open-playing-song-mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 15l7-7 7 7" />
+            </svg>
+          </a>
+  
+        </div>
+        
+        <div class="info-large">
+          
+          <div class="info-img">
+            
+          </div>
+  
+          <div class="info-texto">
+            <a href="#" class="text-medium">Nombre de la cancion</a>
+            <a href="#" class="text-small">Nombre del artista</a>
+          </div>
+
+          <a href="playing-song.html" id="open-playing-song-desktop">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M5 15l7-7 7 7" />
+            </svg>
+          </a>
+  
+        </div>
+  
+        <div class="controles">
+  
+          <div class="library-buttons">
+            
+            <button id="fav-btn">
+              <svg id="corazon-player" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </button>
+            
+            <button id="add-playlist-btn">
+              <svg viewBox="0 0 33 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.3636 5.79254H0V8.68881H19.3636V5.79254ZM19.3636 0H0V2.89627H19.3636V0ZM25.8182 11.5851V5.79254H22.5909V11.5851H16.1364V14.4814H22.5909V20.2739H25.8182V14.4814H32.2727V11.5851H25.8182ZM0 14.4814H12.9091V11.5851H0V14.4814Z" fill="currentColor"/>
+              </svg>            
+            </button>
+  
+          </div>
+  
+          <div class="play-buttons">
+  
+            <button id="play-prev-button">
+              <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.24994 14.7061L1.24994 2.70605M5.70048 7.50605C5.51418 7.64577 5.36298 7.82695 5.25884 8.03523C5.15469 8.24352 5.10048 8.47319 5.10048 8.70605C5.10048 8.93892 5.15469 9.16859 5.25884 9.37687C5.36298 9.58516 5.51418 9.76633 5.70048 9.90605L13.7 15.9061C13.9228 16.0732 14.1878 16.175 14.4653 16.2C14.7427 16.225 15.0216 16.1723 15.2708 16.0477C15.52 15.9231 15.7295 15.7316 15.876 15.4947C16.0224 15.2577 16.1 14.9846 16.1 14.7061L16.1 2.70606C16.1 2.42749 16.0224 2.15442 15.876 1.91746C15.7295 1.68049 15.52 1.489 15.2708 1.36442C15.0216 1.23984 14.7427 1.1871 14.4653 1.21212C14.1878 1.23713 13.9228 1.33892 13.7 1.50606L5.70048 7.50605Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+              
+            <button id="play-button" class="playing">
+              <!-- <svg id="play-glow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <defs>
+                  <filter id="f1">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="0.72" />
+                  </filter>
+                </defs>
+                <path filter="url(#f1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.32" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path filter="url(#f1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg> -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </button>
+  
+            <button id="play-next-button">
+              <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.8502 2.70606L15.8502 14.7061M11.3996 9.90606C11.5859 9.76634 11.7371 9.58516 11.8413 9.37688C11.9454 9.16859 11.9996 8.93892 11.9996 8.70606C11.9996 8.47319 11.9454 8.24352 11.8413 8.03524C11.7371 7.82695 11.5859 7.64578 11.3996 7.50606L3.40012 1.50606C3.17727 1.33891 2.91227 1.23713 2.63483 1.21212C2.35739 1.1871 2.07846 1.23984 1.8293 1.36441C1.58014 1.48899 1.3706 1.68049 1.22415 1.91746C1.07769 2.15442 1.00012 2.42749 1.00012 2.70606L1.00012 14.7061C1.00012 14.9846 1.07769 15.2577 1.22414 15.4947C1.3706 15.7316 1.58014 15.9231 1.8293 16.0477C2.07846 16.1723 2.35739 16.225 2.63483 16.2C2.91227 16.175 3.17726 16.0732 3.40012 15.9061L11.3996 9.90606Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+  
+          </div>
+  
+          <div id="song-nav">
+          
+            <span id="current-time" class="text-small">02:24</span>
+            <input type="range" name="volume" id="song-range" value="148" max="242" class="player-range">
+            <span id="total-time" class="text-small">4:02</span>
+  
+          </div>
+  
+          <div id="vol-control">
+  
+            <button id="volume-mute">
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.586 13.002H2C1.73478 13.002 1.48043 12.8966 1.29289 12.7091C1.10536 12.5215 1 12.2672 1 12.002V8.00196C1 7.73674 1.10536 7.48239 1.29289 7.29485C1.48043 7.10732 1.73478 7.00196 2 7.00196H3.586L8.293 2.29496C8.923 1.66496 10 2.11096 10 3.00196V17.002C10 17.893 8.923 18.339 8.293 17.709L3.586 13.002Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17 10.002L19 12.002M15 12.002L17 10.002L15 12.002ZM17 10.002L19 8.00195L17 10.002ZM17 10.002L15 8.00195L17 10.002Z" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          
+            <input type="range" name="volume" id="volume-range" class="player-range">
+  
+            <button id="volume-btn">
+              <svg viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.411 7.13919C19.0561 7.77746 19.5678 8.53525 19.9169 9.36928C20.266 10.2033 20.4457 11.0972 20.4457 12C20.4457 12.9028 20.266 13.7967 19.9169 14.6307C19.5678 15.4648 19.0561 16.2225 18.411 16.8608V7.13919ZM22.3388 3.25164C23.4995 4.40049 24.4203 5.76437 25.0485 7.26542C25.6767 8.76646 26 10.3753 26 12C26 13.6247 25.6767 15.2335 25.0485 16.7346C24.4203 18.2356 23.4995 19.5995 22.3388 20.7484V3.25164ZM4.59165 16.124H2.38888C2.02053 16.124 1.66726 15.9792 1.40679 15.7214C1.14633 15.4636 1 15.1139 1 14.7493V9.25067C1 8.88609 1.14633 8.53644 1.40679 8.27864C1.66726 8.02084 2.02053 7.87601 2.38888 7.87601H4.59165L11.1291 1.40547C12.0041 0.539433 13.4999 1.15253 13.4999 2.37736V21.6226C13.4999 22.8475 12.0041 23.4606 11.1291 22.5945L4.59165 16.124Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+  
+          </div>
+  
+        </div>
+
+    </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/tags.js"></script>
+
+</body>
+</html>
