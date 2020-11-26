@@ -142,6 +142,7 @@
         margin-left: 32px;
         margin-right: 18px;
         color: var(--color-gray5);
+        min-width: 270px;
     }
     
     .info-large:hover{
@@ -278,8 +279,8 @@
     }
 
     #open-playing-song-desktop{
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
         color: var(--color-gray5);
         align-self: baseline;
         margin-left: 4px;
