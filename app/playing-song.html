@@ -315,7 +315,9 @@
 
           <div class="full-player-content">
 
-            <section id="comentar">
+
+            <section id="comentar" class="small">
+
               <div class="comentarios-input">
                 <button class="boton-comentario" onclick="mostrarInput()">
                   <h3 class="m0 text-medium">Opinar</h3>
@@ -330,8 +332,13 @@
                     <a href="#1" title="Give 1 star">★</a>
                   </div>
                 </div>
+
+                <button id="mostrar-comentarios-btn" class="btn">
+                  Ver Comentarios
+                </button>
+
               </div>
-  
+              
               <div class="bloque-feedback ocultar">
                 <textarea id="contenido-input" placeholder="Comparte lo que opinas..." class="comment-content" maxlength="1000"></textarea>
                 <div class="feedback-bottom">
@@ -395,7 +402,7 @@
                 </div>
               </div>
   
-              <div class="lista-comentarios">
+              <div class="lista-comentarios minimizada">
                 <div id="comentario-oculto" class="comentario-element" style="display: none;">
                   <a href="perfil.html"><div class="avatar-round"></div></a>
                   <button onclick="expandirComentario('ocho-extra')">
@@ -551,7 +558,7 @@
             </section>
   
             <!-- Lista de Canciones -->
-            <ul class="lista-reproduccion">
+            <ul class="lista-reproduccion large">
   
               <h2 class="m0">Rock 'n' Roll <span class="text-normal text-p">(Album)</span></h2>
               

@@ -122,18 +122,22 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: -9px;
 }
 
+#mostrar-comentarios-btn {
+    display: none;
+}
+
 @media(min-width:768px) {
     #song-playlist-btn {
         display: none;
     }
 
     .song-header {
+        position: relative;
         flex-flow: row;
         margin-top: 28px;
         column-gap: 18px;
         line-height: 37px;
         letter-spacing: 0.5px;
-        width: 70%;
     }
 
     .song-info{
@@ -144,31 +148,68 @@ input[type=range]::-webkit-slider-thumb {
         display: none;
     }
 
-    #song-header-buttons{
-        right: 48px;
-        display: flex;
-        flex-flow: column;
-        justify-items: center;
-        row-gap: 8px;
-    }
-
     .full-player-content{
+        position: relative;
         display: flex;
         flex-flow: row-reverse;
         column-gap: 32px;
     }
 
-    .full-player-content .lista-reproduccion{
+    .full-player-content .lista-reproduccion.large{
+        width: 100%;
+    }
+    
+    .full-player-content .lista-reproduccion.small{
         width: 65%;
     }
     
     .full-player-content #comentar{
-        width: 35%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    #comentar.large{
+        width: 45%;
+        transition: width 0.5s ease;
+    }
+
+    #comentar.small{
+        position: absolute;
+        width: 20%;
+        transition: width 0.5s ease;
+    }
+
+    #comentar #mostrar-comentarios-btn{
+        position: absolute;
+        right: 0;
+        margin-top: -96px;
+        display: flex;
+        align-self: center;
+        /* margin-top: 12px;
+        margin-bottom: 12px; */
+    }
+
+    .lista-comentarios.minimizada {
+        height: 0;
+        overflow-y: hidden;
+        transition: height 0.7s ease;
+    }
+    
+    .lista-comentarios {
+        display: flex;
+        height: 100%;
+        overflow-y: hidden;
+        transition: height 0.7s ease;
+    }
+
+    .comentarios-input{
+        position: relative;
+        align-items: center;
     }
 
     .lista-comentarios{
-        display: flex;
+        padding: 0;
+        margin-top: 16px;
     }
-
 
 }
