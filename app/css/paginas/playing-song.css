@@ -118,7 +118,14 @@ input[type=range]::-webkit-slider-thumb {
     transform: rotate(180deg);
 }
 
+.votacion-promedio p {
+    margin-top: -9px;
+}
+
 @media(min-width:768px) {
+    #song-playlist-btn {
+        display: none;
+    }
 
     .song-header {
         flex-flow: row;
