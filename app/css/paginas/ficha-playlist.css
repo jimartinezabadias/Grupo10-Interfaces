@@ -223,6 +223,35 @@
 
 .expandido {
     margin-top: -8px;
+    transform: translate(calc(1% + 0.5px), calc(2% + 0.5px));
+    transition: transform 0.3s ease;
+    text-shadow: 3px 3px 0 #333;
+}
+
+.tilt .tags-bottom {
+    animation: kaboom 5s ease alternate infinite;
+
+}
+@keyframes kaboom {
+90% {
+    transform: scale(1.0);
+}
+100% {
+    transform: scale(1.3);
+}
+}
+
+.tilt .votado {
+    animation: kaboom2 5s ease 3s alternate infinite
+
+}
+@keyframes kaboom2 {
+90% {
+    transform: scale(1.0);
+}
+100% {
+    transform: scale(1.3);
+}
 }
 
 .comentario-element {
@@ -271,10 +300,25 @@
     font-size: 17px;
     color: var(--color-yellow);
     margin-top: -3px;
+    z-index: 1;
+}
+
+.votado p {
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
 }
 
 .tags-bottom {
     display: flex;
+    z-index: 2;
 }
 
 .tags-bottom p {
@@ -418,8 +462,25 @@
         margin-top: -3px;   
     }
 
+    .votado-mobile p {
+        text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+    }
+
     .votado-mobile h5 {
         padding-top: 4px;
+        text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
     }
 
     .bloque-playlist {

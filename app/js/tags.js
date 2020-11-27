@@ -66,10 +66,12 @@ function expandirComentario(nombre,element) {
         texto[1].classList.remove("expandido");
         texto[1].innerHTML = '<a class="text-medium" href="perfil.html">Usuario:</a> Un comentario es una apreciación o escrito sobre cualquier cosa puesta...';
         texto[0].setAttribute("style", "display: none;");
+        texto[0].classList.remove("tilt");
     }else {
         texto[1].classList.add("expandido");
         texto[1].innerHTML = '<a class="text-medium" href="perfil.html">Usuario:</a> Un comentario es una apreciación o escrito sobre cualquier cosa puesta en análisis.';
         texto[0].setAttribute("style", "display: flex;");
+        texto[0].classList.add("tilt");
     }
 }
 
