@@ -114,6 +114,10 @@
     color: var(--color-gray4);
 }
 
+.menu-extensible a:hover {
+    text-decoration: underline;
+}
+
 .menu-extensible h4 {
     padding-left: 18px;
 }
@@ -138,6 +142,12 @@ position: relative;
 font-size: 25px;
 color: white;
 right: 5px;
+}
+
+.side-active{
+    color: var(--color-gray6) !important;
+    background-color: var(--color-tr1) !important;
+    font-weight: 500;
 }
 
 @media(min-width:768px) {
@@ -165,4 +175,6 @@ right: 5px;
         position: relative;
         margin-right: 0;
     }
+
+    
 }
