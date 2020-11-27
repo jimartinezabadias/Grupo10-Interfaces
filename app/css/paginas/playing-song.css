@@ -108,6 +108,16 @@ input[type=range]::-webkit-slider-thumb {
     color: var(--color-green2);
 }
 
+#open-playing-song-desktop {
+    transform: rotate(180deg);
+}
+
+#open-playing-song-mobile {
+    width: 32px;
+    color: var(--color-gray6);
+    transform: rotate(180deg);
+}
+
 @media(min-width:768px) {
 
     .song-header {
